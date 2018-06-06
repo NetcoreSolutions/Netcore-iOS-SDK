@@ -83,8 +83,10 @@ NetCoreInstallation.sharedInstance().netCorePushRegisteration(Identity, withDevi
 4. Handle Push/Local Notification Delegate Events (AppDelegate file)
 ```swift
 func application ( _ application : UIApplication, didReceiveRemoteNotification userInfo : [ AnyHashable : Any ]) {
-    // perform notification received/click action as per third party SDK as per their document
-    NetCorePushTaskManager.sharedInstance().didReceiveRemoteNotification(userInfo)
+    if application.applicationState != .background {
+        // perform notification received/click action as per third party SDK as per their document
+        NetCorePushTaskManager.sharedInstance().didReceiveRemoteNotification(userInfo)
+    }
 }
 
 func application (_ application : UIApplication , didReceive notification : UILocalNotification ){
