@@ -5,7 +5,8 @@ enum AppTrackingEvents{
     tracking_AppExit = 6,
     tracking_FirstLaunch = 20,
     tracking_AppLaunch = 21,
-    tracking_AppUnInstall = 24
+    tracking_AppUnInstall = 24,
+    tracking_AppUpdate = 26
 };
 
 enum AdFrequencyCapping{

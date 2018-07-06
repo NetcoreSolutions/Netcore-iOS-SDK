@@ -13,6 +13,7 @@ class NotificationService: UNNotificationServiceExtension {
 
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         
+        NetCoreNotificationService.sharedInstance().setUpAppGroup("group.com.Smartech.com")
         NetCoreNotificationService.sharedInstance().didReceive(request) { (contentToDeliver:UNNotificationContent) in
             contentHandler(contentToDeliver)
         }

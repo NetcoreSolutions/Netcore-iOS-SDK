@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.0
+ @version    2.2.1
  */
 
 #import <Foundation/Foundation.h>
@@ -63,10 +63,15 @@
  */
 -(void)registerForPushNotifications;
 /*
- @Method getNotifications: this method use to get all the Push Notifications received
+ @Method getNotifications: this method use to get latest 10 Push Notifications received
  @return - Array
  */
 -(NSArray *)getNotifications;
+/*
+ @Method getNotificationsWithCount: this method can be used to get specific amount of Push Notifications received
+ @return - Array
+ */
+-(NSArray *)getNotificationsWithCount:(NSInteger)count;
 /*
  @Method handleApplicationLaunchEvent: this method use to handle App launch Events and Setting Application ID
  @return - void
@@ -77,17 +82,20 @@
  @param  notiData - contains query parameters of url
  */
 -(void)setDeepLinkQueryParameters:(NSDictionary *)notiData;
-
 /*
  @Method checkSessionId: this method checks for session id expiration and renews it.
  */
 -(void)checkSessionId;
-
 /*
  @Method addDeepLinkParametersInDict: adds deeplink parameters to every request.
  */
-
 -(void)addDeepLinkParametersInDict:(NSMutableDictionary *)requestDict;
+/*
+ @Method setUpAppGroup: this method use to setup app groups
+ @param  appGroup - contain appGroup string. Usually, group.<your-bundle-identifier>. eg., group.com.CompanyName.productName
+ */
+-(void)setUpAppGroup:(NSString *)appGroup;
+
 
 
 

@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let appGroup = "group.com.Smartech.com"
+        NetCoreSharedManager.sharedInstance().setUpAppGroup(appGroup)
+        
         let netCore_AppID = "0e3164f1e0b5a556a372b5fc83a5d333"
         NetCoreSharedManager.sharedInstance().handleApplicationLaunchEvent(launchOptions, forApplicationId: netCore_AppID)
         

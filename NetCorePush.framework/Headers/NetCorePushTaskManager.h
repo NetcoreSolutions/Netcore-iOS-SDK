@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.0
+ @version    2.2.1
  */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>

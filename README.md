@@ -26,6 +26,7 @@ pod install
 Push Notification
 Keychain
 Background Mode -> Remote Notification
+App Groups
 ```
 
 6. Open App.xcworkspace and build.
@@ -47,7 +48,7 @@ JavaScriptCore
 Push Notification
 Keychain
 Background Mode -> Remote Notification
-App Groups -> Create new group with name “group.com.Smartech.com”
+App Groups
 ```
 5. Create Bridge file in existing swift project if required and add Following code inside file.
 ```objc
@@ -64,6 +65,10 @@ import NetCorePush
 2. Add NetCore Application AppID in support in Finish Launching Methods
 (AppDelegate file)
 ```swift
+let appGroup = "<group.com.CompanyName.ProductName>"
+
+NetCoreSharedManager.sharedInstance().setUpAppGroup(appGroup)
+
 let netCore_AppID = "your App Id which you get from Netcore smartech admin panel"
 // Set up NetCore  Application Id
 
@@ -180,9 +185,9 @@ let notificationArray : Array = NetCoreSharedManager.sharedInstance().getNotific
 
 2) Click Next and when asked to “Activate”, Click Activate.
 
-3) Add “App Groups” to your apps Capabilities(Add one group with name “group.com.Smartech.com”).
+3) Add “App Groups” to your apps Capabilities(Add one group with name "<group.com.CompanyName.ProductName>").
 
-4) Enable App groups in Service Extension too and select group with name “group.com.Smartech.com”.
+4) Enable App groups in Service Extension too and select group with name "<group.com.CompanyName.ProductName>".
 
 5) If App group is not activated on the provisioning profile you are using, then 
 i.Enable App groups in your provisioning profile from your Apple Developer’s account and replace the profile with the new one. Or,
@@ -201,6 +206,9 @@ import NetCorePush
 2) Handle Notification Request
 ```swift
 override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+let appGroup = "<group.com.CompanyName.ProductName>"
+NetCoreNotificationService.sharedInstance().setUpAppGroup(appGroup)
+
 NetCoreNotificationService.sharedInstance().didReceive(request) { (contentToDeliver:UNNotificationContent) in
 contentHandler(contentToDeliver) }
 }
@@ -222,9 +230,9 @@ NetCoreNotificationService.sharedInstance().serviceExtensionTimeWillExpire()
 
 2) Click Next and when asked to “Activate”, Click Activate.
 
-3) Add “App Groups” to your apps Capabilities(Add one group with name “group.com.Smartech.com”).
+3) Add “App Groups” to your apps Capabilities(Add one group with name "<group.com.CompanyName.ProductName>").
 
-4) Enable “App Groups” in Content Extension too and select group with name “group.com.Smartech.com”.
+4) Enable “App Groups” in Content Extension too and select group with name "<group.com.CompanyName.ProductName>".
 
 ```
 ***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/SDK-Integration-Steps.pdf)>**

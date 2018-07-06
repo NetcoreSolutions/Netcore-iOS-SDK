@@ -1,4 +1,11 @@
-
+/*
+ @header NetCorePushPlugin.m
+ NetCorePushPlugin : - use to setup all Cordova communication methods
+ 
+ @author NetCore
+ @copyright  2018 NetCore
+ @version    2.2.1
+ */
 #import "NetCorePushPlugin.h"
 #import <NetCorePush/NetCorePush.h>
 @implementation NetCorePushPlugin
@@ -12,7 +19,6 @@
             activityMetaData = [command.arguments objectAtIndex:1];
         }
         [[NetCoreAppTracking    sharedInstance]sendAppTrackingEventWithCustomPayload:activityType Payload:activityMetaData Block:^(NSInteger statusCode) {
-            [self sendResult:statusCode Command:command];
         }];
     }
 }
@@ -22,7 +28,6 @@
         NSString *strId = [command.arguments objectAtIndex:0];
         if (strId != nil){
             [[NetCoreInstallation sharedInstance]netCorePushLogin:strId Block:^(NSInteger statusCode) {
-                [self sendResult:statusCode Command:command];
             }];
         }
     }
@@ -30,18 +35,10 @@
 -(void)pushLogout:(CDVInvokedUrlCommand *)command{
     
     [[NetCoreInstallation sharedInstance]netCorePushLogout:^(NSInteger statusCode) {
-        [self sendResult:statusCode Command:command];
     }];
 }
--(void)sendResult:(NSInteger)statusCode Command:(CDVInvokedUrlCommand *)command{
-    
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:statusCode == 200 ? CDVCommandStatus_OK:CDVCommandStatus_ERROR  messageAsNSInteger:statusCode];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-    
-}
+
 -(void)profilePush:(CDVInvokedUrlCommand *)command{
-    
-    
     
     if ([command.arguments count]>0){
         NSString *strId = [command.arguments objectAtIndex:0];
@@ -50,8 +47,41 @@
             activityMetaData = [command.arguments objectAtIndex:1];
         }
         [[NetCoreInstallation sharedInstance]netCoreProfilePush:strId Payload:activityMetaData Block:^(NSInteger statusCode) {
-            [self sendResult:statusCode Command:command];
          }];
     }
 }
+
+-(void)setUpIdentity:(CDVInvokedUrlCommand *)command{
+    
+    if ([command.arguments count]>0){
+        NSString *strIdentity = [command.arguments objectAtIndex:0];
+
+        [[NetCoreSharedManager sharedInstance] setUpIdentity:strIdentity];
+
+    }
+}
+
+-(void)setUpApplicationId:(CDVInvokedUrlCommand *)command{
+    
+    if ([command.arguments count]>0){
+        NSString *strAppID = [command.arguments objectAtIndex:0];
+
+        [[NetCoreSharedManager sharedInstance] setUpApplicationId:strAppID];
+    }
+}
+
+-(void)pushRegisteration:(CDVInvokedUrlCommand *)command{
+    
+    if ([command.arguments count]>0){
+        NSString *strIdentity = [command.arguments objectAtIndex:0];
+        
+        [[NetCoreInstallation sharedInstance] netCorePushRegisteration:strIdentity Block:^(NSInteger statusCode) {
+        }];
+    }
+}
+
+-(NSArray *)getNotifications {
+    return [[NetCoreSharedManager sharedInstance] getNotifications];
+}
+
 @end

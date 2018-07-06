@@ -5,7 +5,7 @@
  
  @author NetCore
  @copyright  2018 NetCore
- @version    2.2.0
+ @version    2.2.1
  */
 
 #import <UserNotifications/UserNotifications.h>
@@ -33,6 +33,11 @@
      action to the app if necessary for Carousel Push Notification.
  */
 -(void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion;
+/*
+ @Method setUpAppGroup: this method use to setup app groups
+ @param  appGroup - contain appGroup string. Usually, group.<your-bundle-identifier>. eg., group.com.CompanyName.productName
+ */
+-(void)setUpAppGroup:(NSString *)appGroup;
 
 @end
 
