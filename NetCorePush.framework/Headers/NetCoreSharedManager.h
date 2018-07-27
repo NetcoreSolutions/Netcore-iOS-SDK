@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.1
+ @version    2.2.2
  */
 
 #import <Foundation/Foundation.h>
@@ -68,11 +68,6 @@
  */
 -(NSArray *)getNotifications;
 /*
- @Method getNotificationsWithCount: this method can be used to get specific amount of Push Notifications received
- @return - Array
- */
--(NSArray *)getNotificationsWithCount:(NSInteger)count;
-/*
  @Method handleApplicationLaunchEvent: this method use to handle App launch Events and Setting Application ID
  @return - void
  */
@@ -95,7 +90,11 @@
  @param  appGroup - contain appGroup string. Usually, group.<your-bundle-identifier>. eg., group.com.CompanyName.productName
  */
 -(void)setUpAppGroup:(NSString *)appGroup;
-
+/*
+ @Method optOut: this method is used to opt for Data Protection Laws.
+ @param  optFlag - If it is True, then it will stop processing user's events and user will not receive any kind of Push/InApp Notifications from Panel. Default Value is False.
+ */
+-(void)optOut:(BOOL)optFlag;
 
 
 

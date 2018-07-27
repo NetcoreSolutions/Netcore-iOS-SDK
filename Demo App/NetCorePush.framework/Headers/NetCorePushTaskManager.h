@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.1
+ @version    2.2.2
  */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
@@ -62,8 +62,12 @@
  */
 -(void)didReceiveNotificationRequest:(UNNotificationRequest *)request;
 /*
- @Method handleActionWithIdentifier :- use to manage Action buttons and their identifiers
+ @Method handleActionWithIdentifier :- use to manage Action buttons for Remote Notifications and their identifiers
  */
 -(void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo;
+/*
+ @Method handleActionWithIdentifier :- use to manage Action buttons for Local Notifications and their identifiers
+ */
+-(void)handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo;
 
 @end

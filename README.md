@@ -178,6 +178,20 @@ NetCoreAppTracking.sharedInstance().sendEvent(withCustomPayload:Int(UInt32(track
 let notificationArray : Array = NetCoreSharedManager.sharedInstance().getNotifications()
 ```
 
+## If user wants to opt out from being tracked
+Add below code
+```swift
+NetCoreSharedManager.sharedInstance().optOut(<boolean_flag>)
+```
+Note:  The method mentioned above accepts a compulsory boolean value (true/false).
+
+- If an end user wants to opt out, the flag should be passed as **true**. Once the user opts out, Netcore SDK will not be able to track that particular user further and no communications will be received by that user. </br>
+**e.g. NetCoreSharedManager.sharedInstance().optOut(true)**
+
+- If an end user wants to opt in, the flag should be passed as **false**. Once the user opts in, Netcore SDK will be able to track that particular user further and next communications will be received by that user.</br>
+**e.g NetCoreSharedManager.sharedInstance().optOut(false)**
+
+
 ## For Rich Push Notifications 
 ### Configuration Changes
 ```swift
@@ -282,3 +296,4 @@ mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
 
 done
 ```
+
