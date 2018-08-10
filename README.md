@@ -162,7 +162,7 @@ NetCoreInstallation.sharedInstance().netCorePushLogout { (statusCode:Int) in }
 // Identity must be “”(blank) or as per Primary key which defined on smartech Panel
 let info = ["NAME":"Tester", "AGE":"23", "MOBILE":"9898948849"]
 
-NetCoreInstallation.sharedInstance().netCoreProfilePush(Identity, payload: ino, block: nil)
+NetCoreInstallation.sharedInstance().netCoreProfilePush(Identity, payload: info, block: nil)
 //Attribute name must be in Capital such as NAME, AGE etc.
 
 ```
