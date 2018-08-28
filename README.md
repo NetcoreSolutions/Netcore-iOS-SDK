@@ -207,7 +207,7 @@ Note:  The method mentioned above accepts a compulsory boolean value (true/false
 i.Enable App groups in your provisioning profile from your Apple Developer’s account and replace the profile with the new one. Or,
 ii.In your apps’s, Target->General-> Signing, Select “Automatically manage signing” and enable App groups by going to Target->Capabilities->App group. This will automatically add app groups capability to you provisioning profile.
 ```
-***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/SDK-Integration-Steps.pdf)>**
+***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/ObjectiveC-and-swift-Integration-Steps.pdf)>**
 
 ### Implementation Changes
 
@@ -234,7 +234,7 @@ NetCoreNotificationService.sharedInstance().serviceExtensionTimeWillExpire()
 }
 
 ```
-***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/SDK-Integration-Steps.pdf)>**
+***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/ObjectiveC-and-swift-Integration-Steps.pdf)>**
 
 
 ## For Carousel Push Notifications 
@@ -249,7 +249,7 @@ NetCoreNotificationService.sharedInstance().serviceExtensionTimeWillExpire()
 4) Enable “App Groups” in Content Extension too and select group with name "<group.com.CompanyName.ProductName>".
 
 ```
-***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/SDK-Integration-Steps.pdf)>**
+***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/ObjectiveC-and-swift-Integration-Steps.pdf)>**
 
 ### Implementation Changes
 ```swift
@@ -261,7 +261,7 @@ NetCoreNotificationService.sharedInstance().serviceExtensionTimeWillExpire()
 
 4) Replace “NotificationViewController” class files from the "Rich Files" into your project.
 ```
-***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/SDK-Integration-Steps.pdf)>**
+***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/ObjectiveC-and-swift-Integration-Steps.pdf)>**
 
 ### Deployment Over Apple Store
 Add Following runscript in your application target ,when you are deploying application
