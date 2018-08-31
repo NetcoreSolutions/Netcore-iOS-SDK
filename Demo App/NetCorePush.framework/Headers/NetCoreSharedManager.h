@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.3
+ @version    2.2.4
  */
 
 #import <Foundation/Foundation.h>
@@ -95,6 +95,11 @@
  @param  optFlag - If it is True, then it will stop processing user's events and user will not receive any kind of Push/InApp Notifications from Panel. Default Value is False.
  */
 -(void)optOut:(BOOL)optFlag;
+
+/*
+ @Method printDeviceToken: this method is used to print device token.
+ */
+-(void)printDeviceToken;
 
 
 

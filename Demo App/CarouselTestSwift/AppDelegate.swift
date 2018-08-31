@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NetCoreSharedManager.sharedInstance().handleApplicationLaunchEvent(launchOptions, forApplicationId: netCore_AppID)
         
         //set up push delegate
-        NetCorePushTaskManager.sharedInstance().delegate = self as NetCorePushTaskManagerDelegate
+        NetCorePushTaskManager.sharedInstance().delegate = self
         
         return true
     }

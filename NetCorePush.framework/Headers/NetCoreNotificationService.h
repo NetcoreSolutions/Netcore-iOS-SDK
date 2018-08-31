@@ -1,11 +1,11 @@
 /*
  @header NetCoreNotificationService.h
- @brief This is the header file where my super-code is contained.
+ @brief
  NetCoreNotificationService : - use to provides the entry point for a Notification Service
  
  @author NetCore
  @copyright  2018 NetCore
- @version    2.2.3
+ @version    2.2.4
  */
 
 #import <UserNotifications/UserNotifications.h>
