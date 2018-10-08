@@ -4,7 +4,7 @@
  @brief This is the header file
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.4
+ @version    2.2.5
  */
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>

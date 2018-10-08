@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.4
+ @version    2.2.5
  */
 
 #import <Foundation/Foundation.h>
@@ -102,6 +102,9 @@
 -(void)printDeviceToken;
 
 
-
+/*!
+ @Method The method will export all the keys which were accidently saved to NSUserDefault:initWithSuit provided the value exits.
+ */
+- (void)getAppGroupDataToUserDefault:(NSArray <NSString *> *)allKeys;
 
  @end

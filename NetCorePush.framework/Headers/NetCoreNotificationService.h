@@ -5,7 +5,7 @@
  
  @author NetCore
  @copyright  2018 NetCore
- @version    2.2.4
+ @version    2.2.5
  */
 
 #import <UserNotifications/UserNotifications.h>
