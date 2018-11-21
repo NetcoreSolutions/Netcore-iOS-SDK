@@ -1,3 +1,4 @@
+
 [![Netcore Logo](https://netcore.in/wp-content/themes/netcore/img/Netcore-new-Logo.png)](http:www.netcore.in)
 
 # Netcore iOS SDK
@@ -142,8 +143,10 @@ if strType .lowercased().contains ("your app deep link"){
 func application(_ application: UIApplication, handleActionWithIdentifier identifier:
 String?, forRemoteNotification userInfo: [AnyHashable : Any], withResponseInfo
 responseInfo: [AnyHashable : Any], completionHandler: @escaping () -> Void) {
-NetCorePushTaskManager.sharedInstance().handleAction(withIdentifier: identifier, forRemoteNotification: userInfo, withResponseInfo: responseInfo)
+
+NetCorePushTaskManager.sharedInstance().handleAction(withIdentifier: identifier, forRemoteNotification: userInfo,     withResponseInfo: responseInfo)
 completionHandler()
+
 }
 ```
 
@@ -166,16 +169,24 @@ NetCoreInstallation.sharedInstance().netCoreProfilePush(Identity, payload: info,
 //Attribute name must be in Capital such as NAME, AGE etc.
 
 ```
-## To Track Custom event
+## To Track Custom Event
 ```swift
-//add To cart event with custom array of data
-NetCoreAppTracking.sharedInstance().sendEvent(withCustomPayload:Int(UInt32(tracking_PageBrowse.rawValue)), payload: arrayAddToCart , block: nil)
+//add To cart event ID with custom array of data
+NetCoreAppTracking.sharedInstance().sendEvent(withCustomPayload:Int(UInt32(tracking_AddToCart.rawValue)), payload: arrayAddToCart , block: nil)
+
+//event name with custom payload dictionary of data
+NetCoreAppTracking.sharedInstance()?.trackEvent(withCustomPayload: Event_Name,payload: payloadDict, block:nil)
+
+eg.
 //Activity tracking code can be generated from Smartech panel
 
 ```
-## To fetch delivered push notifications
+## To Fetch Delivered push notifications
 ```swift
 let notificationArray : Array = NetCoreSharedManager.sharedInstance().getNotifications()
+
+// To get recent 'n' number of notifications
+let notificationArray : Array = NetCoreSharedManager.sharedInstance().getNotificationsWithCount(<count>)
 ```
 
 ## If user wants to opt out from being tracked
@@ -185,12 +196,18 @@ NetCoreSharedManager.sharedInstance().optOut(<boolean_flag>)
 ```
 Note:  The method mentioned above accepts a compulsory boolean value (true/false).
 
+
 - If an end user wants to opt out, the flag should be passed as **true**. Once the user opts out, Netcore SDK will not be able to track that particular user further and no communications will be received by that user. </br>
 **e.g. NetCoreSharedManager.sharedInstance().optOut(true)**
 
 - If an end user wants to opt in, the flag should be passed as **false**. Once the user opts in, Netcore SDK will be able to track that particular user further and next communications will be received by that user.</br>
 **e.g NetCoreSharedManager.sharedInstance().optOut(false)**
 
+## To Clear Identity
+```swift
+NetCoreSharedManager.sharedInstance()?.clearIdentity()
+```
+Note: The method clears the identity locally and all the event carried out after this call will be treated as Anonymous user activity.
 
 ## For Rich Push Notifications 
 ### Configuration Changes

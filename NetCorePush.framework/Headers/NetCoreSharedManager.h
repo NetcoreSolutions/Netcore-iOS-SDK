@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.5
+ @version    2.2.6
  */
 
 #import <Foundation/Foundation.h>
@@ -63,7 +63,7 @@
  */
 -(void)registerForPushNotifications;
 /*
- @Method getNotifications: this method use to get latest 10 Push Notifications received
+ @Method getNotifications: this method will return latest 10 Push Notifications received
  @return - Array
  */
 -(NSArray *)getNotifications;
@@ -101,10 +101,21 @@
  */
 -(void)printDeviceToken;
 
-
 /*!
  @Method The method will export all the keys which were accidently saved to NSUserDefault:initWithSuit provided the value exits.
  */
 - (void)getAppGroupDataToUserDefault:(NSArray <NSString *> *)allKeys;
+
+/*!
+ @Method clearIdentity : The method will clear previously stored user's identity locally.
+ */
+- (void)clearIdentity;
+
+/*!
+ @Method getNotificationsWithCount: this method will return latest Push Notifications received
+ @param  count - This will be the number of latest received Push Notifications to be fetched
+ @return - NSArray
+ */
+-(NSArray *)getNotificationsWithCount:(NSInteger )count;
 
  @end

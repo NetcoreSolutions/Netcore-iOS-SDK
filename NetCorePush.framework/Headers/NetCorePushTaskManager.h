@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.5
+ @version    2.2.6
  */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
@@ -69,5 +69,9 @@
  @Method handleActionWithIdentifier :- use to manage Action buttons for Local Notifications and their identifiers
  */
 -(void)handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo;
+/*
+ @Method isNotificationFromNetCore :- use to check whether the received notification is from NetCore or not.
+ */
+-(BOOL)isNotificationFromNetCore:(NSDictionary *)userInfo;
 
 @end

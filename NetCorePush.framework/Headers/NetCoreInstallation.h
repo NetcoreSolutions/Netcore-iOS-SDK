@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.5
+ @version    2.2.6
  */
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>

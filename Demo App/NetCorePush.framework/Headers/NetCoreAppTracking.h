@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.5
+ @version    2.2.6
  */
 #import <Foundation/Foundation.h>
 #import "NetCoreConstant.h"
@@ -28,4 +28,13 @@
  sendAppTrackingEventWithCustomPayload takes event and custom payload and return response block
  */
 -(void)sendAppTrackingEventWithCustomPayload:(NSInteger)event Payload:(NSMutableArray *)payload Block:(NetCoreStatusBlock)block;
+/*
+ use to send App Tracking Event name
+ */
+-(void)trackEvent:(NSString *)eventName Block:(NetCoreStatusBlock)block;
+/*
+ use to send app tracking Event with payload
+ */
+-(void)trackEventWithCustomPayload:(NSString *)eventName Payload:(NSMutableDictionary *)payloadDict Block:(NetCoreStatusBlock)block;
+
 @end
