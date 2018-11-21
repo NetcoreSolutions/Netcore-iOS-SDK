@@ -177,7 +177,6 @@ NetCoreAppTracking.sharedInstance().sendEvent(withCustomPayload:Int(UInt32(track
 //event name with custom payload dictionary of data
 NetCoreAppTracking.sharedInstance()?.trackEvent(withCustomPayload: Event_Name,payload: payloadDict, block:nil)
 
-eg.
 //Activity tracking code can be generated from Smartech panel
 
 ```
