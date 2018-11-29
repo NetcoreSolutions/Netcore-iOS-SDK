@@ -48,13 +48,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+
         // Register device token with third party SDK as per their document
         //Identity must be “”(blank) or as per Primary key which defined on smartech Panel
-        let token = String(format: "%@", deviceToken as CVarArg)
-            .trimmingCharacters(in: CharacterSet(charactersIn: "<>"))
-            .replacingOccurrences(of: " ", with: "")
-        print("***********Device Token:\(token)")
     NetCoreInstallation.sharedInstance().netCorePushRegisteration("manish.kumar@netcore.co.in", withDeviceToken: deviceToken) { (status) in }
+        
+        NetCoreSharedManager.sharedInstance()?.printDeviceToken()
+
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]){

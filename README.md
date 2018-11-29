@@ -82,8 +82,8 @@ NetCorePushTaskManager.sharedInstance().delegate = self
 ```swift
 func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
 
-//Identity must be “”(blank) or as per Primary key which defined on smartech Panel
-NetCoreInstallation.sharedInstance().netCorePushRegisteration(Identity, withDeviceToken: deviceToken) { (status) in }
+    //Identity must be “”(blank) or as per Primary key which defined on smartech Panel
+    NetCoreInstallation.sharedInstance().netCorePushRegisteration(Identity, withDeviceToken: deviceToken) { (status) in }
 }
 ```
 ## For Normal Push Notifications
@@ -91,12 +91,12 @@ NetCoreInstallation.sharedInstance().netCorePushRegisteration(Identity, withDevi
 ```swift
 //Handle Remote/Local Notification Delegate Events (AppDelegate file)
 func application ( _ application : UIApplication, didReceiveRemoteNotification userInfo : [ AnyHashable : Any ]) {
-// perform notification received/click action as per third party SDK as per their document
-NetCorePushTaskManager.sharedInstance().didReceiveRemoteNotification(userInfo)
+    // perform notification received/click action as per third party SDK as per their document
+    NetCorePushTaskManager.sharedInstance().didReceiveRemoteNotification(userInfo)
 }
 
 func application (_ application : UIApplication , didReceive notification : UILocalNotification ){
-NetCorePushTaskManager.sharedInstance().didReceiveLocalNotification(notification.userInfo)
+    NetCorePushTaskManager.sharedInstance().didReceiveLocalNotification(notification.userInfo)
 }
 ```
 ```swift
@@ -108,9 +108,9 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 func userNotificationCenter ( _ center : UNUserNotificationCenter, didReceive
 response : UNNotificationResponse, withCompletionHandler completionHandler :
 @escaping () -> Void ) {
-// perform notification received/click action as per third party SDK as per their document
-NetCorePushTaskManager.sharedInstance().userNotificationdidReceive(response)
-}
+        // perform notification received/click action as per third party SDK as per their document
+        NetCorePushTaskManager.sharedInstance().userNotificationdidReceive(response)
+    }
 }
 ```
 
@@ -118,10 +118,10 @@ NetCorePushTaskManager.sharedInstance().userNotificationdidReceive(response)
 
 ```swift
 func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-if url.absoluteString.lowercased().contains ("your app URL link") {
-// handle URL link here
-}
-return true
+    if url.absoluteString.lowercased().contains ("your app URL link") {
+            // handle URL link here
+        }
+    return true
 }
 ```
 
@@ -131,10 +131,10 @@ return true
 //For Handling deep link
 extension AppDelegate : NetCorePushTaskManagerDelegate {
 func handleNotificationOpenAction(_ userInfo: [AnyHashable : Any]!, deepLinkType strType: String!) {
-if strType .lowercased().contains ("your app deep link"){
-// handle deep link here
-}
-}
+    if strType .lowercased().contains ("your app deep link"){
+            // handle deep link here
+        }
+    }
 }
 ```
 ## To Handle Interactive buttons
@@ -144,8 +144,8 @@ func application(_ application: UIApplication, handleActionWithIdentifier identi
 String?, forRemoteNotification userInfo: [AnyHashable : Any], withResponseInfo
 responseInfo: [AnyHashable : Any], completionHandler: @escaping () -> Void) {
 
-NetCorePushTaskManager.sharedInstance().handleAction(withIdentifier: identifier, forRemoteNotification: userInfo,     withResponseInfo: responseInfo)
-completionHandler()
+    NetCorePushTaskManager.sharedInstance().handleAction(withIdentifier: identifier, forRemoteNotification: userInfo,withResponseInfo: responseInfo)
+    completionHandler()
 
 }
 ```
@@ -207,6 +207,16 @@ Note:  The method mentioned above accepts a compulsory boolean value (true/false
 NetCoreSharedManager.sharedInstance()?.clearIdentity()
 ```
 Note: The method clears the identity locally and all the event carried out after this call will be treated as Anonymous user activity.
+
+## To Get Device Token
+```swift
+NetCoreSharedManager.sharedInstance()?.getDeviceToken()
+```
+
+## To Get GUID
+```swift
+NetCoreSharedManager.sharedInstance()?.getGUID()
+```
 
 ## For Rich Push Notifications 
 ### Configuration Changes

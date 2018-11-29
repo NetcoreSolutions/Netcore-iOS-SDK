@@ -7,7 +7,7 @@
  
  @author NetCore
  @copyright  2016 NetCore
- @version    2.2.6
+ @version    2.2.7
  */
 
 #import <Foundation/Foundation.h>
@@ -43,10 +43,15 @@
  */
 -(void)setDeviceToken:(NSData *)data;
 /*
- @Method getDeviceToken: this method use to get device toekn
- @return - Data
+ @Method getDeviceToken: this method is used to get device token
+ @return - String
  */
--(NSData *)getDeviceToken;
+-(NSString *)getDeviceToken;
+/*
+ @Method getGUID: this method is used to get device unique identity
+ @return - String
+ */
+-(NSString *)getGUID;
 /*
  @Method setUpIdentity: this method use to setup identity  
  @param  strIdentity - contain strIdentity
