@@ -176,8 +176,18 @@ NetCoreAppTracking.sharedInstance().sendEvent(withCustomPayload:Int(UInt32(track
 
 //event name with custom payload dictionary of data
 NetCoreAppTracking.sharedInstance()?.trackEvent(withCustomPayload: Event_Name,payload: payloadDict, block:nil)
+for eg.,
+let payloadDict = NSMutableDictionary()
+payloadDict.setValue("iPhonex", forKey: "name")
 
-//Activity tracking code can be generated from Smartech panel
+let array = Array(arrayLiteral: "1","2","3");
+payloadDict.setValue(array, forKey: "Price")
+
+let details = NSMutableDictionary()
+details.setValue(“iphone XS", forKey: "name");
+payloadDict.setValue(details, forKey: "details")
+
+NetCoreAppTracking.sharedInstance()?.trackEvent(withCustomPayload: "Add to cart", payload: payloadDict, block:nil)
 
 ```
 ## To Fetch Delivered push notifications
@@ -246,17 +256,17 @@ import NetCorePush
 2) Handle Notification Request
 ```swift
 override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
-let appGroup = "<group.com.CompanyName.ProductName>"
-NetCoreNotificationService.sharedInstance().setUpAppGroup(appGroup)
+    let appGroup = "<group.com.CompanyName.ProductName>"
+    NetCoreNotificationService.sharedInstance().setUpAppGroup(appGroup)
 
-NetCoreNotificationService.sharedInstance().didReceive(request) { (contentToDeliver:UNNotificationContent) in
-contentHandler(contentToDeliver) }
+    NetCoreNotificationService.sharedInstance().didReceive(request) { (contentToDeliver:UNNotificationContent) in
+    contentHandler(contentToDeliver) }
 }
 ```
 3) Handle Notification Service Time Expire
 ```swift
 override func serviceExtensionTimeWillExpire() { 
-NetCoreNotificationService.sharedInstance().serviceExtensionTimeWillExpire() 
+    NetCoreNotificationService.sharedInstance().serviceExtensionTimeWillExpire() 
 }
 
 ```

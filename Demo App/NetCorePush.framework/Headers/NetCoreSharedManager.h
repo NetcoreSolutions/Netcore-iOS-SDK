@@ -1,13 +1,11 @@
 /*
  @header NetCoreSharedManager.h
  
- @brief This is the header file where my super-code is contained.
+ @brief NetCoreSharedManager is singleton class use to setup application id and Application version
  
-   NetCoreSharedManager is singleton class use to setup application id and Application version
- 
- @author NetCore
- @copyright  2016 NetCore
- @version    2.2.7
+ @author Netcore Solutions
+ @copyright  2018 Netcore Solutions
+ @version    2.3.0
  */
 
 #import <Foundation/Foundation.h>
@@ -63,11 +61,6 @@
  */
 -(NSString *)getIdentity;
 /*
- @Method registerForPushNotifications: this method use to register for Push Notifications
- @return - void
- */
--(void)registerForPushNotifications;
-/*
  @Method getNotifications: this method will return latest 10 Push Notifications received
  @return - Array
  */
@@ -100,12 +93,10 @@
  @param  optFlag - If it is True, then it will stop processing user's events and user will not receive any kind of Push/InApp Notifications from Panel. Default Value is False.
  */
 -(void)optOut:(BOOL)optFlag;
-
 /*
  @Method printDeviceToken: this method is used to print device token.
  */
 -(void)printDeviceToken;
-
 /*!
  @Method The method will export all the keys which were accidently saved to NSUserDefault:initWithSuit provided the value exits.
  */

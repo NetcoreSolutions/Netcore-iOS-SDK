@@ -2,9 +2,10 @@
  @header NetCorePush.h
  
  @brief This is the header file
- @author NetCore
- @copyright  2016 NetCore
- @version    2.2.7
+ 
+ @author Netcore Solutions
+ @copyright  2018 Netcore Solutions
+ @version    2.3.0
  */
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>

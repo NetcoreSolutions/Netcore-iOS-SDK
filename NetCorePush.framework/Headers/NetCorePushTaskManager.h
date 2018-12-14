@@ -1,13 +1,11 @@
 /*
  @header NetCorePushTaskManager.h
  
- @brief This is the header file where my super-code is contained.
+ @brief NetCorePushTaskManager : -  use to setup all pushHandler event
  
- NetCorePushTaskManager : -  use to setup all pushHandler event
- 
- @author NetCore
- @copyright  2016 NetCore
- @version    2.2.7
+ @author Netcore Solutions
+ @copyright  2018 Netcore Solutions
+ @version    2.3.0
  */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
