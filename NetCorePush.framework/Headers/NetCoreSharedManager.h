@@ -4,8 +4,8 @@
  @brief NetCoreSharedManager is singleton class use to setup application id and Application version
  
  @author Netcore Solutions
- @copyright  2018 Netcore Solutions
- @version    2.3.0
+ @copyright  2019 Netcore Solutions
+ @version    2.3.1
  */
 
 #import <Foundation/Foundation.h>

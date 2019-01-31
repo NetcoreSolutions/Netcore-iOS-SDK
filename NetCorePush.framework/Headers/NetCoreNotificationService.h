@@ -4,8 +4,8 @@
  @brief NetCoreNotificationService : - use to provides the entry point for a Notification Service
  
  @author Netcore Solutions
- @copyright  2018 Netcore Solutions
- @version    2.3.0
+ @copyright  2019 Netcore Solutions
+ @version    2.3.1
  */
 
 #import <UserNotifications/UserNotifications.h>

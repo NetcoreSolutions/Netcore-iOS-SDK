@@ -4,8 +4,8 @@
  @brief This is the header file
  
  @author Netcore Solutions
- @copyright  2018 Netcore Solutions
- @version    2.3.0
+ @copyright  2019 Netcore Solutions
+ @version    2.3.1
  */
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
