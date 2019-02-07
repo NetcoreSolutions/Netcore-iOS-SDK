@@ -1,10 +1,12 @@
-//
-//  NetCoreConstant.h
-//  NetCorePush
-//
-//  Created by NetCore on 11/14/16.
-//  Copyright © 2018 NetCore. All rights reserved.
-//
+/*
+ @header NetCoreConstant.h
+ 
+ @brief NetCoreConstant : - contains the networking block short name
+ 
+ @author Netcore Solutions
+ @copyright  2019 Netcore Solutions
+ @version    2.3.2
+ */
 
 #ifndef NetCoreConstant_h
 #define NetCoreConstant_h
