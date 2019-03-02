@@ -2,7 +2,8 @@
 [![Netcore Logo](https://netcore.in/wp-content/themes/netcore/img/Netcore-new-Logo.png)](http:www.netcore.in)
 
 # Netcore iOS SDK
-Smartech iOS SDK
+Here's a quick run through on getting started with Netcore SDK in Swift, for detailed integration steps visit the [Official Docs.](https://docs.netcoresmartech.com/docs/ios-sdk-integration)
+
 
 
 ## Integration using CocoaPod
@@ -130,10 +131,21 @@ func application(_ application: UIApplication, open url: URL, sourceApplication:
 ```swift
 //For Handling deep link
 extension AppDelegate : NetCorePushTaskManagerDelegate {
-func handleNotificationOpenAction(_ userInfo: [AnyHashable : Any]!, deepLinkType strType: String!) {
-    if strType .lowercased().contains ("your app deep link"){
+    func handleNotificationOpenAction(_ userInfo: [AnyHashable : Any]!, deepLinkType strType: String!) {
+        if strType .lowercased().contains ("your app deep link"){
             // handle deep link here
         }
+    }
+}
+```
+
+## To Handle Custom Payload
+
+```swift
+//For Handle custom payload
+extension AppDelegate : NetCorePushTaskManagerDelegate {
+    func handleNotificationCustomPayload(_ payload: [AnyHashable : Any]!) {
+
     }
 }
 ```
