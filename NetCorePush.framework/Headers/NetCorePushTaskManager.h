@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.2
+ @version    2.3.3
  */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
@@ -15,7 +15,10 @@
   define protocol to return push notifcation deeplinking event
  */
 @protocol NetCorePushTaskManagerDelegate<NSObject>
+@optional
 -(void)handleNotificationOpenAction:(NSDictionary *)userInfo DeepLinkType:(NSString *)strType;
+
+-(void)handleNotificationCustomPayload:(NSDictionary *)payload;
 @end
 
 @interface NetCorePushTaskManager : NSObject
