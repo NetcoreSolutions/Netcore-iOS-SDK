@@ -5,7 +5,6 @@
 Here's a quick run through on getting started with Netcore SDK in Swift, for detailed integration steps visit the [Official Docs.](https://docs.netcoresmartech.com/docs/ios-sdk-integration)
 
 
-
 ## Integration using CocoaPod
 1. Install CocoaPods on your computer.
 

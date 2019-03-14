@@ -6,8 +6,8 @@
  NetCorePushPlugin : - use to setup all Cordova communication methods
  
  @author NetCore
- @copyright  2018 NetCore
- @version    2.2.4
+ @copyright  2019 NetCore Solutions
+ @version    2.3.4
  */
 
 #import <Cordova/CDVPlugin.h>
