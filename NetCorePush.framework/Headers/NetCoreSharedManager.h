@@ -5,10 +5,12 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.4 */
+ @version    2.3.5 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "SMTNotification.h"
+
 /*
  @class NetCoreSharedManager
  
@@ -111,6 +113,8 @@
  @param  count - This will be the number of latest received Push Notifications to be fetched
  @return - NSArray
  */
--(NSArray *)getNotificationsWithCount:(NSInteger )count;
+- (NSArray *)getNotificationsWithCount:(NSInteger )count;
+
+- (NSUInteger)getUnreadNotificationsCount;
 
  @end

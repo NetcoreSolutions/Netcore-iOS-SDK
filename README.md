@@ -280,6 +280,29 @@ override func serviceExtensionTimeWillExpire() {
     NetCoreNotificationService.sharedInstance().serviceExtensionTimeWillExpire() 
 }
 
+
+
+#### To use Notification Center feature
+To use Notification Center feature in your app, please follow the steps mentioned below:
+
+1. Copy Notification Center files in your project. (SmartechNC folder)
+
+2. Create Bridge file in existing swift project if required and add Following code inside file.
+
+```objc
+#import "SmartechNotificationCenterVC.h"
+```
+3. Use this code to open Notification Center View Controller
+
+```swift
+let center = UIStoryboard.init(name: "SmartechNC", bundle: nil).instantiateViewController(withIdentifier: "SmartechNotificationCenterVC")
+self.navigationController?.pushViewController(center, animated: true)
+```
+**Note:​​** 
+To use Notification Center minimum Netcore SDK version should be 2.3.5. 
+
+
+
 ```
 ***NOTE: For more clarity on this, please refer above <[SDK-Integration-Steps.pdf](https://github.com/NetcoreSolutions/Smartech-ios-sdk/blob/master/ObjectiveC-and-swift-Integration-Steps.pdf)>**
 

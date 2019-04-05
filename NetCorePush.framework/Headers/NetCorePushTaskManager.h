@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.4 */
+ @version    2.3.5 */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
@@ -73,5 +73,14 @@
  @Method isNotificationFromNetCore :- use to check whether the received notification is from NetCore or not.
  */
 -(BOOL)isNotificationFromNetCore:(NSDictionary *)userInfo;
+
+/*
+ @Method sendOpenEventFor :- use to send open event for a notification from notification centre if its open is not sent.
+ */
+
+- (void)markNotificationAsRead:(NSDictionary *)messageDict autoHandleDeeplink:(BOOL)shouldHandle;
+
+
+- (BOOL)deleteNotification:(NSArray *)notificationIDs;
 
 @end

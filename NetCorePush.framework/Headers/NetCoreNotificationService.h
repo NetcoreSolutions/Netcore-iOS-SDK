@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.4 */
+ @version    2.3.5 */
 
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotifications/UNNotificationContent.h>
