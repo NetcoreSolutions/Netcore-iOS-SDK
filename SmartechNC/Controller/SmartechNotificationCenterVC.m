@@ -3,7 +3,7 @@
  @brief SmartechNotificationCenterVC is responsible to show notification center.
  @author    Netcore Solutions
  @copyright 2019 Netcore Solutions
- @version   1.0.0
+ @version   1.0.1
 */
 
 #import "SmartechNotificationCenterVC.h"
@@ -14,7 +14,10 @@
 
 // Constants
 NSString *const kTextCellIdentifier = @"smtTextCell";
-NSString *const kMediaCellIdentifier = @"smtMediaCell";
+NSString *const kImageCellIdentifier = @"smtImageCell";
+NSString *const kVideoCellIdentifier = @"smtVideoCell";
+NSString *const kGifCellIdentifier = @"smtGifCell";
+NSString *const kAudioCellIdentifier = @"smtAudioCell";
 NSString *const kCarouselCellIdentifier = @"smtCarouselCell";
 NSString *const kSmartechNavTitle = @"Notification Center";
 NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
@@ -68,7 +71,7 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
     _notificationTableView.estimatedRowHeight = 252.0;
     _notificationTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     _notificationTableView.rowHeight = UITableViewAutomaticDimension;
-    [_notificationTableView setSeparatorInset:UIEdgeInsetsZero];
+    _notificationTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)configureBarEditButton {
@@ -131,8 +134,14 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
         cell = [tableView dequeueReusableCellWithIdentifier:kTextCellIdentifier forIndexPath:indexPath];
     } else if (notificationArray[indexPath.row].mediaType == SMTMediaTypeCarousel) {
         cell = [tableView dequeueReusableCellWithIdentifier:kCarouselCellIdentifier forIndexPath:indexPath];
+    } else if (notificationArray[indexPath.row].mediaType == SMTMediaTypeAudio) {
+        cell = [tableView dequeueReusableCellWithIdentifier:kAudioCellIdentifier forIndexPath:indexPath];
+    } else if (notificationArray[indexPath.row].mediaType == SMTMediaTypeVideo) {
+        cell = [tableView dequeueReusableCellWithIdentifier:kVideoCellIdentifier forIndexPath:indexPath];
+    } else if (notificationArray[indexPath.row].mediaType == SMTMediaTypeGif) {
+        cell = [tableView dequeueReusableCellWithIdentifier:kGifCellIdentifier forIndexPath:indexPath];
     } else {
-        cell = [tableView dequeueReusableCellWithIdentifier:kMediaCellIdentifier forIndexPath:indexPath];
+        cell = [tableView dequeueReusableCellWithIdentifier:kImageCellIdentifier forIndexPath:indexPath];
     }
     if (tableView.editing) {
         cell.selectionStyle = UITableViewCellSelectionStyleDefault;
@@ -152,7 +161,7 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
         [self sendOpenNotification:notificationArray[indexPath.row].userInfo andAutoHandleDeeplink:true];
         notificationArray[indexPath.row].isNotificationRead = true;
         SmartechNotificationCell *cell = [_notificationTableView cellForRowAtIndexPath:indexPath];
-        [cell updateTitleReadStatus];
+        [cell configureNotificationReadStatus];
     }
 }
 
@@ -177,6 +186,17 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
 }
 
 #pragma mark - Smartech Notification Cell Delegate Methods
+
+- (void)didReceiveReadMoreButtonClickWith:(NSIndexPath *)indexPath {
+    if (!_notificationTableView.editing) {
+        notificationArray[indexPath.row].isCellExpanded = !notificationArray[indexPath.row].isCellExpanded;
+        notificationArray[indexPath.row].isNotificationRead = true;
+//        [_notificationTableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [_notificationTableView reloadData];
+        [_notificationTableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:true];
+        [self sendOpenNotification:notificationArray[indexPath.row].userInfo andAutoHandleDeeplink:false];
+    }
+}
 
 - (void)didReceiveDeeplinkActionWith:(NSString *)deeplinkString userInfo:(NSDictionary *)userInfo {
     if (!_notificationTableView.editing) {

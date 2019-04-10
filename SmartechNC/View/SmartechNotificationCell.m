@@ -3,7 +3,7 @@
  @brief SmartechNotificationCell is responsible to show the individual cells in the notification center.
  @author    Netcore Solutions
  @copyright 2019 Netcore Solutions
- @version   1.0.0
+ @version   1.0.1
  */
 
 #import "SmartechNotificationCell.h"
@@ -17,14 +17,28 @@ NSString *const kAudioPlaceholder = @"smartech-audio-placeholder";
 NSString *const kVideoPlaceholder = @"smartech-video-placehoder";
 NSString *const kPlayerPlaybutton = @"smartech-play-button";
 
-
 @interface SmartechNotificationCell()
 
-@property (strong, nonatomic) UISegmentedControl *interactionButtonsSegmentControl;
+@property (strong, nonatomic) UIButton *interactiveButton;
 @property (strong, nonatomic) UIImageView *mediaImageView;
 @property (strong, nonatomic) FLAnimatedImageView *gifImageView;
 @property (strong, nonatomic) UIScrollView *carouselScrollView;
 @property (strong, nonatomic) UIImageView *thumbnailImageView;
+
+@property (weak, nonatomic) IBOutlet UIView *holderView;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIView *richDataDisplayView;
+@property (weak, nonatomic) IBOutlet UIView *carouselView;
+@property (weak, nonatomic) IBOutlet UIPageControl *carouselPageControl;
+@property (weak, nonatomic) IBOutlet UILabel *carouselTitle;
+@property (weak, nonatomic) IBOutlet UILabel *carouselBody;
+@property (strong, nonatomic) IBOutlet UILabel *bodyLabel;
+@property (weak, nonatomic) IBOutlet UIButton *readMoreButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *readMoreButtonHeightConstraint;
+@property (weak, nonatomic) IBOutlet UIView *interactionButtonViewHolder;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *interactionButtonHeightConstraint;
+
 
 @end
 
@@ -41,21 +55,22 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
 }
 
 #pragma mark - Loading methods
-- (void)loadInteractionButtonsSegmentControl {
-    if (_interactionButtonsSegmentControl == nil) {
-        NSArray <NSString *> *titles = [NSArray new];
-        for (int i = 0; i<_notificationModel.actionButtonArray.count; i++) {
-            NSString *title = [_notificationModel.actionButtonArray objectAtIndexedSubscript:i].titleString;
-            titles = [titles arrayByAddingObject:title];
+
+- (void)loadInteractionButtons {
+    if (_interactiveButton == nil) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        CGFloat posX = 0.0;
+        CGFloat width = self.interactionButtonViewHolder.frame.size.width/self.notificationModel.actionButtonArray.count;
+        for (int i = 0; i<self.notificationModel.actionButtonArray.count; i++) {
+            self.interactiveButton = [[UIButton alloc] initWithFrame:CGRectMake(posX, 0, width, self.interactionButtonHeightConstraint.constant)];
+            [self.interactiveButton setTitle:self.notificationModel.actionButtonArray[i].titleString forState:UIControlStateNormal];
+            [self.interactiveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            self.interactiveButton.titleLabel.font = [UIFont systemFontOfSize:16.0];
+            self.interactiveButton.tag = i;
+            [self.interactiveButton addTarget:self action:@selector(interactiveButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+            [self.interactionButtonViewHolder addSubview:self.interactiveButton];
+            posX = posX + width;
         }
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            self.interactionButtonsSegmentControl = [[UISegmentedControl alloc] initWithItems:titles];
-            self.interactionButtonsSegmentControl.frame = CGRectMake(0.0, 0.0, self.interactionButtonViewHolder.frame.size.width, self.interactionButtonViewHolder.frame.size.height);
-            NSDictionary *attributes = @{NSForegroundColorAttributeName: [UIColor blackColor],NSFontAttributeName:[UIFont systemFontOfSize:16.0]};
-            [self.interactionButtonsSegmentControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
-            [self.interactionButtonsSegmentControl addTarget:self action:@selector(segmentSelected:) forControlEvents: UIControlEventValueChanged];
-            self.interactionButtonsSegmentControl.tintColor = [UIColor clearColor];
-            [self.interactionButtonViewHolder addSubview:self.interactionButtonsSegmentControl];
         });
     }
 }
@@ -173,27 +188,21 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
 }
 
 #pragma mark - Local Helpers
+
 - (void)setNotificationModel:(SMTNotification *)notificationModel {
+    [self configureHolderView];
     _notificationModel = notificationModel;
     _carouselPageIndex = 0;
     _titleLabel.text = notificationModel.titleString;
     _bodyLabel.text = notificationModel.subtitleString;
     _dateLabel.text = notificationModel.dateString;
-    if (!notificationModel.isNotificationRead) {
-        _titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
-    } else {
-        _titleLabel.font = [UIFont systemFontOfSize:14.0];
-    }
-    [self setMediaView];
-    if (notificationModel.actionButtonArray) {
-        _interactionButtonHeightConstraint.constant = kInteractionButtonView;
-        [_interactionButtonViewHolder setHidden:false];
-        [self layoutIfNeeded];
-        [self loadInteractionButtonsSegmentControl];
-    } else {
-        _interactionButtonHeightConstraint.constant = 0.0;
-        [_interactionButtonViewHolder setHidden:true];
-    }
+    [self configureNotificationReadStatus];
+    [self configureUIForReadMore];
+    //this code is used to update the frames of ui on delay
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self setMediaView];
+    });
+    [self configureActionButtonsUI];
 }
 
 - (void)setMediaView {
@@ -226,14 +235,55 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
     }
 }
 
-
-- (void)updateTitleReadStatus {
-    _titleLabel.font = [UIFont systemFontOfSize:14.0];
-}
-
 - (void)configureCarouselTexts {
     _carouselTitle.text = _notificationModel.carouselArray[_carouselPageIndex].imageTitleString;
     _carouselBody.text = _notificationModel.carouselArray[_carouselPageIndex].imageMessageString;
+}
+
+- (void)configureHolderView {
+    _holderView.layer.cornerRadius = 10.0;
+    _holderView.layer.shadowOffset = CGSizeMake(0, 0);
+    _holderView.layer.shadowRadius = 5;
+    _holderView.layer.shadowOpacity = 0.25;
+    _holderView.layer.shadowColor = [[UIColor blackColor] CGColor];
+}
+
+- (void)configureUIForReadMore {
+    if (_notificationModel.isCellExpandable) {
+        [_readMoreButton setHidden:false];
+        _readMoreButtonHeightConstraint.constant = readMoreButtonHeightConstant;
+        [self layoutIfNeeded];
+        if (!_notificationModel.isCellExpanded) {
+            _bodyLabel.numberOfLines = 3;
+            [_readMoreButton setTitle:@"Read More..." forState:UIControlStateNormal];
+        } else {
+            _bodyLabel.numberOfLines = -1;
+            [_readMoreButton setTitle:@"...Read Less" forState:UIControlStateNormal];
+        }
+    } else {
+        [_readMoreButton setHidden:true];
+        _readMoreButtonHeightConstraint.constant = 0.0;
+    }
+}
+
+- (void)configureNotificationReadStatus {
+    if (!_notificationModel.isNotificationRead) {
+        _titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
+    } else {
+        _titleLabel.font = [UIFont systemFontOfSize:14.0];
+    }
+}
+
+- (void)configureActionButtonsUI {
+    if (_notificationModel.actionButtonArray) {
+        _interactionButtonHeightConstraint.constant = kInteractionButtonView;
+        [_interactionButtonViewHolder setHidden:false];
+        [self layoutIfNeeded];
+        [self loadInteractionButtons];
+    } else {
+        _interactionButtonHeightConstraint.constant = 0.0;
+        [_interactionButtonViewHolder setHidden:true];
+    }
 }
 
 #pragma mark - UIScrollViewDelegate Method
@@ -254,9 +304,23 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
 }
 
 #pragma mark - UIButton Event
+
+- (IBAction)readMoreButtonClicked:(id)sender {
+    if (_delegate) {
+        [_delegate didReceiveReadMoreButtonClickWith:_indexPath];
+    }
+}
+
 - (void)playerPlayButtonClicked:(UIButton *)sender {
     if (_delegate) {
         [_delegate didReceivePlayerClickEvent:_notificationModel.mediaurl];
+    }
+}
+
+- (void)interactiveButtonClicked:(UIButton *)sender {
+    if (_delegate) {
+        NSString *deepLink = _notificationModel.actionButtonArray[sender.tag].deeplinkString;
+        [_delegate didReceiveDeeplinkActionWith:deepLink userInfo:_notificationModel.userInfo];
     }
 }
 

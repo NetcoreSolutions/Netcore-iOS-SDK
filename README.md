@@ -279,27 +279,42 @@ override func didReceive(_ request: UNNotificationRequest, withContentHandler co
 override func serviceExtensionTimeWillExpire() { 
     NetCoreNotificationService.sharedInstance().serviceExtensionTimeWillExpire() 
 }
+```
 
 
+## Notification Center Feature
 
-#### To use Notification Center feature
+**Note:​​**  To use Notification Center minimum Netcore SDK version should be **2.3.5**. 
+
 To use Notification Center feature in your app, please follow the steps mentioned below:
 
 1. Copy Notification Center files in your project. (SmartechNC folder)
-
 2. Create Bridge file in existing swift project if required and add Following code inside file.
 
 ```objc
 #import "SmartechNotificationCenterVC.h"
 ```
+
 3. Use this code to open Notification Center View Controller
 
 ```swift
 let center = UIStoryboard.init(name: "SmartechNC", bundle: nil).instantiateViewController(withIdentifier: "SmartechNotificationCenterVC")
 self.navigationController?.pushViewController(center, animated: true)
 ```
-**Note:​​** 
-To use Notification Center minimum Netcore SDK version should be 2.3.5. 
+5. To get all the delivered notifications to the device.
+```swift
+let array = SMTNotification.getNotifications()
+```
+4. To get last X number of delivered notifications (the below code will fetch the last 10 notifications).
+```swift
+let array = SMTNotification.getNotificationsWithCount(10)
+```
+5. To get Unread delivered notification count.
+```swift
+let count = SMTNotification.getUnreadNotificationsCount();
+```
+
+
 
 
 
