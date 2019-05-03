@@ -98,13 +98,19 @@ func application ( _ application : UIApplication, didReceiveRemoteNotification u
 func application (_ application : UIApplication , didReceive notification : UILocalNotification ){
     NetCorePushTaskManager.sharedInstance().didReceiveLocalNotification(notification.userInfo)
 }
+
 ```
+
 ```swift
-// called when application is open when user click on notification
+// Adding UNUserNotificationCenter Delegate Method (v2.3.6 onwards)
 extension AppDelegate: UNUserNotificationCenterDelegate {
+@available ( iOS 10.0 , * )
+func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+    completionHandler(UNNotificationPresentationOptions.alert);
+}
 
 @objc (userNotificationCenter: didReceiveNotificationResponse :withCompletionHandler:)
-@available ( iOS 10.0 , * )
+
 func userNotificationCenter ( _ center : UNUserNotificationCenter, didReceive
 response : UNNotificationResponse, withCompletionHandler completionHandler :
 @escaping () -> Void ) {
@@ -122,6 +128,37 @@ func application(_ application: UIApplication, open url: URL, sourceApplication:
             // handle URL link here
         }
     return true
+}
+```
+
+## To Setting Universal Link
+You need to pass the universal link value to the SDK that you have added in your Capabilities -> Associated Domains section
+Eg. applinks:https://www.netcoresmartech.com then enter only domain name as https://www.netcoresmartech.com, you can pass multiple domain names.
+```swift
+NetCoreSharedManager.sharedInstance()?.setAssociateDomain(["type-your-universal-link"]);
+```
+
+## To Handle Deep Link and Custom Payload (2.3.6 onwards)
+```swift
+func handleSmartechDeeplink(_ options: SMTDeeplink?) {
+    if options?.deepLinkType == SMTDeeplinkType.url {
+        // When Deeplink is WebURL
+    }
+    else if options?.deepLinkType == SMTDeeplinkType.universalLink {
+        // When Deeplink is Universal-link
+    }
+    else if options?.deepLinkType == SMTDeeplinkType.deeplink {
+        // When Deeplink is URLSchemes link.
+    }
+    else if options?.deepLinkType == SMTDeeplinkType.app {
+        // When Deeplink is Empty.
+    }
+
+    // options?.customPayload is send from notification.
+
+    // options?.userInfo is notification Pyaload.
+
+
 }
 ```
 
@@ -160,6 +197,7 @@ responseInfo: [AnyHashable : Any], completionHandler: @escaping () -> Void) {
 
 }
 ```
+
 
 ## For Login Activity
 ```swift

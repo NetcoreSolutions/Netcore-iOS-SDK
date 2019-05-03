@@ -1,10 +1,11 @@
-//
-//  SMTNotification.h
-//  dummyNetCoreObjc
-//
-//  Created by jainish on 18/03/19.
-//  Copyright © 2019 netcore. All rights reserved.
-//
+/*
+ @header SMTNotification.h
+ 
+ @brief SMTNotification model class
+ 
+ @author Netcore Solutions
+ @copyright  2019 Netcore Solutions
+ @version    2.3.6 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>

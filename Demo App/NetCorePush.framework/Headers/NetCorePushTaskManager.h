@@ -5,20 +5,49 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.5 */
+ @version    2.3.6 */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
+
+
+typedef NS_ENUM(NSUInteger, SMTDeeplinkType) {
+    SMTDeeplinkTypeApp,
+    SMTDeeplinkTypeUrl,
+    SMTDeeplinkTypeDeeplink,
+    SMTDeeplinkTypeUniversalLink,
+};
+
+
+@interface SMTDeeplink : NSObject
+
+@property (nonatomic) SMTDeeplinkType deepLinkType;
+
+@property (nonatomic, nonnull) NSDictionary *customPayload;
+
+@property (nonatomic, strong) NSString *_Nullable deepLink;
+
+@property (nonatomic, strong) NSDictionary *_Nullable userInfo;
+
+@end
+
+
 
 /*
   define protocol to return push notifcation deeplinking event
  */
 @protocol NetCorePushTaskManagerDelegate<NSObject>
 @optional
--(void)handleNotificationOpenAction:(NSDictionary *)userInfo DeepLinkType:(NSString *)strType;
 
--(void)handleNotificationCustomPayload:(NSDictionary *)payload;
+-(void)handleNotificationOpenAction:(NSDictionary *_Nullable)userInfo DeepLinkType:(NSString *_Nullable)strType;
+
+-(void)handleNotificationCustomPayload:(NSDictionary *_Nullable)payload;
+
+- (void)handleSmartechDeeplink:(SMTDeeplink *_Nullable)options;
+
 @end
+
+
 
 @interface NetCorePushTaskManager : NSObject
 

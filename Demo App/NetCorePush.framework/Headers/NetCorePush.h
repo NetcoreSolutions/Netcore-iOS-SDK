@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.5 */
+ @version    2.3.6 */
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <NetCorePush/NetCoreSharedManager.h>
