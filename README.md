@@ -115,7 +115,7 @@ func userNotificationCenter ( _ center : UNUserNotificationCenter, didReceive
 response : UNNotificationResponse, withCompletionHandler completionHandler :
 @escaping () -> Void ) {
         // perform notification received/click action as per third party SDK as per their document
-        NetCorePushTaskManager.sharedInstance().userNotificationdidReceive(response)
+        NetCorePushTaskManager.sharedInstance()?.didReceiveRemoteNotification(response.notification.request.content.userInfo);
     }
 }
 ```
