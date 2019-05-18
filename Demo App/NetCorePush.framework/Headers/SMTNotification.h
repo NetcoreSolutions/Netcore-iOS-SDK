@@ -1,11 +1,11 @@
 /*
  @header SMTNotification.h
  
- @brief SMTNotification model class
+ @brief This is the header file for SMTNotification model used in Notification Centre
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.6 */
+ @version    2.3.7 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
