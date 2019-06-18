@@ -47,7 +47,6 @@ JavaScriptCore
 4. Add Following capability inside your application
 ```swift
 Push Notification
-Keychain
 Background Mode -> Remote Notification
 App Groups
 ```
