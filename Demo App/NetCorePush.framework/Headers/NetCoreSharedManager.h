@@ -5,11 +5,13 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.7 */
+ @version    2.3.8 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "SMTNotification.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 /*
  @class NetCoreSharedManager
@@ -40,7 +42,7 @@
  @Method setDeviceToken: this method use to set device toekn
  @param  data - contain push device token data
  */
--(void)setDeviceToken:(NSData *)data;
+-(void)setDeviceToken:(NSString *)deviceTokenString;
 /*
  @Method getDeviceToken: this method is used to get device token
  @return - String
@@ -70,7 +72,7 @@
  @Method handleApplicationLaunchEvent: this method use to handle App launch Events and Setting Application ID
  @return - void
  */
--(void)handleApplicationLaunchEvent:(id)launchOptions forApplicationId:(NSString *)AppId;
+-(void)handleApplicationLaunchEvent:(_Nullable id)launchOptions forApplicationId:(NSString *)AppId;
 /*
  @Method setDeepLinkQueryParameters: this method use to set query parameters
  @param  notiData - contains query parameters of url
@@ -118,5 +120,7 @@
 - (NSUInteger)getUnreadNotificationsCount;
 
 - (void)setAssociateDomain:(NSArray *)associateDomain;
+
+NS_ASSUME_NONNULL_END
 
  @end

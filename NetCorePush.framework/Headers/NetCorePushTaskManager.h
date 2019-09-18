@@ -5,11 +5,12 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.7 */
+ @version    2.3.8 */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, SMTDeeplinkType) {
     SMTDeeplinkTypeApp,
@@ -66,7 +67,7 @@ typedef NS_ENUM(NSUInteger, SMTDeeplinkType) {
 /*
   @Method handelApplicationLaunchEvent :- use to handle push notification open event when application not launched
  */
--(void)handelApplicationLaunchEvent:(id)launchOptions;
+-(void)handelApplicationLaunchEvent:(id _Nullable)launchOptions;
 
 /*
  @Method didReceiveRemoteNotification :- use to handle push notification event (before ios 10)
@@ -80,16 +81,16 @@ typedef NS_ENUM(NSUInteger, SMTDeeplinkType) {
 /*
  @Method userNotificationdidReceiveNotificationResponse :- use to manage notification tap/open event(onward ios 10)
  */
--(void)userNotificationdidReceiveNotificationResponse:(UNNotificationResponse *)response;
+-(void)userNotificationdidReceiveNotificationResponse:(UNNotificationResponse *)response API_AVAILABLE(ios(10.0));
 
 /*
  @Method userNotificationWillPresentNotification :- use to manage notification present event(onward ios 10)
  */
--(void)userNotificationWillPresentNotification:(UNNotification *)notification;
+-(void)userNotificationWillPresentNotification:(UNNotification *)notification API_AVAILABLE(ios(10.0));
 /*
  @Method didReceiveNotificationRequest :- use to manage notification request(onward ios 10)
  */
--(void)didReceiveNotificationRequest:(UNNotificationRequest *)request;
+-(void)didReceiveNotificationRequest:(UNNotificationRequest *)request API_AVAILABLE(ios(10.0));
 /*
  @Method handleActionWithIdentifier :- use to manage Action buttons for Remote Notifications and their identifiers
  */
@@ -111,5 +112,7 @@ typedef NS_ENUM(NSUInteger, SMTDeeplinkType) {
 
 
 - (BOOL)deleteNotification:(NSArray *)notificationIDs;
+
+NS_ASSUME_NONNULL_END
 
 @end
