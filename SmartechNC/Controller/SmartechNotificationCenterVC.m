@@ -3,7 +3,7 @@
  @brief SmartechNotificationCenterVC is responsible to show notification center.
  @author    Netcore Solutions
  @copyright 2019 Netcore Solutions
- @version   1.0.1
+ @version   1.0.0
 */
 
 #import "SmartechNotificationCenterVC.h"
@@ -24,7 +24,7 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
 
 
 @interface SmartechNotificationCenterVC () <UITableViewDataSource, UITableViewDelegate, SmartechNotificationCellDelegate> {
-    NSMutableArray <SMTNotification*> *notificationArray;
+    NSMutableArray <NCNotification*> *notificationArray;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *notificationTableView;
@@ -37,7 +37,7 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    notificationArray = [[SMTNotification getNotifications] mutableCopy];
+    notificationArray = [[NCNotification getNotifications] mutableCopy];
     [self setupUI];
 }
 
@@ -118,9 +118,17 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)sendOpenNotification:(NSDictionary *)userInfo andAutoHandleDeeplink:(BOOL)shouldHandle {
-    [[NetCorePushTaskManager sharedInstance] markNotificationAsRead:userInfo autoHandleDeeplink:shouldHandle];
+- (void)sendOpenNotification:(NSDictionary *)userInfo andAutoHandleDeeplink:(BOOL)shouldHandle withDeeplink:(NSString *)deeplink {
+    [[NetCorePushTaskManager sharedInstance] markNotificationAsRead:userInfo autoHandleDeeplink:shouldHandle withDeeplink:deeplink];
 }
+
+- (void)configureNotificationReadStatusWithDeeplink:(NSString *)deeplink autoHandleDeeplink:(BOOL)autoHandleDeeplink indexPath:(NSIndexPath *)indexPath {
+    [self sendOpenNotification:notificationArray[indexPath.row].userInfo andAutoHandleDeeplink:autoHandleDeeplink withDeeplink:deeplink];
+    notificationArray[indexPath.row].isNotificationRead = true;
+    SmartechNotificationCell *cell = [_notificationTableView cellForRowAtIndexPath:indexPath];
+    [cell configureNotificationReadStatus];
+}
+
 
 #pragma mark - UITableViewDataSource
 
@@ -130,15 +138,15 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SmartechNotificationCell *cell;
-    if (notificationArray[indexPath.row].mediaType == SMTMediaTypeText) {
+    if (notificationArray[indexPath.row].mediaType == NCMediaTypeText) {
         cell = [tableView dequeueReusableCellWithIdentifier:kTextCellIdentifier forIndexPath:indexPath];
-    } else if (notificationArray[indexPath.row].mediaType == SMTMediaTypeCarousel) {
+    } else if (notificationArray[indexPath.row].mediaType == NCMediaTypeCarousel) {
         cell = [tableView dequeueReusableCellWithIdentifier:kCarouselCellIdentifier forIndexPath:indexPath];
-    } else if (notificationArray[indexPath.row].mediaType == SMTMediaTypeAudio) {
+    } else if (notificationArray[indexPath.row].mediaType == NCMediaTypeAudio) {
         cell = [tableView dequeueReusableCellWithIdentifier:kAudioCellIdentifier forIndexPath:indexPath];
-    } else if (notificationArray[indexPath.row].mediaType == SMTMediaTypeVideo) {
+    } else if (notificationArray[indexPath.row].mediaType == NCMediaTypeVideo) {
         cell = [tableView dequeueReusableCellWithIdentifier:kVideoCellIdentifier forIndexPath:indexPath];
-    } else if (notificationArray[indexPath.row].mediaType == SMTMediaTypeGif) {
+    } else if (notificationArray[indexPath.row].mediaType == NCMediaTypeGif) {
         cell = [tableView dequeueReusableCellWithIdentifier:kGifCellIdentifier forIndexPath:indexPath];
     } else {
         cell = [tableView dequeueReusableCellWithIdentifier:kImageCellIdentifier forIndexPath:indexPath];
@@ -158,10 +166,7 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!tableView.editing) {
-        [self sendOpenNotification:notificationArray[indexPath.row].userInfo andAutoHandleDeeplink:true];
-        notificationArray[indexPath.row].isNotificationRead = true;
-        SmartechNotificationCell *cell = [_notificationTableView cellForRowAtIndexPath:indexPath];
-        [cell configureNotificationReadStatus];
+        [self configureNotificationReadStatusWithDeeplink:notificationArray[indexPath.row].deeplinkString autoHandleDeeplink:true indexPath:indexPath];
     }
 }
 
@@ -194,13 +199,13 @@ NSString *const kSmartechEmptyNotificationImage = @"smartech-empty";
 //        [_notificationTableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         [_notificationTableView reloadData];
         [_notificationTableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:true];
-        [self sendOpenNotification:notificationArray[indexPath.row].userInfo andAutoHandleDeeplink:false];
+        [self sendOpenNotification:notificationArray[indexPath.row].userInfo andAutoHandleDeeplink:false withDeeplink:notificationArray[indexPath.row].deeplinkString];
     }
 }
 
-- (void)didReceiveDeeplinkActionWith:(NSString *)deeplinkString userInfo:(NSDictionary *)userInfo {
+- (void)didReceiveDeeplinkActionWith:(NSString *)deeplinkString userInfo:(NSDictionary *)userInfo indexPath:(nonnull NSIndexPath *)indexPath {
     if (!_notificationTableView.editing) {
-        [self sendOpenNotification:userInfo andAutoHandleDeeplink:true];
+        [self configureNotificationReadStatusWithDeeplink:deeplinkString autoHandleDeeplink:true indexPath:indexPath];
     }
 }
 

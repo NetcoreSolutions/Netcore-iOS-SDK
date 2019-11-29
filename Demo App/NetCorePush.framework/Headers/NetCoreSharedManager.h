@@ -5,11 +5,11 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.9 */
+ @version    2.4.0 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "SMTNotification.h"
+#import "NCNotification.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

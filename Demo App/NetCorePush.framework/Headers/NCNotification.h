@@ -1,11 +1,11 @@
 /*
- @header SMTNotification.h
+ @header NCNotification.h
  
- @brief This is the header file for SMTNotification model used in Notification Centre
+ @brief This is the header file for NCNotification model used in Notification Centre
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.3.9 */
+ @version    2.4.0 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -16,18 +16,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger,SMTMediaType) {
-    SMTMediaTypeText,
-    SMTMediaTypeImage,
-    SMTMediaTypeVideo,
-    SMTMediaTypeAudio,
-    SMTMediaTypeGif,
-    SMTMediaTypeCarousel,
+typedef NS_ENUM(NSUInteger,NCMediaType) {
+    NCMediaTypeText,
+    NCMediaTypeImage,
+    NCMediaTypeVideo,
+    NCMediaTypeAudio,
+    NCMediaTypeGif,
+    NCMediaTypeCarousel,
 };
 
-@class SMTCarousel,SMTActionButton;
+@class NCCarousel,NCActionButton;
 
-@interface SMTNotification : NSObject
+@interface NCNotification : NSObject
 
 @property (strong, nonatomic) NSDictionary *userInfo;
 @property (strong, nonatomic) UIImage *image;
@@ -45,18 +45,18 @@ typedef NS_ENUM(NSUInteger,SMTMediaType) {
 //used to check that the read status of notification
 @property (nonatomic) Boolean isNotificationRead;
 @property (strong, nonatomic) NSDictionary *customPayload;
-@property NSArray <SMTCarousel *> *carouselArray;
-@property NSArray <SMTActionButton *> *actionButtonArray;
+@property NSArray <NCCarousel *> *carouselArray;
+@property NSArray <NCActionButton *> *actionButtonArray;
 
 - (instancetype)initWithNotification:(NSArray *)dataArray;
 
-+ (NSArray <SMTNotification *>*)getNotifications;
++ (NSArray <NCNotification *>*)getNotifications;
 
-+ (NSArray <SMTNotification *>*)getNotificationsWithCount:(NSInteger )count;
++ (NSArray <NCNotification *>*)getNotificationsWithCount:(NSInteger )count;
 
 + (NSUInteger)getUnreadNotificationsCount;
 
-+ (void)markNotificationAsRead:(NSDictionary *)messageDict autoHandleDeeplink:(BOOL)shouldHandle;
++ (void)markNotificationAsRead:(NSDictionary *)messageDict autoHandleDeeplink:(BOOL)shouldHandle withDeeplink:(NSString *)deeplink;
 
 + (BOOL)deleteNotification:(NSArray *)notificationIDs;
 
@@ -64,7 +64,7 @@ typedef NS_ENUM(NSUInteger,SMTMediaType) {
 
 
 
-@interface SMTDateFormatter : NSObject
+@interface NCDateFormatter : NSObject
 
 +(instancetype)sharedInstance;
 
@@ -75,7 +75,7 @@ typedef NS_ENUM(NSUInteger,SMTMediaType) {
 
 
 
-@interface SMTCarousel : NSObject
+@interface NCCarousel : NSObject
 
 @property (strong, nonatomic) NSString *imageUrlString;
 @property (strong, nonatomic) NSString *imageTitleString;
@@ -88,7 +88,7 @@ typedef NS_ENUM(NSUInteger,SMTMediaType) {
 
 
 
-@interface SMTActionButton : NSObject
+@interface NCActionButton : NSObject
 
 @property (strong, nonatomic) NSString *deeplinkString;
 @property (strong, nonatomic) NSString *titleString;

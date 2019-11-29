@@ -3,7 +3,7 @@
  @brief SmartechNotificationCell is responsible to show the individual cells in the notification center.
  @author    Netcore Solutions
  @copyright 2019 Netcore Solutions
- @version   1.0.1
+ @version   1.0.0
  */
 
 #import <UIKit/UIKit.h>
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol SmartechNotificationCellDelegate <NSObject>
 
--(void)didReceiveDeeplinkActionWith:(NSString *)deeplinkString userInfo:(NSDictionary *)userInfo;
+-(void)didReceiveDeeplinkActionWith:(NSString *)deeplinkString userInfo:(NSDictionary *)userInfo indexPath:(NSIndexPath *)indexPath;
 -(void)didReceivePlayerClickEvent:(NSString *)mediaUrl;
 - (void)didReceiveReadMoreButtonClickWith:(NSIndexPath *)indexPath;
 
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSIndexPath *indexPath;
 @property (nonatomic) NSInteger carouselPageIndex;
 
-@property (strong, nonatomic) SMTNotification *notificationModel;
+@property (strong, nonatomic) NCNotification *notificationModel;
 @property(weak, nonatomic) id<SmartechNotificationCellDelegate> delegate;
 
 #pragma mark - Function Definition

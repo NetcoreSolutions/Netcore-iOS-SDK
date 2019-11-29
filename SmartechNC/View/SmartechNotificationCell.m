@@ -3,7 +3,7 @@
  @brief SmartechNotificationCell is responsible to show the individual cells in the notification center.
  @author    Netcore Solutions
  @copyright 2019 Netcore Solutions
- @version   1.0.1
+ @version   1.0.0
  */
 
 #import "SmartechNotificationCell.h"
@@ -119,7 +119,7 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
         [_richDataDisplayView addSubview:_thumbnailImageView];
         UIView *view = [[UIView alloc] initWithFrame:_thumbnailImageView.bounds];
         
-        if (_notificationModel.mediaType == SMTMediaTypeVideo) {
+        if (_notificationModel.mediaType == NCMediaTypeVideo) {
             view.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.3];
             _thumbnailImageView.image = [UIImage imageNamed:kVideoPlaceholder];
         } else {
@@ -136,7 +136,7 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
         [playerPlayButton addTarget:self action:@selector(playerPlayButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [view addSubview:playerPlayButton];
     }
-    if (_notificationModel.mediaType == SMTMediaTypeVideo) {
+    if (_notificationModel.mediaType == NCMediaTypeVideo) {
         _thumbnailImageView.image = [UIImage imageNamed:kVideoPlaceholder];
     }
     else {
@@ -165,7 +165,7 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
     CGFloat posX = 0.0;
     
     for (int i = 0; i<_notificationModel.carouselArray.count; i++) {
-        SMTCarousel *carousel = [_notificationModel.carouselArray objectAtIndexedSubscript:i];
+        NCCarousel *carousel = [_notificationModel.carouselArray objectAtIndexedSubscript:i];
         UIImageView *carouselImageView = [[UIImageView alloc] initWithFrame:CGRectMake(posX, 0.0, _carouselScrollView.frame.size.width, _carouselScrollView.bounds.size.height)];
         [carouselImageView sd_setImageWithURL:[NSURL URLWithString:carousel.imageUrlString] placeholderImage:[UIImage imageNamed:kPlaceholder]];
         [carouselImageView setUserInteractionEnabled:true];
@@ -189,7 +189,7 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
 
 #pragma mark - Local Helpers
 
-- (void)setNotificationModel:(SMTNotification *)notificationModel {
+- (void)setNotificationModel:(NCNotification *)notificationModel {
     [self configureHolderView];
     _notificationModel = notificationModel;
     _carouselPageIndex = 0;
@@ -207,26 +207,26 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
 
 - (void)setMediaView {
     switch (_notificationModel.mediaType) {
-        case SMTMediaTypeText:
+        case NCMediaTypeText:
             [_richDataDisplayView setHidden:true];
             break;
-        case SMTMediaTypeImage:
+        case NCMediaTypeImage:
             [self loadViewForImage];
             [_richDataDisplayView setHidden:false];
             break;
-        case SMTMediaTypeVideo:
+        case NCMediaTypeVideo:
             [self loadPlayerView];
             [_richDataDisplayView setHidden:false];
             break;
-        case SMTMediaTypeGif:
+        case NCMediaTypeGif:
             [self loadViewForGif];
             [_richDataDisplayView setHidden:false];
             break;
-        case SMTMediaTypeCarousel:
+        case NCMediaTypeCarousel:
             [self loadViewForCarousel];
             [_richDataDisplayView setHidden:true];
             break;
-        case SMTMediaTypeAudio:
+        case NCMediaTypeAudio:
             [self loadPlayerView];
             [_richDataDisplayView setHidden:false];
             break;
@@ -295,16 +295,7 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
     [self configureCarouselTexts];
 }
 
-#pragma mark - UISegmentedControl Event
-- (void)segmentSelected:(UISegmentedControl *)segment {
-    if (_delegate) {
-        NSString *deepLink = _notificationModel.actionButtonArray[segment.selectedSegmentIndex].deeplinkString;
-        [_delegate didReceiveDeeplinkActionWith:deepLink userInfo:_notificationModel.userInfo];
-    }
-}
-
 #pragma mark - UIButton Event
-
 - (IBAction)readMoreButtonClicked:(id)sender {
     if (_delegate) {
         [_delegate didReceiveReadMoreButtonClickWith:_indexPath];
@@ -320,13 +311,13 @@ NSString *const kPlayerPlaybutton = @"smartech-play-button";
 - (void)interactiveButtonClicked:(UIButton *)sender {
     if (_delegate) {
         NSString *deepLink = _notificationModel.actionButtonArray[sender.tag].deeplinkString;
-        [_delegate didReceiveDeeplinkActionWith:deepLink userInfo:_notificationModel.userInfo];
+        [_delegate didReceiveDeeplinkActionWith:deepLink userInfo:_notificationModel.userInfo indexPath:_indexPath];
     }
 }
 
 - (void)carouselImageViewGestureEvent:(UIGestureRecognizer *)sender {
     if (_delegate) {
-        [_delegate didReceiveDeeplinkActionWith:_notificationModel.deeplinkString userInfo:_notificationModel.userInfo];
+        [_delegate didReceiveDeeplinkActionWith:_notificationModel.deeplinkString userInfo:_notificationModel.userInfo indexPath:_indexPath];
     }
 }
 
