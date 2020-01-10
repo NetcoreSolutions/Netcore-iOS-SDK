@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.4.0 */
+ @version    2.4.1 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -79,13 +79,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(void)setDeepLinkQueryParameters:(NSDictionary *)notiData;
 /*
- @Method checkSessionId: this method checks for session id expiration and renews it.
+ @Method resetSession: this method resets the session for the user.
  */
--(void)checkSessionId;
-/*
- @Method addDeepLinkParametersInDict: adds deeplink parameters to every request.
- */
--(void)addDeepLinkParametersInDict:(NSMutableDictionary *)requestDict;
+- (void)resetSession;
+
 /*
  @Method setUpAppGroup: this method use to setup app groups
  @param  appGroup - contain appGroup string. Usually, group.<your-bundle-identifier>. eg., group.com.CompanyName.productName
@@ -120,6 +117,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSUInteger)getUnreadNotificationsCount;
 
 - (void)setAssociateDomain:(NSArray *)associateDomain;
+
+- (void)copyDatabaseToDirectory;
 
 NS_ASSUME_NONNULL_END
 

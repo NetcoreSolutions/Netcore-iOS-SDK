@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina6_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,15 +23,15 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="2422"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="smtGifCell" rowHeight="348" id="pGS-xe-kW8" userLabel="Media Cell" customClass="SmartechNotificationCell">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="348"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="smtGifCell" rowHeight="364" id="pGS-xe-kW8" userLabel="Media Cell" customClass="SmartechNotificationCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="364"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pGS-xe-kW8" id="DAI-sN-7Gr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="347.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRF-xD-5sP">
-                                                    <rect key="frame" x="8" y="8" width="359" height="331.66666666666669"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="348"/>
                                                     <subviews>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title so that i can check for two lines else i can change the size of label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RC-Ak-r8V">
                                                             <rect key="frame" x="8" y="8" width="263" height="36"/>
@@ -61,14 +59,14 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRp-um-Sgj">
-                                                            <rect key="frame" x="8" y="214" width="343" height="73.666666666666686"/>
+                                                            <rect key="frame" x="8" y="214" width="343" height="48"/>
                                                             <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKW-gV-eE6">
-                                                            <rect key="frame" x="8" y="289.66666666666669" width="343" height="38"/>
+                                                            <rect key="frame" x="8" y="264" width="343" height="38"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="38" id="TFj-8P-baO"/>
                                                             </constraints>
@@ -78,14 +76,23 @@
                                                                 <action selector="readMoreButtonClicked:" destination="pGS-xe-kW8" eventType="touchUpInside" id="ZxY-5Q-vCS"/>
                                                             </connections>
                                                         </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtw-iN-jaV">
+                                                            <rect key="frame" x="0.0" y="304" width="359" height="40"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="tIK-aF-bC9"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="8RC-Ak-r8V" firstAttribute="top" secondItem="gRF-xD-5sP" secondAttribute="top" constant="8" id="1eB-mY-qjU"/>
                                                         <constraint firstItem="yKh-Ov-Onl" firstAttribute="centerY" secondItem="8RC-Ak-r8V" secondAttribute="centerY" id="BAR-ij-Rxh"/>
-                                                        <constraint firstAttribute="bottom" secondItem="eKW-gV-eE6" secondAttribute="bottom" constant="4" id="BIB-kN-Fao"/>
+                                                        <constraint firstAttribute="bottom" secondItem="gtw-iN-jaV" secondAttribute="bottom" constant="4" id="CVC-Sy-Ibf"/>
                                                         <constraint firstItem="eKW-gV-eE6" firstAttribute="leading" secondItem="gRF-xD-5sP" secondAttribute="leading" constant="8" id="Fz1-EW-FfX"/>
                                                         <constraint firstItem="yKh-Ov-Onl" firstAttribute="leading" secondItem="8RC-Ak-r8V" secondAttribute="trailing" constant="8" id="GLe-Pa-3cZ"/>
+                                                        <constraint firstItem="gtw-iN-jaV" firstAttribute="leading" secondItem="gRF-xD-5sP" secondAttribute="leading" id="GXz-CE-14f"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gtw-iN-jaV" secondAttribute="trailing" id="Nms-gX-KFu"/>
                                                         <constraint firstItem="eKW-gV-eE6" firstAttribute="top" secondItem="uRp-um-Sgj" secondAttribute="bottom" constant="2" id="OJj-jO-t83"/>
                                                         <constraint firstItem="uRp-um-Sgj" firstAttribute="top" secondItem="Qay-2S-Xd9" secondAttribute="bottom" constant="8" id="Opg-JR-yGM"/>
                                                         <constraint firstItem="Qay-2S-Xd9" firstAttribute="top" secondItem="8RC-Ak-r8V" secondAttribute="bottom" constant="2" id="P1d-Sa-cK2"/>
@@ -94,6 +101,7 @@
                                                         <constraint firstAttribute="trailing" secondItem="uRp-um-Sgj" secondAttribute="trailing" constant="8" id="d6n-o1-v1R"/>
                                                         <constraint firstAttribute="trailing" secondItem="eKW-gV-eE6" secondAttribute="trailing" constant="8" id="dw0-ue-lM9"/>
                                                         <constraint firstAttribute="trailing" secondItem="yKh-Ov-Onl" secondAttribute="trailing" constant="8" id="eAt-HO-4SF"/>
+                                                        <constraint firstItem="gtw-iN-jaV" firstAttribute="top" secondItem="eKW-gV-eE6" secondAttribute="bottom" constant="2" id="hBT-Kl-Aiw"/>
                                                         <constraint firstAttribute="trailing" secondItem="Qay-2S-Xd9" secondAttribute="trailing" id="qoY-7W-wzO"/>
                                                         <constraint firstItem="Qay-2S-Xd9" firstAttribute="leading" secondItem="gRF-xD-5sP" secondAttribute="leading" id="qyh-fG-maW"/>
                                                     </constraints>
@@ -110,21 +118,23 @@
                                             <outlet property="bodyLabel" destination="uRp-um-Sgj" id="eml-eo-QZY"/>
                                             <outlet property="dateLabel" destination="yKh-Ov-Onl" id="TT1-Xu-kX7"/>
                                             <outlet property="holderView" destination="gRF-xD-5sP" id="wCD-au-Pcg"/>
+                                            <outlet property="interactionButtonHeightConstraint" destination="tIK-aF-bC9" id="mSp-ze-aze"/>
+                                            <outlet property="interactionButtonViewHolder" destination="gtw-iN-jaV" id="PAQ-SJ-aBP"/>
                                             <outlet property="readMoreButton" destination="eKW-gV-eE6" id="ggi-yQ-Oo2"/>
                                             <outlet property="readMoreButtonHeightConstraint" destination="TFj-8P-baO" id="bYA-qb-Smb"/>
                                             <outlet property="richDataDisplayView" destination="Qay-2S-Xd9" id="0a1-Mr-lCx"/>
                                             <outlet property="titleLabel" destination="8RC-Ak-r8V" id="Puc-SC-IVz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="smtAudioCell" rowHeight="348" id="Ruq-oQ-ixc" userLabel="Media Cell" customClass="SmartechNotificationCell">
-                                        <rect key="frame" x="0.0" y="376" width="375" height="348"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="smtAudioCell" rowHeight="364" id="Ruq-oQ-ixc" userLabel="Media Cell" customClass="SmartechNotificationCell">
+                                        <rect key="frame" x="0.0" y="392" width="375" height="364"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ruq-oQ-ixc" id="nih-wX-ZNI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="347.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qj-Yr-e64">
-                                                    <rect key="frame" x="8" y="8" width="359" height="331.66666666666669"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="348"/>
                                                     <subviews>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title so that i can check for two lines else i can change the size of label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcI-1H-Ouy">
                                                             <rect key="frame" x="8" y="8" width="263" height="36"/>
@@ -152,14 +162,14 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQU-Vd-PHe">
-                                                            <rect key="frame" x="8" y="214" width="343" height="75.666666666666686"/>
+                                                            <rect key="frame" x="8" y="214" width="343" height="48"/>
                                                             <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0d-T3-g74">
-                                                            <rect key="frame" x="8" y="291.66666666666669" width="343" height="38"/>
+                                                            <rect key="frame" x="8" y="264" width="343" height="38"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="38" id="ueZ-Kx-ioj"/>
                                                             </constraints>
@@ -169,6 +179,13 @@
                                                                 <action selector="readMoreButtonClicked:" destination="Ruq-oQ-ixc" eventType="touchUpInside" id="sDd-OM-DZO"/>
                                                             </connections>
                                                         </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzn-8U-0pw">
+                                                            <rect key="frame" x="0.0" y="304" width="359" height="40"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="ssY-Rh-GKd"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -176,14 +193,17 @@
                                                         <constraint firstItem="Vez-ke-v6X" firstAttribute="leading" secondItem="ZcI-1H-Ouy" secondAttribute="trailing" constant="8" id="Aif-X1-wWs"/>
                                                         <constraint firstAttribute="trailing" secondItem="Vez-ke-v6X" secondAttribute="trailing" constant="8" id="Aur-RB-89q"/>
                                                         <constraint firstItem="H0d-T3-g74" firstAttribute="leading" secondItem="4qj-Yr-e64" secondAttribute="leading" constant="8" id="Bzz-oV-hd7"/>
+                                                        <constraint firstAttribute="bottom" secondItem="hzn-8U-0pw" secondAttribute="bottom" constant="4" id="Fqh-TF-l7U"/>
                                                         <constraint firstItem="vQU-Vd-PHe" firstAttribute="leading" secondItem="4qj-Yr-e64" secondAttribute="leading" constant="8" id="I8b-Xl-0uB"/>
                                                         <constraint firstItem="H0d-T3-g74" firstAttribute="top" secondItem="vQU-Vd-PHe" secondAttribute="bottom" constant="2" id="IwA-31-yaI"/>
+                                                        <constraint firstItem="hzn-8U-0pw" firstAttribute="leading" secondItem="4qj-Yr-e64" secondAttribute="leading" id="Kd1-i1-4Pv"/>
                                                         <constraint firstItem="Vez-ke-v6X" firstAttribute="centerY" secondItem="ZcI-1H-Ouy" secondAttribute="centerY" id="PVl-00-ZqG"/>
                                                         <constraint firstItem="ZcI-1H-Ouy" firstAttribute="leading" secondItem="4qj-Yr-e64" secondAttribute="leading" constant="8" id="Ruz-fc-dwP"/>
-                                                        <constraint firstAttribute="bottom" secondItem="H0d-T3-g74" secondAttribute="bottom" constant="2" id="Zbu-6m-8x4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hzn-8U-0pw" secondAttribute="trailing" id="Z7z-4E-MnK"/>
                                                         <constraint firstItem="Oq8-Be-RP2" firstAttribute="leading" secondItem="4qj-Yr-e64" secondAttribute="leading" id="d9O-fp-fcZ"/>
                                                         <constraint firstItem="Oq8-Be-RP2" firstAttribute="top" secondItem="ZcI-1H-Ouy" secondAttribute="bottom" constant="2" id="ht0-W1-zqJ"/>
                                                         <constraint firstAttribute="trailing" secondItem="Oq8-Be-RP2" secondAttribute="trailing" id="puX-YH-NiE"/>
+                                                        <constraint firstItem="hzn-8U-0pw" firstAttribute="top" secondItem="H0d-T3-g74" secondAttribute="bottom" constant="2" id="qIM-XP-HU6"/>
                                                         <constraint firstItem="vQU-Vd-PHe" firstAttribute="top" secondItem="Oq8-Be-RP2" secondAttribute="bottom" constant="8" id="rPH-sc-Ccn"/>
                                                         <constraint firstItem="ZcI-1H-Ouy" firstAttribute="top" secondItem="4qj-Yr-e64" secondAttribute="top" constant="8" id="reR-aX-LEh"/>
                                                         <constraint firstAttribute="trailing" secondItem="vQU-Vd-PHe" secondAttribute="trailing" constant="8" id="vbt-3m-ozb"/>
@@ -201,21 +221,23 @@
                                             <outlet property="bodyLabel" destination="vQU-Vd-PHe" id="RA8-aM-kEx"/>
                                             <outlet property="dateLabel" destination="Vez-ke-v6X" id="ufq-fF-g4f"/>
                                             <outlet property="holderView" destination="4qj-Yr-e64" id="CIB-iR-h4E"/>
+                                            <outlet property="interactionButtonHeightConstraint" destination="ssY-Rh-GKd" id="sAD-pq-kRP"/>
+                                            <outlet property="interactionButtonViewHolder" destination="hzn-8U-0pw" id="c2Q-Uc-64U"/>
                                             <outlet property="readMoreButton" destination="H0d-T3-g74" id="Jbz-27-GCi"/>
                                             <outlet property="readMoreButtonHeightConstraint" destination="ueZ-Kx-ioj" id="35c-vb-KQy"/>
                                             <outlet property="richDataDisplayView" destination="Oq8-Be-RP2" id="iPi-sK-4Jp"/>
                                             <outlet property="titleLabel" destination="ZcI-1H-Ouy" id="0ht-W0-7sm"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="smtVideoCell" rowHeight="348" id="axk-0T-79g" userLabel="Media Cell" customClass="SmartechNotificationCell">
-                                        <rect key="frame" x="0.0" y="724" width="375" height="348"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="smtVideoCell" rowHeight="364" id="axk-0T-79g" userLabel="Media Cell" customClass="SmartechNotificationCell">
+                                        <rect key="frame" x="0.0" y="756" width="375" height="364"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="axk-0T-79g" id="9Xm-DM-bfU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="347.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqg-GX-Erl">
-                                                    <rect key="frame" x="8" y="8" width="359" height="331.66666666666669"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="348"/>
                                                     <subviews>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title so that i can check for two lines else i can change the size of label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtI-Ht-dFp">
                                                             <rect key="frame" x="8" y="8" width="263" height="36"/>
@@ -243,14 +265,14 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nl-cf-8Ye">
-                                                            <rect key="frame" x="8" y="214" width="343" height="73.666666666666686"/>
+                                                            <rect key="frame" x="8" y="214" width="343" height="48"/>
                                                             <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unC-hs-rVT">
-                                                            <rect key="frame" x="8" y="289.66666666666669" width="343" height="38"/>
+                                                            <rect key="frame" x="8" y="264" width="343" height="38"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="38" id="Vhz-EM-Uph"/>
                                                             </constraints>
@@ -260,23 +282,33 @@
                                                                 <action selector="readMoreButtonClicked:" destination="axk-0T-79g" eventType="touchUpInside" id="dqa-aR-hnF"/>
                                                             </connections>
                                                         </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25G-tu-Uyj">
+                                                            <rect key="frame" x="0.0" y="304" width="359" height="40"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="Iwp-78-KOZ"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="unC-hs-rVT" firstAttribute="top" secondItem="1nl-cf-8Ye" secondAttribute="bottom" constant="2" id="2eD-pk-D4S"/>
                                                         <constraint firstItem="1nl-cf-8Ye" firstAttribute="leading" secondItem="xqg-GX-Erl" secondAttribute="leading" constant="8" id="6gO-0V-K69"/>
                                                         <constraint firstAttribute="trailing" secondItem="F6h-kd-CZS" secondAttribute="trailing" id="8jH-mN-Yql"/>
+                                                        <constraint firstItem="25G-tu-Uyj" firstAttribute="top" secondItem="unC-hs-rVT" secondAttribute="bottom" constant="2" id="KGU-Fx-Ia6"/>
+                                                        <constraint firstAttribute="bottom" secondItem="25G-tu-Uyj" secondAttribute="bottom" constant="4" id="LLG-4r-jik"/>
                                                         <constraint firstAttribute="trailing" secondItem="QE8-AX-eiX" secondAttribute="trailing" constant="8" id="TLp-rq-CO7"/>
                                                         <constraint firstItem="F6h-kd-CZS" firstAttribute="top" secondItem="JtI-Ht-dFp" secondAttribute="bottom" constant="2" id="TOb-Vq-1Mb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="25G-tu-Uyj" secondAttribute="trailing" id="Ug0-Pv-WFj"/>
                                                         <constraint firstItem="JtI-Ht-dFp" firstAttribute="leading" secondItem="xqg-GX-Erl" secondAttribute="leading" constant="8" id="VT7-jC-U80"/>
                                                         <constraint firstItem="JtI-Ht-dFp" firstAttribute="top" secondItem="xqg-GX-Erl" secondAttribute="top" constant="8" id="Zvt-MW-3Sd"/>
-                                                        <constraint firstAttribute="bottom" secondItem="unC-hs-rVT" secondAttribute="bottom" constant="4" id="g6K-Og-K3R"/>
                                                         <constraint firstItem="QE8-AX-eiX" firstAttribute="centerY" secondItem="JtI-Ht-dFp" secondAttribute="centerY" id="gWF-mA-gGj"/>
                                                         <constraint firstItem="QE8-AX-eiX" firstAttribute="leading" secondItem="JtI-Ht-dFp" secondAttribute="trailing" constant="8" id="h8C-bk-OP3"/>
                                                         <constraint firstItem="unC-hs-rVT" firstAttribute="leading" secondItem="xqg-GX-Erl" secondAttribute="leading" constant="8" id="huV-9c-MPG"/>
                                                         <constraint firstAttribute="trailing" secondItem="1nl-cf-8Ye" secondAttribute="trailing" constant="8" id="lIi-Ug-f6F"/>
                                                         <constraint firstAttribute="trailing" secondItem="unC-hs-rVT" secondAttribute="trailing" constant="8" id="mTV-wX-9wv"/>
                                                         <constraint firstItem="F6h-kd-CZS" firstAttribute="leading" secondItem="xqg-GX-Erl" secondAttribute="leading" id="mdi-X5-mRZ"/>
+                                                        <constraint firstItem="25G-tu-Uyj" firstAttribute="leading" secondItem="xqg-GX-Erl" secondAttribute="leading" id="msu-j0-cwH"/>
                                                         <constraint firstItem="1nl-cf-8Ye" firstAttribute="top" secondItem="F6h-kd-CZS" secondAttribute="bottom" constant="8" id="nZF-W5-A8m"/>
                                                     </constraints>
                                                 </view>
@@ -292,6 +324,8 @@
                                             <outlet property="bodyLabel" destination="1nl-cf-8Ye" id="A3B-iO-CKa"/>
                                             <outlet property="dateLabel" destination="QE8-AX-eiX" id="jbe-G6-9rr"/>
                                             <outlet property="holderView" destination="xqg-GX-Erl" id="osx-TA-Y0p"/>
+                                            <outlet property="interactionButtonHeightConstraint" destination="Iwp-78-KOZ" id="sz6-tx-2uw"/>
+                                            <outlet property="interactionButtonViewHolder" destination="25G-tu-Uyj" id="MD8-6c-00F"/>
                                             <outlet property="readMoreButton" destination="unC-hs-rVT" id="j20-0O-xqE"/>
                                             <outlet property="readMoreButtonHeightConstraint" destination="Vhz-EM-Uph" id="QdU-hE-Plv"/>
                                             <outlet property="richDataDisplayView" destination="F6h-kd-CZS" id="H47-QZ-CFy"/>
@@ -299,14 +333,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="smtImageCell" rowHeight="364" id="LnW-2m-E58" userLabel="Media Cell" customClass="SmartechNotificationCell">
-                                        <rect key="frame" x="0.0" y="1072" width="375" height="364"/>
+                                        <rect key="frame" x="0.0" y="1120" width="375" height="364"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LnW-2m-E58" id="sM9-mh-MPe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="363.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOq-mO-IP6">
-                                                    <rect key="frame" x="8" y="8" width="359" height="347.66666666666669"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="348"/>
                                                     <subviews>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title so that i can check for two lines else i can change the size of label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXc-Me-GaP">
                                                             <rect key="frame" x="8" y="8" width="263" height="36"/>
@@ -334,14 +368,14 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fje-Ar-kwm">
-                                                            <rect key="frame" x="8" y="214" width="343" height="47.666666666666686"/>
+                                                            <rect key="frame" x="8" y="214" width="343" height="48"/>
                                                             <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-YD-Bl3">
-                                                            <rect key="frame" x="8" y="263.66666666666669" width="343" height="38"/>
+                                                            <rect key="frame" x="8" y="264" width="343" height="38"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="38" id="v75-GL-8de"/>
                                                             </constraints>
@@ -352,7 +386,7 @@
                                                             </connections>
                                                         </button>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-h4-zEY">
-                                                            <rect key="frame" x="0.0" y="303.66666666666669" width="359" height="40"/>
+                                                            <rect key="frame" x="0.0" y="304" width="359" height="40"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="tUT-Oq-yR6"/>
@@ -402,14 +436,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="smtTextCell" rowHeight="206" id="FV6-cv-hVI" userLabel="Text Cell" customClass="SmartechNotificationCell">
-                                        <rect key="frame" x="0.0" y="1436" width="375" height="206"/>
+                                        <rect key="frame" x="0.0" y="1484" width="375" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FV6-cv-hVI" id="HaH-kx-Uc8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="205.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIJ-Vr-cK0">
-                                                    <rect key="frame" x="8" y="8" width="359" height="189.66666666666666"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="190"/>
                                                     <subviews>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title so that i can check for two lines else i can change the size of label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFH-d0-8Kf">
                                                             <rect key="frame" x="8" y="8" width="263" height="36"/>
@@ -431,14 +465,14 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfM-nv-t7U">
-                                                            <rect key="frame" x="8" y="52" width="343" height="51.666666666666657"/>
+                                                            <rect key="frame" x="8" y="52" width="343" height="52"/>
                                                             <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCI-KO-eVa">
-                                                            <rect key="frame" x="8" y="105.66666666666667" width="343" height="38.000000000000014"/>
+                                                            <rect key="frame" x="8" y="106" width="343" height="38"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="38" id="6XV-kK-zGQ"/>
                                                             </constraints>
@@ -449,7 +483,7 @@
                                                             </connections>
                                                         </button>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yJ-Xs-qPB">
-                                                            <rect key="frame" x="0.0" y="145.66666666666666" width="359" height="40"/>
+                                                            <rect key="frame" x="0.0" y="146" width="359" height="40"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="gvB-FL-gM8"/>
@@ -495,14 +529,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="smtCarouselCell" rowHeight="396" id="UAM-1K-1nl" userLabel="Carousel Cell" customClass="SmartechNotificationCell">
-                                        <rect key="frame" x="0.0" y="1642" width="375" height="396"/>
+                                        <rect key="frame" x="0.0" y="1690" width="375" height="396"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UAM-1K-1nl" id="tTE-u7-hYS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="395.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="396"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTo-yY-Vcr">
-                                                    <rect key="frame" x="8" y="8" width="359" height="379.66666666666669"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="380"/>
                                                     <subviews>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title so that i can check for two lines else i can change the size of label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72I-UA-DVC">
                                                             <rect key="frame" x="8" y="8" width="263" height="36"/>
@@ -558,14 +592,14 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRR-gO-hWX">
-                                                            <rect key="frame" x="8" y="284" width="343" height="53.666666666666686"/>
+                                                            <rect key="frame" x="8" y="284" width="343" height="54"/>
                                                             <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsA-dn-pAE">
-                                                            <rect key="frame" x="8" y="339.66666666666669" width="343" height="38"/>
+                                                            <rect key="frame" x="8" y="340" width="343" height="38"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="38" id="Siv-gT-P3a"/>
                                                             </constraints>
