@@ -2,7 +2,7 @@
 //  NetCorePush.h
 //  NetCorePush
 //
-//  Created by Netcore Solutions on 05/08/19.
+//  Created by Jobin Kurian on 05/08/19.
 //  Copyright © 2019 Netcore Solutions. All rights reserved.
 //
 

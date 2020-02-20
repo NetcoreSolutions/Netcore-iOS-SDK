@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.4.1 */
+ @version    2.4.2 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -117,8 +117,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSUInteger)getUnreadNotificationsCount;
 
 - (void)setAssociateDomain:(NSArray *)associateDomain;
-
-- (void)copyDatabaseToDirectory;
 
 NS_ASSUME_NONNULL_END
 
