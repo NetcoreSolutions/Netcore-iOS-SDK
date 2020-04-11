@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.4.2 */
+ @version    2.4.3 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -93,6 +93,11 @@ NS_ASSUME_NONNULL_BEGIN
  @param  optFlag - If it is True, then it will stop processing user's events and user will not receive any kind of Push/InApp Notifications from Panel. Default Value is False.
  */
 -(void)optOut:(BOOL)optFlag;
+/*
+@Method getOptOutStatus: this method is used get the status of GDPR compliance.
+@return - BOOL
+*/
+-(BOOL)getOptOutStatus;
 /*
  @Method printDeviceToken: this method is used to print device token.
  */

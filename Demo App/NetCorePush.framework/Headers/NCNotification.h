@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.4.2 */
+ @version    2.4.3 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -34,6 +34,7 @@ typedef NS_ENUM(NSUInteger,NCMediaType) {
 @property (strong, nonatomic) NSString *dateString;
 @property (strong, nonatomic) NSString *titleString;
 @property (strong, nonatomic) NSString *subtitleString;
+@property (strong, nonatomic) NSString *bodyString;
 @property (strong, nonatomic) NSString *deeplinkString;
 @property (strong, nonatomic) NSString *mediaurl;
 @property (strong, nonatomic) NSString *trid;

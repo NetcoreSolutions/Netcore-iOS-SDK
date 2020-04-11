@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.4.2 */
+ @version    2.4.3 */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
@@ -42,6 +42,9 @@ typedef NS_ENUM(NSUInteger, SMTDeeplinkType) {
 - (void)handleNotificationCustomPayload:(NSDictionary *_Nullable)payload;
 
 - (void)handleSmartechDeeplink:(SMTDeeplink *_Nullable)options;
+
+- (void)handleDeeplinkActionWithURLString:(NSString *)deepLinkURLString
+                         andCustomPayload:(NSDictionary *_Nullable)customPayload;
 
 @end
 

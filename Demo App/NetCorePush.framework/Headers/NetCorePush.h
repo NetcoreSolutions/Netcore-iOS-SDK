@@ -2,8 +2,8 @@
 //  NetCorePush.h
 //  NetCorePush
 //
-//  Created by Jobin Kurian on 05/08/19.
-//  Copyright © 2019 Netcore Solutions. All rights reserved.
+//  Created by Netcore on 08/04/20.
+//  Copyright © 2020 Netcore Solutions. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -22,5 +22,7 @@ FOUNDATION_EXPORT const unsigned char NetCorePushVersionString[];
 #import <NetCorePush/NetCoreTrackingInfo.h>
 #import <NetCorePush/NetCorePushTaskManager.h>
 #import <NetCorePush/NetCoreNotificationService.h>
+#import <NetCorePush/SMTNotificationServiceExtension.h>
+#import <NetCorePush/Smartech.h>
 
 
