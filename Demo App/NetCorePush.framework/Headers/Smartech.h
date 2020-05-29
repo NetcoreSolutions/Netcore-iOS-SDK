@@ -11,7 +11,6 @@
 #import <UserNotificationsUI/UserNotificationsUI.h>
 #import "NCNotification.h"
 
-
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol SmartechDelegate<NSObject>
@@ -25,6 +24,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,weak) id <SmartechDelegate>delegate;
 
+typedef NS_ENUM(NSUInteger, NCLogLevel) {
+    NC_LOG_LEVEL_VERBOSE = 1,
+    NC_LOG_LEVEL_DEBUG = 2,
+    NC_LOG_LEVEL_INFO = 3,
+    NC_LOG_LEVEL_WARN = 4,
+    NC_LOG_LEVEL_ERROR = 5,
+    NC_LOG_LEVEL_FATAL = 6,
+    NC_LOG_LEVEL_NONE = 7,
+};
+
 /**
  @return Smartech instance.
  */
@@ -35,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  delclare delegate inorder support protocol delegation
  */
 
--(void)initSDKWithDelegate:(id<SmartechDelegate>)delegate withLaunchOptions:launchOptions;
+- (void)initSDKWithDelegate:(id <SmartechDelegate>)delegate withLaunchOptions:launchOptions;
 
 #pragma mark - Notification Methods
 
@@ -87,7 +96,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @brief This method will be called just before this extension is terminated by the system. You may choose whether to override this method.
  */
--(void)serviceExtensionTimeWillExpire;
+- (void)serviceExtensionTimeWillExpire;
 
 #pragma mark - Notification Content Extension methods
 
@@ -247,6 +256,31 @@ NS_ASSUME_NONNULL_BEGIN
  @return BOOL - the result of whether the notification from Smartech or not.
  */
 - (BOOL)isNotificationFromSmartech:(NSDictionary *)userInfo;
+
+#pragma mark - Debugging Methods
+
+/**
+ @brief Set the debug logging level
+ 
+ @discussion Set using NCLogLevel enum values or the corresponding int values.
+ 
+ NC_LOG_LEVEL_VERBOSE  - enables all logging.
+ NC_LOG_LEVEL_DEBUG - enables verbose debug logging.
+ NC_LOG_LEVEL_INFO - enables minimal information related to SDK integration.
+ NC_LOG_LEVEL_WARN - enables warning information related to SDK integration.
+ NC_LOG_LEVEL_ERROR - enables errorn information related to SDK integration.
+ NC_LOG_LEVEL_FATAL - enables crash information related to SDK integration.
+ NC_LOG_LEVEL_NONE - turns off all SDK logging.
+ 
+ You can use the below code.
+ 
+ @code
+ [[Smartech sharedInstance] setDebugLevel:NC_LOG_LEVEL_NONE];
+ @endcode
+ 
+ @param level The debug level to set.
+ */
+- (void)setDebugLevel:(NCLogLevel)level;
 
 @end
 

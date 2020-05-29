@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.5.1 */
+ @version    2.4.5 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -67,10 +67,10 @@ typedef NS_ENUM(NSUInteger,NCMediaType) {
 
 @interface NCDateFormatter : NSObject
 
-+(instancetype)sharedInstance;
++ (instancetype)sharedInstance;
 
 @property (strong, nonatomic) NSDateFormatter *dateFormatter;
--(NSDateFormatter *)dateFormatterInitializer;
+- (NSDateFormatter *)dateFormatterInitializer;
 
 @end
 

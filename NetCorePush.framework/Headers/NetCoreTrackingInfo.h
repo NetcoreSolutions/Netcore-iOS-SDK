@@ -1,7 +1,7 @@
 #ifndef NetCoreTrackingInfo_h
 #define NetCoreTrackingInfo_h
 
-enum AppTrackingEvents{
+enum AppTrackingEvents {
     tracking_AppExit = 6,
     tracking_FirstLaunch = 20,
     tracking_AppLaunch = 21,
@@ -10,7 +10,7 @@ enum AppTrackingEvents{
     tracking_AppReinstall = 83
 };
 
-enum AdFrequencyCapping{
+enum AdFrequencyCapping {
     freq_session,
     freq_day,
     freq_campaign

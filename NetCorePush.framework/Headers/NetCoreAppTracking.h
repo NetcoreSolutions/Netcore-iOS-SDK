@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.5.1 */
+ @version    2.4.5 */
 #import <Foundation/Foundation.h>
 #import "NetCoreConstant.h"
 
@@ -19,19 +19,19 @@
 /*
   sendAppTrackingEvent takes event and return response block
  */
--(void)sendAppTrackingEvent:(NSInteger)event Block:(NetCoreStatusBlock)block;
+- (void)sendAppTrackingEvent:(NSInteger)event Block:(NetCoreStatusBlock)block;
 
 /*
  sendAppTrackingEventWithCustomPayload takes event and custom payload and return response block
  */
--(void)sendAppTrackingEventWithCustomPayload:(NSInteger)event Payload:(NSMutableArray *)payload Block:(NetCoreStatusBlock)block;
+- (void)sendAppTrackingEventWithCustomPayload:(NSInteger)event Payload:(NSMutableArray *)payload Block:(NetCoreStatusBlock)block;
 /*
  use to send App Tracking Event name
  */
--(void)trackEvent:(NSString *)eventName Block:(NetCoreStatusBlock)block;
+- (void)trackEvent:(NSString *)eventName Block:(NetCoreStatusBlock)block;
 /*
  use to send app tracking Event with payload
  */
--(void)trackEventWithCustomPayload:(NSString *)eventName Payload:(NSMutableDictionary *)payloadDict Block:(NetCoreStatusBlock)block;
+- (void)trackEventWithCustomPayload:(NSString *)eventName Payload:(NSMutableDictionary *)payloadDict Block:(NetCoreStatusBlock)block;
 
 @end

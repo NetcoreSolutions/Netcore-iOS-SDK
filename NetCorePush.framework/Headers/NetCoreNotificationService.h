@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.5.1 */
+ @version    2.4.5 */
 
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotifications/UNNotificationContent.h>
@@ -22,22 +22,22 @@ API_AVAILABLE(ios(10.0))
 /*
  @Method contentViewDidLoad :- use to load the view controller for Carousel Push Notification.
  */
--(void)contentViewDidLoad:(UIView *)customView;
+- (void)contentViewDidLoad:(UIView *)customView;
 /*
  @Method didReceiveNotification :- use to call the notification to be displayed on the extension for Carousel Push Notification.
  */
--(void)didReceiveNotification:(UNNotification *)notification;
+- (void)didReceiveNotification:(UNNotification *)notification;
 /*
  @Method didReceiveNotificationResponse :- use to call when the user taps on one of the notification action buttons. The completion handler can be called
      after handling the action to dismiss the notification and forward the
      action to the app if necessary for Carousel Push Notification.
  */
--(void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion;
+- (void)didReceiveNotificationResponse:(UNNotificationResponse *)response completionHandler:(void (^)(UNNotificationContentExtensionResponseOption))completion;
 /*
  @Method setUpAppGroup: this method use to setup app groups
  @param  appGroup - contain appGroup string. Usually, group.<your-bundle-identifier>. eg., group.com.CompanyName.productName
  */
--(void)setUpAppGroup:(NSString *)appGroup;
+- (void)setUpAppGroup:(NSString *)appGroup;
 
 @end
 
