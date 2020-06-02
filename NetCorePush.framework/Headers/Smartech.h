@@ -25,13 +25,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,weak) id <SmartechDelegate>delegate;
 
 typedef NS_ENUM(NSUInteger, NCLogLevel) {
-    NC_LOG_LEVEL_VERBOSE = 1,
-    NC_LOG_LEVEL_DEBUG = 2,
-    NC_LOG_LEVEL_INFO = 3,
-    NC_LOG_LEVEL_WARN = 4,
-    NC_LOG_LEVEL_ERROR = 5,
-    NC_LOG_LEVEL_FATAL = 6,
-    NC_LOG_LEVEL_NONE = 7,
+    NCLogLevelVerbose = 1,
+    NCLogLevelDebug = 2,
+    NCLogLevelInfo = 3,
+    NCLogLevelWarn = 4,
+    NCLogLevelError = 5,
+    NCLogLevelFatal = 6,
+    NCLogLevelNone = 7,
 };
 
 /**
@@ -264,13 +264,13 @@ typedef NS_ENUM(NSUInteger, NCLogLevel) {
  
  @discussion Set using NCLogLevel enum values or the corresponding int values.
  
- NC_LOG_LEVEL_VERBOSE  - enables all logging.
- NC_LOG_LEVEL_DEBUG - enables verbose debug logging.
- NC_LOG_LEVEL_INFO - enables minimal information related to SDK integration.
- NC_LOG_LEVEL_WARN - enables warning information related to SDK integration.
- NC_LOG_LEVEL_ERROR - enables errorn information related to SDK integration.
- NC_LOG_LEVEL_FATAL - enables crash information related to SDK integration.
- NC_LOG_LEVEL_NONE - turns off all SDK logging.
+ NCLogVerbose  - enables all logging.
+ NCLogDebug - enables verbose debug logging.
+ NCLogInfo - enables minimal information related to SDK integration.
+ NCLogWarn - enables warning information related to SDK integration.
+ NCLogError - enables errorn information related to SDK integration.
+ NCLogFatal - enables crash information related to SDK integration.
+ NCLogNone - turns off all SDK logging.
  
  You can use the below code.
  
