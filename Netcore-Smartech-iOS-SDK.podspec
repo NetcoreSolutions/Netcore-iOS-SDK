@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Netcore-Smartech-iOS-SDK"
-  s.version      = "2.4.6"
+  s.version      = "2.5.3"
   s.summary      = "The Netcore Smartech iOS SDK for App Engagement."
   s.description  = "Smartech provide full stack marketing automation. SDK provide app engagement feature."  
   s.homepage     = "https://github.com/NetcoreSolutions/Netcore-iOS-SDK"
