@@ -24,5 +24,5 @@ FOUNDATION_EXPORT const unsigned char NetCorePushVersionString[];
 #import <NetCorePush/NetCoreNotificationService.h>
 #import <NetCorePush/SMTNotificationServiceExtension.h>
 #import <NetCorePush/Smartech.h>
-
-
+#import <NetCorePush/SMTBoxxRequest.h>
+#import <NetCorePush/SMTBoxxRequestQuery.h>

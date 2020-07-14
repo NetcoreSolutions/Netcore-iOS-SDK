@@ -5,12 +5,13 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.5.2 */
+ @version    2.4.6 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "NCNotification.h"
 #import "Smartech.h"
+#import "SMTBoxxRequest.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -138,6 +139,36 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 - (void)setDebugLevel:(NCLogLevel)level;
+
+/*!
+ @Method setDebugLevel: this method will be used for default(boxx) Boxx recommendation.
+ @param boxxRequest This model structure will create the boxx request.
+ */
+- (void)getReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
+
+/*!
+@Method setDebugLevel: this method will be used for best seller Boxx recommendation.
+@param boxxRequest This model structure will create the boxx request.
+*/
+- (void)getBestSellerReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
+
+/*!
+@Method setDebugLevel: this method will be used for trending Boxx recommendation.
+@param boxxRequest This model structure will create the boxx request.
+*/
+- (void)getTrendingReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
+
+/*!
+@Method setDebugLevel: this method will be used for recently viewed Boxx recommendation.
+@param boxxRequest This model structure will create the boxx request.
+*/
+- (void)getRecentlyViewedReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
+
+/*!
+@Method setDebugLevel: this method will be used for new products Boxx recommendation.
+@param boxxRequest This model structure will create the boxx request.
+*/
+- (void)getNewProductsReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
 
 NS_ASSUME_NONNULL_END
 

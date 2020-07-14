@@ -10,6 +10,7 @@
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
 #import "NCNotification.h"
+#import "SMTBoxxRequest.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -281,6 +282,36 @@ typedef NS_ENUM(NSUInteger, NCLogLevel) {
  @param level The debug level to set.
  */
 - (void)setDebugLevel:(NCLogLevel)level;
+
+/*!
+ @Method setDebugLevel: this method will be used for default(boxx) Boxx recommendation.
+ @param boxxRequest This model structure will create the boxx request.
+ */
+- (void)getReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
+
+/*!
+@Method setDebugLevel: this method will be used for best seller Boxx recommendation.
+@param boxxRequest This model structure will create the boxx request.
+*/
+- (void)getBestSellerReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
+
+/*!
+@Method setDebugLevel: this method will be used for trending Boxx recommendation.
+@param boxxRequest This model structure will create the boxx request.
+*/
+- (void)getTrendingReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
+
+/*!
+@Method setDebugLevel: this method will be used for recently viewed Boxx recommendation.
+@param boxxRequest This model structure will create the boxx request.
+*/
+- (void)getRecentlyViewedReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
+
+/*!
+@Method setDebugLevel: this method will be used for new products Boxx recommendation.
+@param boxxRequest This model structure will create the boxx request.
+*/
+- (void)getNewProductsReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
 
 @end
 
