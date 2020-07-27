@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.5.3 */
+ @version    2.4.7 */
 #import <Foundation/Foundation.h>
 #import "NetCoreConstant.h"
 
