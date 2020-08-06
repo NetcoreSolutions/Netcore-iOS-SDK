@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.5.4 */
+ @version    2.5.5 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -169,6 +169,15 @@ NS_ASSUME_NONNULL_BEGIN
 @param boxxRequest This model structure will create the boxx request.
 */
 - (void)getNewProductsReco:(SMTBoxxRequest *)boxxRequest withCompletionBlock:(BoxxAPICompletionBlock)completion;
+
+/*
+ @Method getNotificationsWithCount: this method will return count based of on notification status such as NCStatusRead, NCStatusUnread and NCStatusAll.
+ @param  limit - This will be the number of latest received Push Notifications to be fetched.
+ @param  notificationStatus - This will be the status of notification for which the count is expected.
+ @return - NSUInteger
+ */
+- (NSUInteger)getNotificationsWithCount:(NSUInteger)limit withFilterStatus:(NCStatus)notificationStatus;
+
 
 NS_ASSUME_NONNULL_END
 

@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SmartechDelegate<NSObject>
+@protocol SmartechDelegate <NSObject>
 @optional
 
 - (void)handleDeeplinkActionWithURLString:(NSString *)deepLinkURLString
@@ -135,7 +135,7 @@ typedef NS_ENUM(NSUInteger, NCLogLevel) {
 /**
  @brief This method fetch App Inbox notifications.
  */
-- (NSArray <NCNotification *>*)getNotifications;
+- (NSArray <NCNotification *> *)getNotifications;
 
 /**
  @brief This method fetch smartech notifications.
@@ -144,7 +144,7 @@ typedef NS_ENUM(NSUInteger, NCLogLevel) {
  
  @return NSArray - get notifications according to desired count.
  */
-- (NSArray <NCNotification *>*)getNotificationsWithCount:(NSInteger)count;
+- (NSArray <NCNotification *> *)getNotificationsWithCount:(NSInteger)count;
 
 /**
  @brief This method deletes the notification.

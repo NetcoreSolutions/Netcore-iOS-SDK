@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.5.4 */
+ @version    2.5.5 */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -23,6 +23,12 @@ typedef NS_ENUM(NSUInteger,NCMediaType) {
     NCMediaTypeAudio,
     NCMediaTypeGif,
     NCMediaTypeCarousel,
+};
+
+typedef NS_ENUM(NSUInteger,NCStatus) {
+    NCStatusAll,
+    NCStatusRead,
+    NCStatusUnread
 };
 
 @class NCCarousel,NCActionButton;
@@ -51,11 +57,13 @@ typedef NS_ENUM(NSUInteger,NCMediaType) {
 
 - (instancetype)initWithNotification:(NSArray *)dataArray;
 
-+ (NSArray <NCNotification *>*)getNotifications;
++ (NSArray <NCNotification *> *)getNotifications;
 
-+ (NSArray <NCNotification *>*)getNotificationsWithCount:(NSInteger )count;
++ (NSArray <NCNotification *> *)getNotificationsWithCount:(NSInteger )count;
 
 + (NSUInteger)getUnreadNotificationsCount;
+
++ (NSUInteger)getNotificationsWithCount:(NSUInteger)limit withFilterStatus:(NCStatus)notificationStatus;
 
 + (void)markNotificationAsRead:(NSDictionary *)messageDict autoHandleDeeplink:(BOOL)shouldHandle withDeeplink:(NSString *)deeplink;
 

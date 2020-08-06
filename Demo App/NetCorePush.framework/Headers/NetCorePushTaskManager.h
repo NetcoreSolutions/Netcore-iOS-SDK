@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.5.4 */
+ @version    2.5.5 */
 #import <Foundation/Foundation.h>
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotificationsUI/UserNotificationsUI.h>
@@ -34,7 +34,7 @@ typedef NS_ENUM(NSUInteger, SMTDeeplinkType) {
 /*
   define protocol to return push notifcation deeplinking event
  */
-@protocol NetCorePushTaskManagerDelegate<NSObject>
+@protocol NetCorePushTaskManagerDelegate <NSObject>
 @optional
 
 - (void)handleNotificationOpenAction:(NSDictionary *_Nullable)userInfo DeepLinkType:(NSString *_Nullable)strType;
