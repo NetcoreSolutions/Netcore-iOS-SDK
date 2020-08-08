@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.4.8 */
+ @version    2.5.5 */
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "NetCoreConstant.h"
