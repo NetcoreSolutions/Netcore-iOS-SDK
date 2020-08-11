@@ -7,8 +7,8 @@ Apple clang version 11.0.3 (clang-1103.0.32.62)
 +[NetCoreCommonMethods presentController:]
 ___42+[NetCoreCommonMethods presentController:]_block_invoke
 ___42+[NetCoreCommonMethods presentController:]_block_invoke_2
-___copy_helper_block_e8_40s
-___destroy_helper_block_e8_40s
+___copy_helper_block_e4_24s
+___destroy_helper_block_e4_24s
 +[NetCoreCommonMethods getPresentedController]
 +[NetCoreCommonMethods launchEvent]
 +[NetCoreCommonMethods saveToDefaults:forKey:]
@@ -19,8 +19,8 @@ ___destroy_helper_block_e8_40s
 +[NetCoreCommonMethods getRandomNumber]
 +[NetCoreCommonMethods removeNotificationFromTray:]
 ___51+[NetCoreCommonMethods removeNotificationFromTray:]_block_invoke
-___copy_helper_block_e8_32s
-___destroy_helper_block_e8_32s
+___copy_helper_block_e4_20s
+___destroy_helper_block_e4_20s
 +[NetCoreCommonMethods getAssociateDomain]
 +[NetCoreCommonMethods isAssociateDomainContains:]
 +[NetCoreCommonMethods removeQueryParameter:]
@@ -36,8 +36,8 @@ ___destroy_helper_block_e8_32s
 +[NetCoreCommonMethods MD5String:]
 +[NetCoreCommonMethods checkNotificationPermissionStatus]
 ___57+[NetCoreCommonMethods checkNotificationPermissionStatus]_block_invoke
-___copy_helper_block_e8_
-___destroy_helper_block_e8_
+___copy_helper_block_e4_
+___destroy_helper_block_e4_
 +[NetCoreCommonMethods evaluateAndRecordPushNotificationPermission:]
 +[NetCoreCommonMethods recordPushNotificationPermission:]
 +[NetCoreCommonMethods getSavedDeviceGuid]
@@ -74,7 +74,7 @@ _OBJC_SELECTOR_REFERENCES_.337
 _OBJC_SELECTOR_REFERENCES_.339
 _OBJC_CLASSLIST_REFERENCES_$_.340
 _OBJC_SELECTOR_REFERENCES_.342
-___block_descriptor_48_e8_40s_e5_v8?0l
+___block_descriptor_28_e4_24s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.345
 _OBJC_CLASSLIST_REFERENCES_$_.346
 _OBJC_SELECTOR_REFERENCES_.348
@@ -126,7 +126,7 @@ _OBJC_SELECTOR_REFERENCES_.436
 _OBJC_CLASSLIST_REFERENCES_$_.437
 _OBJC_SELECTOR_REFERENCES_.443
 _OBJC_SELECTOR_REFERENCES_.445
-___block_descriptor_48_e8_32s_e17_v16?0"NSArray"8l
+___block_descriptor_28_e4_20s_e16_v8?0"NSArray"4l
 _OBJC_SELECTOR_REFERENCES_.448
 _OBJC_SELECTOR_REFERENCES_.450
 _OBJC_SELECTOR_REFERENCES_.452
@@ -187,7 +187,7 @@ _OBJC_SELECTOR_REFERENCES_.854
 _OBJC_SELECTOR_REFERENCES_.856
 _OBJC_SELECTOR_REFERENCES_.858
 _OBJC_SELECTOR_REFERENCES_.862
-___block_descriptor_40_e8__e20_v20?0B8"NSError"12l
+___block_descriptor_24_e4__e19_v12?0c4"NSError"8l
 _OBJC_SELECTOR_REFERENCES_.866
 _OBJC_CLASSLIST_REFERENCES_$_.867
 _OBJC_SELECTOR_REFERENCES_.869
@@ -233,16 +233,14 @@ __OBJC_CLASS_RO_$_NetCoreCommonMethods
 _OBJC_LABEL_CLASS_$
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Utitlities/Common Classes/NetCoreCommonMethods.m
 NetCorePush/Utitlities/Common Classes/NetCoreCommonMethods.m
-__destroy_helper_block_e8_
-__copy_helper_block_e8_
+__destroy_helper_block_e4_
+__copy_helper_block_e4_
 __57+[NetCoreCommonMethods checkNotificationPermissionStatus]_block_invoke
-NSMakeRange
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
-__destroy_helper_block_e8_32s
-__copy_helper_block_e8_32s
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20s
 __51+[NetCoreCommonMethods removeNotificationFromTray:]_block_invoke
-__destroy_helper_block_e8_40s
-__copy_helper_block_e8_40s
+__destroy_helper_block_e4_24s
+__copy_helper_block_e4_24s
 __42+[NetCoreCommonMethods presentController:]_block_invoke_2
 __42+[NetCoreCommonMethods presentController:]_block_invoke
 +[NetCoreInstallation sharedInstance]
@@ -254,7 +252,7 @@ ___37+[NetCoreInstallation sharedInstance]_block_invoke
 -[NetCoreInstallation netCorePushRegisteration:withDeviceToken:Block:]
 _sharedInstance.instance
 _sharedInstance.onceToken
-___block_descriptor_40_e8__e5_v8?0l
+___block_descriptor_24_e4__e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.299
 _OBJC_SELECTOR_REFERENCES_.303
 _OBJC_SELECTOR_REFERENCES_.305
@@ -334,7 +332,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.40
 _OBJC_SELECTOR_REFERENCES_.42
 _OBJC_SELECTOR_REFERENCES_.44
 _OBJC_SELECTOR_REFERENCES_.46
-___block_descriptor_40_e8_32s_e25_v32?0"NSString"8Q16^B24l
+___block_descriptor_24_e4_20s_e24_v16?0"NSString"4I8^c12l
 _OBJC_SELECTOR_REFERENCES_.48
 __OBJC_$_CLASS_METHODS_NCNotificationCategoryHelper
 __OBJC_METACLASS_RO_$_NCNotificationCategoryHelper
@@ -372,8 +370,8 @@ NetCorePush/Utitlities/FileManager/NCFileUtilities.m
 ___Block_byref_object_copy_
 ___Block_byref_object_dispose_
 ___34+[NCNotification getNotifications]_block_invoke
-___copy_helper_block_e8_32r
-___destroy_helper_block_e8_32r
+___copy_helper_block_e4_20r
+___destroy_helper_block_e4_20r
 +[NCNotification getNotificationsWithCount:]
 ___44+[NCNotification getNotificationsWithCount:]_block_invoke
 +[NCNotification getUnreadNotificationsCount]
@@ -451,7 +449,7 @@ _OBJC_SELECTOR_REFERENCES_.59
 _OBJC_CLASSLIST_REFERENCES_$_.60
 _OBJC_SELECTOR_REFERENCES_.62
 _OBJC_SELECTOR_REFERENCES_.64
-___block_descriptor_40_e8_32r_e15_v32?08Q16^B24l
+___block_descriptor_24_e4_20r_e14_v16?04I8^c12l
 _OBJC_SELECTOR_REFERENCES_.67
 _OBJC_SELECTOR_REFERENCES_.69
 _OBJC_SELECTOR_REFERENCES_.71
@@ -487,7 +485,6 @@ __OBJC_$_INSTANCE_METHODS_NCNotification
 _OBJC_IVAR_$_NCNotification._isCellExpandable
 _OBJC_IVAR_$_NCNotification._isCellExpanded
 _OBJC_IVAR_$_NCNotification._isNotificationRead
-_OBJC_IVAR_$_NCNotification._mediaType
 _OBJC_IVAR_$_NCNotification._userInfo
 _OBJC_IVAR_$_NCNotification._image
 _OBJC_IVAR_$_NCNotification._dateString
@@ -497,6 +494,7 @@ _OBJC_IVAR_$_NCNotification._bodyString
 _OBJC_IVAR_$_NCNotification._deeplinkString
 _OBJC_IVAR_$_NCNotification._mediaurl
 _OBJC_IVAR_$_NCNotification._trid
+_OBJC_IVAR_$_NCNotification._mediaType
 _OBJC_IVAR_$_NCNotification._customPayload
 _OBJC_IVAR_$_NCNotification._carouselArray
 _OBJC_IVAR_$_NCNotification._actionButtonArray
@@ -540,8 +538,8 @@ NetCorePush/Models/NCNotification/NCNotification.m
 NetCorePush/Models/NCNotification/NCNotification.h
 __33+[NCDateFormatter sharedInstance]_block_invoke
 __44+[NCNotification getNotificationsWithCount:]_block_invoke
-__destroy_helper_block_e8_32r
-__copy_helper_block_e8_32r
+__destroy_helper_block_e4_20r
+__copy_helper_block_e4_20r
 __34+[NCNotification getNotifications]_block_invoke
 __Block_byref_object_dispose_
 __Block_byref_object_copy_
@@ -563,10 +561,10 @@ ___63+[NetCorePayloadConverter arrayFromDictionary:withKeyCaseType:]_block_invok
 _OBJC_CLASSLIST_REFERENCES_$_.8
 _OBJC_CLASSLIST_REFERENCES_$_.22
 _OBJC_CLASSLIST_REFERENCES_$_.23
-___block_descriptor_56_e8_32s_e15_v32?08Q16^B24l
+___block_descriptor_32_e4_20s_e14_v16?04I8^c12l
 _OBJC_SELECTOR_REFERENCES_.32
 _OBJC_SELECTOR_REFERENCES_.34
-___block_descriptor_56_e8_40s_e15_v32?0816^B24l
+___block_descriptor_32_e4_24s_e14_v16?048^c12l
 _OBJC_SELECTOR_REFERENCES_.41
 __OBJC_$_CLASS_METHODS_NetCorePayloadConverter
 __OBJC_METACLASS_RO_$_NetCorePayloadConverter
@@ -790,7 +788,7 @@ ___31+[NCPreferences sharedInstance]_block_invoke
 -[NCPreferences setSharedUserDefault:]
 -[NCPreferences .cxx_destruct]
 _sharedInstance.sharedInstance
-___block_descriptor_32_e5_v8?0l
+___block_descriptor_20_e5_v4?0l
 ___block_literal_global
 _OBJC_CLASSLIST_REFERENCES_$_.3
 _OBJC_CLASSLIST_REFERENCES_$_.11
@@ -825,8 +823,8 @@ __31+[NCPreferences sharedInstance]_block_invoke
 +[NCInAppPersistenceService addRulesWithPayloads:inContext:]
 +[NCInAppPersistenceService incrementAlreadyViewedCountForRule:withFrequencyTypeValue:inContext:]
 ___97+[NCInAppPersistenceService incrementAlreadyViewedCountForRule:withFrequencyTypeValue:inContext:]_block_invoke
-___copy_helper_block_e8_32s40s48s56r
-___destroy_helper_block_e8_32s40s48s56r
+___copy_helper_block_e4_20s24s28s32r
+___destroy_helper_block_e4_20s24s28s32r
 +[NCInAppPersistenceService getAllExistingRulesIdInContext:]
 +[NCInAppPersistenceService getInAppRulesIdenfierFromRules:]
 +[NCInAppPersistenceService getEventNameListFromWhomToRules:forEventName:]
@@ -858,7 +856,7 @@ _OBJC_SELECTOR_REFERENCES_.134
 _OBJC_SELECTOR_REFERENCES_.136
 _OBJC_SELECTOR_REFERENCES_.140
 _OBJC_SELECTOR_REFERENCES_.142
-___block_descriptor_64_e8_32s40s48s56r_e5_v8?0l
+___block_descriptor_36_e4_20s24s28s32r_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.145
 _OBJC_SELECTOR_REFERENCES_.147
 __OBJC_$_CLASS_METHODS_NCInAppPersistenceService
@@ -866,8 +864,8 @@ __OBJC_METACLASS_RO_$_NCInAppPersistenceService
 __OBJC_CLASS_RO_$_NCInAppPersistenceService
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Database/Services/NCInAppPersistenceService.m
 NetCorePush/Database/Services/NCInAppPersistenceService.m
-__destroy_helper_block_e8_32s40s48s56r
-__copy_helper_block_e8_32s40s48s56r
+__destroy_helper_block_e4_20s24s28s32r
+__copy_helper_block_e4_20s24s28s32r
 __97+[NCInAppPersistenceService incrementAlreadyViewedCountForRule:withFrequencyTypeValue:inContext:]_block_invoke
 +[NCInAppMessageController sharedInstance]
 ___42+[NCInAppMessageController sharedInstance]_block_invoke
@@ -876,8 +874,8 @@ ___42+[NCInAppMessageController sharedInstance]_block_invoke
 -[NCInAppMessageController showMessageWithEventId:eventName:payload:]
 ___69-[NCInAppMessageController showMessageWithEventId:eventName:payload:]_block_invoke
 ___69-[NCInAppMessageController showMessageWithEventId:eventName:payload:]_block_invoke_2
-___copy_helper_block_e8_32s40s48s
-___destroy_helper_block_e8_32s40s48s
+___copy_helper_block_e4_20s24s28s
+___destroy_helper_block_e4_20s24s28s
 -[NCInAppMessageController setupWebControllerAndWindow]
 -[NCInAppMessageController didTapOnView]
 -[NCInAppMessageController onWebViewLoaded:]
@@ -888,8 +886,8 @@ ___destroy_helper_block_e8_32s40s48s
 -[NCInAppMessageController queue]
 -[NCInAppMessageController setQueue:]
 -[NCInAppMessageController .cxx_destruct]
-___block_descriptor_56_e8_32s40s48s_e5_v8?0l
-___block_descriptor_40_e8_32s_e39_v28?0B8"NCInAppEventRule"12"NSURL"20l
+___block_descriptor_32_e4_20s24s28s_e5_v4?0l
+___block_descriptor_24_e4_20s_e38_v16?0c4"NCInAppEventRule"8"NSURL"12l
 _OBJC_CLASSLIST_REFERENCES_$_.35
 _OBJC_CLASSLIST_REFERENCES_$_.45
 _OBJC_SELECTOR_REFERENCES_.47
@@ -920,8 +918,8 @@ __OBJC_CLASS_RO_$_NCInAppMessageController
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Core/InAppMessaging/Controllers/NCInAppMessageController.m
 NetCorePush/Core/InAppMessaging/Controllers/NCInAppMessageController.m
 NetCorePush/Core/InAppMessaging/Controllers/NCInAppMessageController.h
-__destroy_helper_block_e8_32s40s48s
-__copy_helper_block_e8_32s40s48s
+__destroy_helper_block_e4_20s24s28s
+__copy_helper_block_e4_20s24s28s
 __69-[NCInAppMessageController showMessageWithEventId:eventName:payload:]_block_invoke_2
 __69-[NCInAppMessageController showMessageWithEventId:eventName:payload:]_block_invoke
 __42+[NCInAppMessageController sharedInstance]_block_invoke
@@ -984,8 +982,8 @@ NetCorePush/Utitlities/DateUtility/NCDateUtility.m
 +[NCManagedObject fetchRequest]
 +[NCManagedObject fetchAllObjectsInContext:]
 ___44+[NCManagedObject fetchAllObjectsInContext:]_block_invoke
-___copy_helper_block_e8_32s40s48r56r
-___destroy_helper_block_e8_32s40s48r56r
+___copy_helper_block_e4_20s24s28r32r
+___destroy_helper_block_e4_20s24s28r32r
 +[NCManagedObject fetchAllObjectByProperty:inContext:]
 ___54+[NCManagedObject fetchAllObjectByProperty:inContext:]_block_invoke
 +[NCManagedObject fetchAllObjectsWithSortDescriptor:inContext:]
@@ -996,51 +994,51 @@ ___70+[NCManagedObject findObjectsWithPredictate:sortDescriptor:inContext:]_bloc
 ___55+[NCManagedObject findObjectsWithPredictate:inContext:]_block_invoke
 +[NCManagedObject insertNewObjectForEntityWithManagedContext:]
 ___62+[NCManagedObject insertNewObjectForEntityWithManagedContext:]_block_invoke
-___copy_helper_block_e8_40s48r
-___destroy_helper_block_e8_40s48r
+___copy_helper_block_e4_24s28r
+___destroy_helper_block_e4_24s28r
 +[NCManagedObject batchDeleteRequestWithPredictate:inContext:]
 ___62+[NCManagedObject batchDeleteRequestWithPredictate:inContext:]_block_invoke
-___copy_helper_block_e8_32s40s48r
-___destroy_helper_block_e8_32s40s48r
+___copy_helper_block_e4_20s24s28r
+___destroy_helper_block_e4_20s24s28r
 +[NCManagedObject batchUpdateRequestForProperties:withPredictate:inContext:]
 ___76+[NCManagedObject batchUpdateRequestForProperties:withPredictate:inContext:]_block_invoke
 +[NCManagedObject countForObjectsWithPredictate:sortDescriptor:inContext:]
 ___74+[NCManagedObject countForObjectsWithPredictate:sortDescriptor:inContext:]_block_invoke
 -[NCManagedObject save]
 ___23-[NCManagedObject save]_block_invoke
-___copy_helper_block_e8_32s40r
-___destroy_helper_block_e8_32s40r
-___block_descriptor_64_e8_32s40s48r56r_e5_v8?0l
+___copy_helper_block_e4_20s24r
+___destroy_helper_block_e4_20s24r
+___block_descriptor_36_e4_20s24s28r32r_e5_v4?0l
 _OBJC_CLASSLIST_REFERENCES_$_.9
 _OBJC_SELECTOR_REFERENCES_.30
 _OBJC_CLASSLIST_REFERENCES_$_.31
 _OBJC_SELECTOR_REFERENCES_.39
-___block_descriptor_56_e8_40s48r_e5_v8?0l
-___block_descriptor_56_e8_32s40s48r_e5_v8?0l
-___block_descriptor_48_e8_32s40r_e5_v8?0l
+___block_descriptor_32_e4_24s28r_e5_v4?0l
+___block_descriptor_32_e4_20s24s28r_e5_v4?0l
+___block_descriptor_28_e4_20s24r_e5_v4?0l
 __OBJC_$_CLASS_METHODS_NCManagedObject
 __OBJC_METACLASS_RO_$_NCManagedObject
 __OBJC_$_INSTANCE_METHODS_NCManagedObject
 __OBJC_CLASS_RO_$_NCManagedObject
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Database/Entities/NCManagedObject.m
-__destroy_helper_block_e8_32s40r
-__copy_helper_block_e8_32s40r
+__destroy_helper_block_e4_20s24r
+__copy_helper_block_e4_20s24r
 __23-[NCManagedObject save]_block_invoke
 NetCorePush/Database/Entities/NCManagedObject.m
 __74+[NCManagedObject countForObjectsWithPredictate:sortDescriptor:inContext:]_block_invoke
 __76+[NCManagedObject batchUpdateRequestForProperties:withPredictate:inContext:]_block_invoke
-__destroy_helper_block_e8_32s40s48r
-__copy_helper_block_e8_32s40s48r
+__destroy_helper_block_e4_20s24s28r
+__copy_helper_block_e4_20s24s28r
 __62+[NCManagedObject batchDeleteRequestWithPredictate:inContext:]_block_invoke
-__destroy_helper_block_e8_40s48r
-__copy_helper_block_e8_40s48r
+__destroy_helper_block_e4_24s28r
+__copy_helper_block_e4_24s28r
 __62+[NCManagedObject insertNewObjectForEntityWithManagedContext:]_block_invoke
 __55+[NCManagedObject findObjectsWithPredictate:inContext:]_block_invoke
 __70+[NCManagedObject findObjectsWithPredictate:sortDescriptor:inContext:]_block_invoke
 __63+[NCManagedObject fetchAllObjectsWithSortDescriptor:inContext:]_block_invoke
 __54+[NCManagedObject fetchAllObjectByProperty:inContext:]_block_invoke
-__destroy_helper_block_e8_32s40s48r56r
-__copy_helper_block_e8_32s40s48r56r
+__destroy_helper_block_e4_20s24s28r32r
+__copy_helper_block_e4_20s24s28r32r
 __44+[NCManagedObject fetchAllObjectsInContext:]_block_invoke
 +[NetCoreLocationTracker sharedInstance]
 ___40+[NetCoreLocationTracker sharedInstance]_block_invoke
@@ -1124,7 +1122,7 @@ NetCorePush/Utitlities/Logger/NCLogger.m
 +[SMTBoxxAPIManager validateAndGetBoxxReco:withCompletionBlock:]
 +[SMTBoxxAPIManager callBoxxAPI:withCompletionBlock:]
 ___53+[SMTBoxxAPIManager callBoxxAPI:withCompletionBlock:]_block_invoke
-___copy_helper_block_e8_40b
+___copy_helper_block_e4_24b
 +[SMTBoxxAPIManager getAPIResponse:statusMessage:andResponse:]
 _OBJC_SELECTOR_REFERENCES_.314
 _OBJC_CLASSLIST_REFERENCES_$_.330
@@ -1136,7 +1134,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.356
 _OBJC_SELECTOR_REFERENCES_.369
 _OBJC_SELECTOR_REFERENCES_.373
 _OBJC_SELECTOR_REFERENCES_.375
-___block_descriptor_48_e8_40bs_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+___block_descriptor_28_e4_24bs_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
 _OBJC_SELECTOR_REFERENCES_.382
 _OBJC_CLASSLIST_REFERENCES_$_.385
 _OBJC_CLASSLIST_REFERENCES_$_.386
@@ -1146,7 +1144,7 @@ __OBJC_METACLASS_RO_$_SMTBoxxAPIManager
 __OBJC_CLASS_RO_$_SMTBoxxAPIManager
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Models/BoxxAPIManager/SMTBoxxAPIManager.m
 NetCorePush/Models/BoxxAPIManager/SMTBoxxAPIManager.m
-__copy_helper_block_e8_40b
+__copy_helper_block_e4_24b
 __53+[SMTBoxxAPIManager callBoxxAPI:withCompletionBlock:]_block_invoke
 -[SMTBoxxRequestQuery toNSDictionary]
 -[SMTBoxxRequestQuery relatedActionType]
@@ -1252,8 +1250,8 @@ NetCorePush/Utitlities/JsonParser/InAppMessageParser/NCInAppRuleParser.m
 +[NCInAppRuleEvaluator evaluateWhereTo:withPayload:]
 +[NCInAppRuleEvaluator evaluateWhomTo:forRuleEvent:withPayload:]
 ___64+[NCInAppRuleEvaluator evaluateWhomTo:forRuleEvent:withPayload:]_block_invoke
-___copy_helper_block_e8_32s48s56s64r72r
-___destroy_helper_block_e8_32s48s56s64r72r
+___copy_helper_block_e4_20s28s32s36r40r
+___destroy_helper_block_e4_20s28s32s36r40r
 +[NCInAppRuleEvaluator evaluateFilters:withFilterType:withPayload:]
 +[NCInAppRuleEvaluator applyNestedFilterWithOperation:operator:filterValue:keys:withPayload:]
 +[NCInAppRuleEvaluator applyFilterWithOperation:operator:filterValue:withValue:]
@@ -1261,8 +1259,8 @@ ___destroy_helper_block_e8_32s48s56s64r72r
 +[NCInAppRuleEvaluator applyNumericOperationWithOperator:filterValue:withValue:]
 +[NCInAppRuleEvaluator checkWhenToTime:forDate:]
 ___48+[NCInAppRuleEvaluator checkWhenToTime:forDate:]_block_invoke
-___copy_helper_block_e8_32s40s
-___destroy_helper_block_e8_32s40s
+___copy_helper_block_e4_20s24s
+___destroy_helper_block_e4_20s24s
 +[NCInAppRuleEvaluator compareIds:idList:]
 +[NCInAppRuleEvaluator checkIfEventPerformedAfter:forEvent:inEventsArray:]
 +[NCInAppRuleEvaluator checkIfEventPerformed:inEventsArray:]
@@ -1270,14 +1268,14 @@ ___destroy_helper_block_e8_32s40s
 ___84+[NCInAppRuleEvaluator executeInAppRuleAfter:forRule:forRuleEvent:withEventPayload:]_block_invoke
 ___84+[NCInAppRuleEvaluator executeInAppRuleAfter:forRule:forRuleEvent:withEventPayload:]_block_invoke_2
 ___84+[NCInAppRuleEvaluator executeInAppRuleAfter:forRule:forRuleEvent:withEventPayload:]_block_invoke_3
-___copy_helper_block_e8_40s48s56s64r
-___destroy_helper_block_e8_40s48s56s64r
+___copy_helper_block_e4_24s28s32s36r
+___destroy_helper_block_e4_24s28s32s36r
 ___84+[NCInAppRuleEvaluator executeInAppRuleAfter:forRule:forRuleEvent:withEventPayload:]_block_invoke.559
-___copy_helper_block_e8_40s48s
-___destroy_helper_block_e8_40s48s
+___copy_helper_block_e4_24s28s
+___destroy_helper_block_e4_24s28s
 +[NCInAppRuleEvaluator performOperation:forRule:completion:]
 ___60+[NCInAppRuleEvaluator performOperation:forRule:completion:]_block_invoke
-___copy_helper_block_e8_32b40s
+___copy_helper_block_e4_20b24s
 _OBJC_CLASSLIST_REFERENCES_$_.332
 _OBJC_SELECTOR_REFERENCES_.362
 _OBJC_SELECTOR_REFERENCES_.366
@@ -1292,7 +1290,7 @@ _OBJC_SELECTOR_REFERENCES_.428
 _OBJC_SELECTOR_REFERENCES_.432
 _OBJC_SELECTOR_REFERENCES_.440
 _OBJC_SELECTOR_REFERENCES_.442
-___block_descriptor_80_e8_32s48s56s64r72r_e24_v32?0"NCRules"8Q16^B24l
+___block_descriptor_44_e4_20s28s32s36r40r_e23_v16?0"NCRules"4I8^c12l
 _OBJC_SELECTOR_REFERENCES_.449
 _OBJC_SELECTOR_REFERENCES_.451
 _OBJC_SELECTOR_REFERENCES_.459
@@ -1317,13 +1315,13 @@ _OBJC_SELECTOR_REFERENCES_.527
 _OBJC_SELECTOR_REFERENCES_.529
 _OBJC_SELECTOR_REFERENCES_.531
 _OBJC_SELECTOR_REFERENCES_.533
-___block_descriptor_48_e8_32s40s_e23_v32?0"NCTime"8Q16^B24l
+___block_descriptor_28_e4_20s24s_e22_v16?0"NCTime"4I8^c12l
 _OBJC_SELECTOR_REFERENCES_.536
 _OBJC_CLASSLIST_REFERENCES_$_.539
 _OBJC_CLASSLIST_REFERENCES_$_.540
 _OBJC_SELECTOR_REFERENCES_.542
 _OBJC_SELECTOR_REFERENCES_.544
-___block_descriptor_72_e8_40s48s56s64r_e29_v32?0"NSDictionary"8Q16^B24l
+___block_descriptor_40_e4_24s28s32s36r_e28_v16?0"NSDictionary"4I8^c12l
 _OBJC_CLASSLIST_REFERENCES_$_.551
 _OBJC_SELECTOR_REFERENCES_.553
 _OBJC_SELECTOR_REFERENCES_.555
@@ -1331,36 +1329,36 @@ _OBJC_CLASSLIST_REFERENCES_$_.556
 _OBJC_SELECTOR_REFERENCES_.558
 _OBJC_CLASSLIST_REFERENCES_$_.560
 _OBJC_SELECTOR_REFERENCES_.562
-___block_descriptor_56_e8_32s40s48r_e8_v12?0B8l
+___block_descriptor_32_e4_20s24s28r_e7_v8?0c4l
 _OBJC_SELECTOR_REFERENCES_.565
-___block_descriptor_48_e8_32s_e26_v16?0"NCInAppEventRule"8l
+___block_descriptor_28_e4_20s_e25_v8?0"NCInAppEventRule"4l
 _OBJC_SELECTOR_REFERENCES_.568
-___block_descriptor_64_e8_40s48s_e5_v8?0l
+___block_descriptor_36_e4_24s28s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.572
 _OBJC_CLASSLIST_REFERENCES_$_.573
 _OBJC_SELECTOR_REFERENCES_.575
 _OBJC_SELECTOR_REFERENCES_.577
-___block_descriptor_48_e8_32bs40s_e5_v8?0l
+___block_descriptor_28_e4_20bs24s_e5_v4?0l
 __OBJC_$_CLASS_METHODS_NCInAppRuleEvaluator
 __OBJC_METACLASS_RO_$_NCInAppRuleEvaluator
 __OBJC_CLASS_RO_$_NCInAppRuleEvaluator
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Core/InAppMessaging/InAppUtility/NCInAppRuleEvaluator.m
-__copy_helper_block_e8_32b40s
+__copy_helper_block_e4_20b24s
 __60+[NCInAppRuleEvaluator performOperation:forRule:completion:]_block_invoke
 NetCorePush/Core/InAppMessaging/InAppUtility/NCInAppRuleEvaluator.m
-__destroy_helper_block_e8_40s48s
-__copy_helper_block_e8_40s48s
+__destroy_helper_block_e4_24s28s
+__copy_helper_block_e4_24s28s
 __84+[NCInAppRuleEvaluator executeInAppRuleAfter:forRule:forRuleEvent:withEventPayload:]_block_invoke.559
-__destroy_helper_block_e8_40s48s56s64r
-__copy_helper_block_e8_40s48s56s64r
+__destroy_helper_block_e4_24s28s32s36r
+__copy_helper_block_e4_24s28s32s36r
 __84+[NCInAppRuleEvaluator executeInAppRuleAfter:forRule:forRuleEvent:withEventPayload:]_block_invoke_3
 __84+[NCInAppRuleEvaluator executeInAppRuleAfter:forRule:forRuleEvent:withEventPayload:]_block_invoke_2
 __84+[NCInAppRuleEvaluator executeInAppRuleAfter:forRule:forRuleEvent:withEventPayload:]_block_invoke
-__destroy_helper_block_e8_32s40s
-__copy_helper_block_e8_32s40s
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20s24s
 __48+[NCInAppRuleEvaluator checkWhenToTime:forDate:]_block_invoke
-__destroy_helper_block_e8_32s48s56s64r72r
-__copy_helper_block_e8_32s48s56s64r72r
+__destroy_helper_block_e4_20s28s32s36r40r
+__copy_helper_block_e4_20s28s32s36r40r
 __64+[NCInAppRuleEvaluator evaluateWhomTo:forRuleEvent:withPayload:]_block_invoke
 __inline_isnand
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/usr/include/math.h
@@ -1399,7 +1397,7 @@ ___38+[NetCoreSharedManager sharedInstance]_block_invoke
 -[NetCoreSharedManager init]
 -[NetCoreSharedManager setUpApplicationId:]
 ___43-[NetCoreSharedManager setUpApplicationId:]_block_invoke
-___43-[NetCoreSharedManager setUpApplicationId:]_block_invoke.414
+___43-[NetCoreSharedManager setUpApplicationId:]_block_invoke.416
 -[NetCoreSharedManager getGUID]
 -[NetCoreSharedManager getUserAgent]
 ___36-[NetCoreSharedManager getUserAgent]_block_invoke
@@ -1416,6 +1414,8 @@ ___53-[NetCoreSharedManager registerForPushNotifications:]_block_invoke
 ___53-[NetCoreSharedManager registerForPushNotifications:]_block_invoke_2
 ___53-[NetCoreSharedManager registerForPushNotifications:]_block_invoke_3
 -[NetCoreSharedManager handleApplicationLaunchEvent:forApplicationId:]
+-[NetCoreSharedManager loadStoredDatabase]
+___42-[NetCoreSharedManager loadStoredDatabase]_block_invoke
 -[NetCoreSharedManager getUserMetaData]
 ___39-[NetCoreSharedManager getUserMetaData]_block_invoke
 -[NetCoreSharedManager setDeepLinkQueryParameters:]
@@ -1447,112 +1447,125 @@ ___53-[NetCoreSharedManager getAppGroupDataToUserDefault:]_block_invoke
 -[NetCoreSharedManager webView]
 -[NetCoreSharedManager setWebView:]
 -[NetCoreSharedManager .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.311
-_OBJC_CLASSLIST_REFERENCES_$_.314
-_OBJC_CLASSLIST_REFERENCES_$_.325
-___block_descriptor_40_e8_32s_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.336
-_OBJC_CLASSLIST_REFERENCES_$_.349
-_OBJC_CLASSLIST_REFERENCES_$_.363
-_OBJC_CLASSLIST_REFERENCES_$_.372
+___block_descriptor_24_e4_20s_e5_v4?0l
+_OBJC_CLASSLIST_REFERENCES_$_.338
+_OBJC_CLASSLIST_REFERENCES_$_.351
+_OBJC_CLASSLIST_REFERENCES_$_.354
+_OBJC_SELECTOR_REFERENCES_.364
+_OBJC_CLASSLIST_REFERENCES_$_.365
+_OBJC_CLASSLIST_REFERENCES_$_.374
 _OBJC_SELECTOR_REFERENCES_.378
 _OBJC_SELECTOR_REFERENCES_.384
-_OBJC_SELECTOR_REFERENCES_.398
-_OBJC_CLASSLIST_REFERENCES_$_.417
-_OBJC_SELECTOR_REFERENCES_.419
-_OBJC_CLASSLIST_REFERENCES_$_.420
-_OBJC_CLASSLIST_REFERENCES_$_.435
-_OBJC_SELECTOR_REFERENCES_.437
-_OBJC_CLASSLIST_REFERENCES_$_.438
+_OBJC_SELECTOR_REFERENCES_.400
+_OBJC_SELECTOR_REFERENCES_.410
+_OBJC_CLASSLIST_REFERENCES_$_.411
+_OBJC_SELECTOR_REFERENCES_.415
+_OBJC_CLASSLIST_REFERENCES_$_.419
+_OBJC_SELECTOR_REFERENCES_.421
+_OBJC_CLASSLIST_REFERENCES_$_.422
+_OBJC_SELECTOR_REFERENCES_.430
+_OBJC_SELECTOR_REFERENCES_.439
+_OBJC_CLASSLIST_REFERENCES_$_.440
 _OBJC_SELECTOR_REFERENCES_.444
-_OBJC_CLASSLIST_REFERENCES_$_.453
-_OBJC_SELECTOR_REFERENCES_.455
-___block_descriptor_48_e8_32s40r_e20_v24?08"NSError"16l
-_OBJC_SELECTOR_REFERENCES_.468
-_OBJC_CLASSLIST_REFERENCES_$_.475
-_OBJC_SELECTOR_REFERENCES_.477
+_OBJC_SELECTOR_REFERENCES_.446
+_OBJC_SELECTOR_REFERENCES_.454
+_OBJC_CLASSLIST_REFERENCES_$_.455
+_OBJC_SELECTOR_REFERENCES_.457
+___block_descriptor_28_e4_20s24r_e19_v12?04"NSError"8l
+_OBJC_CLASSLIST_REFERENCES_$_.477
 _OBJC_SELECTOR_REFERENCES_.479
 _OBJC_SELECTOR_REFERENCES_.489
-_OBJC_CLASSLIST_REFERENCES_$_.490
-_OBJC_SELECTOR_REFERENCES_.492
-_OBJC_CLASSLIST_REFERENCES_$_.495
+_OBJC_SELECTOR_REFERENCES_.496
+_OBJC_CLASSLIST_REFERENCES_$_.497
 _OBJC_SELECTOR_REFERENCES_.499
 _OBJC_SELECTOR_REFERENCES_.501
 _OBJC_SELECTOR_REFERENCES_.505
-_OBJC_CLASSLIST_REFERENCES_$_.508
-_OBJC_SELECTOR_REFERENCES_.510
-___block_literal_global.511
-_OBJC_CLASSLIST_REFERENCES_$_.512
-_OBJC_SELECTOR_REFERENCES_.514
+_OBJC_SELECTOR_REFERENCES_.509
+_OBJC_CLASSLIST_REFERENCES_$_.510
+_OBJC_SELECTOR_REFERENCES_.512
+___block_literal_global.513
+_OBJC_CLASSLIST_REFERENCES_$_.514
 _OBJC_SELECTOR_REFERENCES_.516
 _OBJC_SELECTOR_REFERENCES_.518
 _OBJC_SELECTOR_REFERENCES_.520
-___block_descriptor_33_e5_v8?0l
-___block_descriptor_33_e20_v20?0B8"NSError"12l
-_OBJC_CLASSLIST_REFERENCES_$_.526
-_OBJC_SELECTOR_REFERENCES_.528
+___block_descriptor_21_e5_v4?0l
+___block_descriptor_21_e19_v12?0c4"NSError"8l
+_OBJC_CLASSLIST_REFERENCES_$_.528
 _OBJC_SELECTOR_REFERENCES_.530
-_OBJC_CLASSLIST_REFERENCES_$_.531
+_OBJC_SELECTOR_REFERENCES_.532
+_OBJC_CLASSLIST_REFERENCES_$_.533
 _OBJC_SELECTOR_REFERENCES_.535
-_OBJC_CLASSLIST_REFERENCES_$_.536
-_OBJC_SELECTOR_REFERENCES_.538
+_OBJC_SELECTOR_REFERENCES_.537
+_OBJC_CLASSLIST_REFERENCES_$_.538
 _OBJC_SELECTOR_REFERENCES_.540
-_OBJC_SELECTOR_REFERENCES_.546
-_OBJC_CLASSLIST_REFERENCES_$_.547
-_OBJC_CLASSLIST_REFERENCES_$_.558
-___block_descriptor_32_e11_v24?0q816l
-___block_literal_global.560
-_OBJC_SELECTOR_REFERENCES_.564
-_OBJC_SELECTOR_REFERENCES_.566
-_OBJC_SELECTOR_REFERENCES_.574
-_OBJC_SELECTOR_REFERENCES_.576
-_OBJC_SELECTOR_REFERENCES_.578
-_OBJC_SELECTOR_REFERENCES_.580
-_OBJC_SELECTOR_REFERENCES_.584
-_OBJC_SELECTOR_REFERENCES_.586
-_OBJC_SELECTOR_REFERENCES_.588
-_OBJC_SELECTOR_REFERENCES_.592
-_OBJC_SELECTOR_REFERENCES_.594
-_OBJC_SELECTOR_REFERENCES_.598
-_OBJC_SELECTOR_REFERENCES_.600
-_OBJC_SELECTOR_REFERENCES_.602
-_OBJC_SELECTOR_REFERENCES_.604
-_OBJC_SELECTOR_REFERENCES_.606
-_OBJC_SELECTOR_REFERENCES_.608
-_OBJC_SELECTOR_REFERENCES_.610
-_OBJC_SELECTOR_REFERENCES_.612
-_OBJC_SELECTOR_REFERENCES_.614
-_OBJC_CLASSLIST_REFERENCES_$_.615
+_OBJC_CLASSLIST_REFERENCES_$_.545
+_OBJC_SELECTOR_REFERENCES_.547
+_OBJC_CLASSLIST_REFERENCES_$_.548
+_OBJC_SELECTOR_REFERENCES_.550
+_OBJC_SELECTOR_REFERENCES_.552
+___block_descriptor_24_e4_20s_e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.559
+_OBJC_SELECTOR_REFERENCES_.561
+_OBJC_SELECTOR_REFERENCES_.563
+_OBJC_CLASSLIST_REFERENCES_$_.564
+_OBJC_SELECTOR_REFERENCES_.570
+_OBJC_CLASSLIST_REFERENCES_$_.575
+___block_descriptor_20_e10_v12?0i48l
+___block_literal_global.577
+_OBJC_SELECTOR_REFERENCES_.579
+_OBJC_SELECTOR_REFERENCES_.581
+_OBJC_SELECTOR_REFERENCES_.583
+_OBJC_SELECTOR_REFERENCES_.585
+_OBJC_SELECTOR_REFERENCES_.589
+_OBJC_SELECTOR_REFERENCES_.591
+_OBJC_SELECTOR_REFERENCES_.593
+_OBJC_SELECTOR_REFERENCES_.595
+_OBJC_SELECTOR_REFERENCES_.597
+_OBJC_SELECTOR_REFERENCES_.601
+_OBJC_SELECTOR_REFERENCES_.603
+_OBJC_SELECTOR_REFERENCES_.605
+_OBJC_SELECTOR_REFERENCES_.609
+_OBJC_SELECTOR_REFERENCES_.611
+_OBJC_SELECTOR_REFERENCES_.615
 _OBJC_SELECTOR_REFERENCES_.617
 _OBJC_SELECTOR_REFERENCES_.619
 _OBJC_SELECTOR_REFERENCES_.621
 _OBJC_SELECTOR_REFERENCES_.623
 _OBJC_SELECTOR_REFERENCES_.625
 _OBJC_SELECTOR_REFERENCES_.627
-_OBJC_CLASSLIST_REFERENCES_$_.628
-_OBJC_SELECTOR_REFERENCES_.630
-_OBJC_SELECTOR_REFERENCES_.632
+_OBJC_SELECTOR_REFERENCES_.629
+_OBJC_SELECTOR_REFERENCES_.631
+_OBJC_CLASSLIST_REFERENCES_$_.632
 _OBJC_SELECTOR_REFERENCES_.634
 _OBJC_SELECTOR_REFERENCES_.636
-___block_descriptor_48_e8_32s40s_e25_v32?0"NSString"8Q16^B24l
-_OBJC_SELECTOR_REFERENCES_.639
-_OBJC_SELECTOR_REFERENCES_.641
-_OBJC_SELECTOR_REFERENCES_.643
-_OBJC_SELECTOR_REFERENCES_.645
+_OBJC_SELECTOR_REFERENCES_.638
+_OBJC_SELECTOR_REFERENCES_.640
+_OBJC_SELECTOR_REFERENCES_.642
+_OBJC_SELECTOR_REFERENCES_.644
+_OBJC_CLASSLIST_REFERENCES_$_.645
 _OBJC_SELECTOR_REFERENCES_.647
-_OBJC_CLASSLIST_REFERENCES_$_.648
-_OBJC_CLASSLIST_REFERENCES_$_.649
+_OBJC_SELECTOR_REFERENCES_.649
 _OBJC_SELECTOR_REFERENCES_.651
 _OBJC_SELECTOR_REFERENCES_.653
-_OBJC_SELECTOR_REFERENCES_.655
-_OBJC_CLASSLIST_REFERENCES_$_.656
+___block_descriptor_28_e4_20s24s_e24_v16?0"NSString"4I8^c12l
+_OBJC_SELECTOR_REFERENCES_.656
 _OBJC_SELECTOR_REFERENCES_.658
-_OBJC_CLASSLIST_REFERENCES_$_.659
-_OBJC_SELECTOR_REFERENCES_.661
-_OBJC_SELECTOR_REFERENCES_.663
-_OBJC_SELECTOR_REFERENCES_.665
-_OBJC_SELECTOR_REFERENCES_.667
-_OBJC_SELECTOR_REFERENCES_.669
+_OBJC_SELECTOR_REFERENCES_.660
+_OBJC_SELECTOR_REFERENCES_.662
+_OBJC_SELECTOR_REFERENCES_.664
+_OBJC_CLASSLIST_REFERENCES_$_.665
+_OBJC_CLASSLIST_REFERENCES_$_.666
+_OBJC_SELECTOR_REFERENCES_.668
+_OBJC_SELECTOR_REFERENCES_.670
+_OBJC_SELECTOR_REFERENCES_.672
+_OBJC_CLASSLIST_REFERENCES_$_.673
+_OBJC_SELECTOR_REFERENCES_.675
+_OBJC_CLASSLIST_REFERENCES_$_.676
+_OBJC_SELECTOR_REFERENCES_.678
+_OBJC_SELECTOR_REFERENCES_.680
+_OBJC_SELECTOR_REFERENCES_.682
+_OBJC_SELECTOR_REFERENCES_.684
+_OBJC_SELECTOR_REFERENCES_.686
 __OBJC_$_CLASS_METHODS_NetCoreSharedManager
 __OBJC_$_PROTOCOL_REFS_UNUserNotificationCenterDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UNUserNotificationCenterDelegate
@@ -1572,11 +1585,12 @@ NetCorePush/Core/SharedManager/NetCoreSharedManager.m
 __53-[NetCoreSharedManager getAppGroupDataToUserDefault:]_block_invoke
 __31-[NetCoreSharedManager optOut:]_block_invoke
 __39-[NetCoreSharedManager getUserMetaData]_block_invoke
+__42-[NetCoreSharedManager loadStoredDatabase]_block_invoke
 __53-[NetCoreSharedManager registerForPushNotifications:]_block_invoke_3
 __53-[NetCoreSharedManager registerForPushNotifications:]_block_invoke_2
 __53-[NetCoreSharedManager registerForPushNotifications:]_block_invoke
 __36-[NetCoreSharedManager getUserAgent]_block_invoke
-__43-[NetCoreSharedManager setUpApplicationId:]_block_invoke.414
+__43-[NetCoreSharedManager setUpApplicationId:]_block_invoke.416
 __43-[NetCoreSharedManager setUpApplicationId:]_block_invoke
 __38+[NetCoreSharedManager sharedInstance]_block_invoke
 __OBJC_METACLASS_RO_$_NCConstants
@@ -1589,6 +1603,7 @@ __OBJC_CLASS_RO_$_NCConstants
 -[NetcoreHandler handleAppWhenActive:]
 -[NetcoreHandler handleAppWillTerminate:]
 _OBJC_CLASSLIST_REFERENCES_$_.302
+_OBJC_CLASSLIST_REFERENCES_$_.311
 __OBJC_METACLASS_RO_$_NetcoreHandler
 __OBJC_$_INSTANCE_METHODS_NetcoreHandler
 __OBJC_CLASS_RO_$_NetcoreHandler
@@ -1911,12 +1926,13 @@ __tg_round
 __tg_pow
 __tg_floor
 __tg_ceil
+CGPointMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __tg_tan
 __tg_cos
 __tg_sin
 compareViewDepth
 __CGSizeEqualToSize
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 +[NetCoreAppTracking sharedInstance]
 ___36+[NetCoreAppTracking sharedInstance]_block_invoke
 -[NetCoreAppTracking sendAppTrackingEvent:Block:]
@@ -1927,7 +1943,7 @@ ___74-[NetCoreAppTracking sendAppTrackingEventWithCustomPayload:Payload:Block:]_
 _OBJC_CLASSLIST_REFERENCES_$_.305
 _OBJC_CLASSLIST_REFERENCES_$_.308
 _OBJC_CLASSLIST_REFERENCES_$_.317
-___block_descriptor_32_e8_v16?0q8l
+___block_descriptor_20_e7_v8?0i4l
 _OBJC_CLASSLIST_REFERENCES_$_.321
 __OBJC_$_CLASS_METHODS_NetCoreAppTracking
 __OBJC_METACLASS_RO_$_NetCoreAppTracking
@@ -1941,22 +1957,22 @@ __36+[NetCoreAppTracking sharedInstance]_block_invoke
 ___37+[NetCorePopupManager sharedInstance]_block_invoke
 -[NetCorePopupManager getPopupConfigurationData]
 ___48-[NetCorePopupManager getPopupConfigurationData]_block_invoke
-___copy_helper_block_e8_32s40w
-___destroy_helper_block_e8_32s40w
+___copy_helper_block_e4_20s24w
+___destroy_helper_block_e4_20s24w
 -[NetCorePopupManager parseResult:withSelf:]
 ___44-[NetCorePopupManager parseResult:withSelf:]_block_invoke
 -[NetCorePopupManager sendEventWithId:deepLink:]
 ___48-[NetCorePopupManager sendEventWithId:deepLink:]_block_invoke
 -[NetCorePopupManager validateListAndSegments:completionHandler:]
 ___65-[NetCorePopupManager validateListAndSegments:completionHandler:]_block_invoke
-___copy_helper_block_e8_32s40s48b56r
+___copy_helper_block_e4_20s24s28b32r
 -[NetCorePopupManager parseListAndSegmentData:]
-___block_descriptor_48_e8_32s40w_e11_v24?0q816l
+___block_descriptor_28_e4_20s24w_e10_v12?0i48l
 _OBJC_CLASSLIST_REFERENCES_$_.318
-___block_descriptor_40_e8_32s_e32_v16?0"NSManagedObjectContext"8l
+___block_descriptor_24_e4_20s_e31_v8?0"NSManagedObjectContext"4l
 _OBJC_CLASSLIST_REFERENCES_$_.334
-_OBJC_CLASSLIST_REFERENCES_$_.338
 _OBJC_CLASSLIST_REFERENCES_$_.358
+_OBJC_CLASSLIST_REFERENCES_$_.363
 ___block_literal_global.367
 _OBJC_CLASSLIST_REFERENCES_$_.382
 _OBJC_CLASSLIST_REFERENCES_$_.387
@@ -1964,7 +1980,7 @@ _OBJC_SELECTOR_REFERENCES_.389
 _OBJC_SELECTOR_REFERENCES_.391
 _OBJC_CLASSLIST_REFERENCES_$_.400
 _OBJC_SELECTOR_REFERENCES_.402
-___block_descriptor_64_e8_32s40s48bs56r_e11_v24?0q816l
+___block_descriptor_36_e4_20s24s28bs32r_e10_v12?0i48l
 _OBJC_CLASSLIST_REFERENCES_$_.405
 _OBJC_SELECTOR_REFERENCES_.407
 _OBJC_SELECTOR_REFERENCES_.409
@@ -1974,12 +1990,12 @@ __OBJC_$_INSTANCE_METHODS_NetCorePopupManager
 __OBJC_CLASS_RO_$_NetCorePopupManager
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Core/InAppMessaging/NetCorePopupManager.m
 NetCorePush/Core/InAppMessaging/NetCorePopupManager.m
-__copy_helper_block_e8_32s40s48b56r
+__copy_helper_block_e4_20s24s28b32r
 __65-[NetCorePopupManager validateListAndSegments:completionHandler:]_block_invoke
 __48-[NetCorePopupManager sendEventWithId:deepLink:]_block_invoke
 __44-[NetCorePopupManager parseResult:withSelf:]_block_invoke
-__destroy_helper_block_e8_32s40w
-__copy_helper_block_e8_32s40w
+__destroy_helper_block_e4_20s24w
+__copy_helper_block_e4_20s24w
 __48-[NetCorePopupManager getPopupConfigurationData]_block_invoke
 __37+[NetCorePopupManager sharedInstance]_block_invoke
 +[NCPreferencesManager getAllSmartechStoredPreferences]
@@ -2026,10 +2042,10 @@ ___38+[NCCoreDataController sharedInstance]_block_invoke
 -[NCCoreDataController loadStoreAtPath:withCompletionHandler:]
 ___62-[NCCoreDataController loadStoreAtPath:withCompletionHandler:]_block_invoke
 ___62-[NCCoreDataController loadStoreAtPath:withCompletionHandler:]_block_invoke_2
-___copy_helper_block_e8_32s40b48w
-___destroy_helper_block_e8_32s40s48w
+___copy_helper_block_e4_20s24b28w
+___destroy_helper_block_e4_20s24s28w
 ___62-[NCCoreDataController loadStoreAtPath:withCompletionHandler:]_block_invoke.50
-___copy_helper_block_e8_32s40s48b
+___copy_helper_block_e4_20s24s28b
 -[NCCoreDataController viewContext]
 -[NCCoreDataController newBackgroundContext]
 -[NCCoreDataController performBackgroundTask:]
@@ -2056,8 +2072,8 @@ ___35-[NCCoreDataController saveContext]_block_invoke
 _OBJC_CLASSLIST_REFERENCES_$_.4
 _OBJC_CLASSLIST_REFERENCES_$_.6
 _OBJC_CLASSLIST_REFERENCES_$_.15
-___block_descriptor_56_e8_32s40bs48w_e50_v24?0"NSPersistentStoreDescription"8"NSError"16l
-___block_descriptor_56_e8_32s40s48bs_e5_v8?0l
+___block_descriptor_32_e4_20s24bs28w_e49_v12?0"NSPersistentStoreDescription"4"NSError"8l
+___block_descriptor_32_e4_20s24s28bs_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.66
 _OBJC_SELECTOR_REFERENCES_.70
 _OBJC_CLASSLIST_REFERENCES_$_.75
@@ -2087,24 +2103,24 @@ __OBJC_CLASS_RO_$_NCCoreDataController
 NetCorePush/Database/Factory/NCCoreDataController.m
 NetCorePush/Database/Factory/NCCoreDataController.h
 __35-[NCCoreDataController saveContext]_block_invoke
-__copy_helper_block_e8_32s40s48b
+__copy_helper_block_e4_20s24s28b
 __62-[NCCoreDataController loadStoreAtPath:withCompletionHandler:]_block_invoke.50
-__destroy_helper_block_e8_32s40s48w
-__copy_helper_block_e8_32s40b48w
+__destroy_helper_block_e4_20s24s28w
+__copy_helper_block_e4_20s24b28w
 __62-[NCCoreDataController loadStoreAtPath:withCompletionHandler:]_block_invoke_2
 __62-[NCCoreDataController loadStoreAtPath:withCompletionHandler:]_block_invoke
 __38+[NCCoreDataController sharedInstance]_block_invoke
 -[SMTNotificationServiceExtension didReceiveNotificationRequest:withContentHandler:]
 ___84-[SMTNotificationServiceExtension didReceiveNotificationRequest:withContentHandler:]_block_invoke
-___copy_helper_block_e8_32b
+___copy_helper_block_e4_20b
 -[SMTNotificationServiceExtension serviceExtensionTimeWillExpire]
-___block_descriptor_40_e8_32bs_e31_v16?0"UNNotificationContent"8l
+___block_descriptor_24_e4_20bs_e30_v8?0"UNNotificationContent"4l
 __OBJC_METACLASS_RO_$_SMTNotificationServiceExtension
 __OBJC_$_INSTANCE_METHODS_SMTNotificationServiceExtension
 __OBJC_CLASS_RO_$_SMTNotificationServiceExtension
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/SMTNotificationExtension/SMTNotificationServiceExtension.m
 NetCorePush/SMTNotificationExtension/SMTNotificationServiceExtension.m
-__copy_helper_block_e8_32b
+__copy_helper_block_e4_20b
 __84-[SMTNotificationServiceExtension didReceiveNotificationRequest:withContentHandler:]_block_invoke
 +[NCReachability reachabilityWithHostName:]
 +[NCReachability reachabilityWithAddress:]
@@ -2142,13 +2158,13 @@ ReachabilityCallback
 -[NetCoreEventModel .cxx_destruct]
 __OBJC_METACLASS_RO_$_NetCoreEventModel
 __OBJC_$_INSTANCE_METHODS_NetCoreEventModel
-_OBJC_IVAR_$_NetCoreEventModel._eventID
-_OBJC_IVAR_$_NetCoreEventModel._eventSyncStatus
 _OBJC_IVAR_$_NetCoreEventModel._strEventName
 _OBJC_IVAR_$_NetCoreEventModel._mEventName
 _OBJC_IVAR_$_NetCoreEventModel._strEventData
 _OBJC_IVAR_$_NetCoreEventModel._eventPayloadData
 _OBJC_IVAR_$_NetCoreEventModel._eventTime
+_OBJC_IVAR_$_NetCoreEventModel._eventID
+_OBJC_IVAR_$_NetCoreEventModel._eventSyncStatus
 __OBJC_$_INSTANCE_VARIABLES_NetCoreEventModel
 __OBJC_$_PROP_LIST_NetCoreEventModel
 __OBJC_CLASS_RO_$_NetCoreEventModel
@@ -2246,7 +2262,6 @@ __34+[NetCoreDataModel sharedInstance]_block_invoke
 +[Smartech sharedInstance]
 ___26+[Smartech sharedInstance]_block_invoke
 -[Smartech initSDKWithDelegate:withLaunchOptions:]
-___50-[Smartech initSDKWithDelegate:withLaunchOptions:]_block_invoke
 -[Smartech didRegisterForRemoteNotificationsWithDeviceToken:]
 -[Smartech didFailToRegisterForRemoteNotificationsWithError:]
 -[Smartech didReceiveRemoteNotification:]
@@ -2291,18 +2306,11 @@ ___61-[Smartech didReceiveNotificationRequest:withContentHandler:]_block_invoke
 _sharedInstance._onceToken
 __shared
 _OBJC_CLASSLIST_REFERENCES_$_.303
+_OBJC_CLASSLIST_REFERENCES_$_.314
 _OBJC_CLASSLIST_REFERENCES_$_.315
-_OBJC_CLASSLIST_REFERENCES_$_.323
-___block_descriptor_40_e8_32s_e17_v16?0"NSError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.354
-_OBJC_SELECTOR_REFERENCES_.393
-_OBJC_SELECTOR_REFERENCES_.395
-_OBJC_SELECTOR_REFERENCES_.397
+_OBJC_CLASSLIST_REFERENCES_$_.353
 _OBJC_SELECTOR_REFERENCES_.403
 _OBJC_SELECTOR_REFERENCES_.405
-_OBJC_CLASSLIST_REFERENCES_$_.410
-_OBJC_SELECTOR_REFERENCES_.412
-_OBJC_SELECTOR_REFERENCES_.414
 __OBJC_$_CLASS_METHODS_Smartech
 __OBJC_$_PROTOCOL_REFS_NetCorePushTaskManagerDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NetCorePushTaskManagerDelegate
@@ -2321,7 +2329,6 @@ NetCorePush/Smartech.m
 NetCorePush/Smartech.h
 __61-[Smartech didReceiveNotificationRequest:withContentHandler:]_block_invoke
 __41-[Smartech didReceiveRemoteNotification:]_block_invoke
-__50-[Smartech initSDKWithDelegate:withLaunchOptions:]_block_invoke
 __26+[Smartech sharedInstance]_block_invoke
 +[NetcoreHelper checkIfSessionNeedToUpdate]
 +[NetcoreHelper saveDeepLinkParametersForURL:]
@@ -2478,7 +2485,9 @@ __OBJC_$_INSTANCE_VARIABLES_NCEvents
 __OBJC_$_PROP_LIST_NCEvents
 __OBJC_CLASS_RO_$_NCEvents
 _OBJC_CLASSLIST_SUP_REFS_$_.391
-_OBJC_SELECTOR_REFERENCES_.415
+_OBJC_SELECTOR_REFERENCES_.393
+_OBJC_SELECTOR_REFERENCES_.395
+_OBJC_SELECTOR_REFERENCES_.397
 __OBJC_CLASS_PROTOCOLS_$_NCRules
 __OBJC_METACLASS_RO_$_NCRules
 __OBJC_$_INSTANCE_METHODS_NCRules
@@ -2493,7 +2502,6 @@ __OBJC_$_PROP_LIST_NCRules
 __OBJC_CLASS_RO_$_NCRules
 _OBJC_CLASSLIST_SUP_REFS_$_.436
 _OBJC_SELECTOR_REFERENCES_.438
-_OBJC_SELECTOR_REFERENCES_.446
 __OBJC_CLASS_PROTOCOLS_$_NCFilters
 __OBJC_METACLASS_RO_$_NCFilters
 __OBJC_$_INSTANCE_METHODS_NCFilters
@@ -2526,6 +2534,7 @@ __OBJC_$_PROP_LIST_NCWhenTo
 __OBJC_CLASS_RO_$_NCWhenTo
 _OBJC_CLASSLIST_SUP_REFS_$_.502
 _OBJC_SELECTOR_REFERENCES_.508
+_OBJC_SELECTOR_REFERENCES_.510
 __OBJC_CLASS_PROTOCOLS_$_NCTime
 __OBJC_METACLASS_RO_$_NCTime
 __OBJC_$_INSTANCE_METHODS_NCTime
@@ -2567,7 +2576,7 @@ ___28-[NCDBManager addEventWith:]_block_invoke
 -[NCDBManager isSyncing]
 -[NCDBManager setIsSyncing:]
 -[NCDBManager .cxx_destruct]
-___block_descriptor_48_e8_32s40s_e8_v16?0q8l
+___block_descriptor_28_e4_20s24s_e7_v8?0i4l
 __OBJC_$_CLASS_METHODS_NCDBManager
 __OBJC_METACLASS_RO_$_NCDBManager
 __OBJC_$_INSTANCE_METHODS_NCDBManager
@@ -2639,8 +2648,8 @@ ___51-[NetCorePushTaskManager handleRemoteNotification:]_block_invoke
 ___51-[NetCorePushTaskManager handleRemoteNotification:]_block_invoke_2
 ___51-[NetCorePushTaskManager handleRemoteNotification:]_block_invoke_3
 ___51-[NetCorePushTaskManager handleRemoteNotification:]_block_invoke_4
-___copy_helper_block_e8_32s40s48s56s
-___destroy_helper_block_e8_32s40s48s56s
+___copy_helper_block_e4_20s24s28s32s
+___destroy_helper_block_e4_20s24s28s32s
 -[NetCorePushTaskManager getValueForKey:dataDict:]
 -[NetCorePushTaskManager isNotificationFromNetCore:]
 -[NetCorePushTaskManager checkIsAmplifiedFlag:]
@@ -2672,83 +2681,82 @@ ___45-[NetCorePushTaskManager deleteNotification:]_block_invoke
 -[SMTDeeplink userInfo]
 -[SMTDeeplink setUserInfo:]
 -[SMTDeeplink .cxx_destruct]
-_OBJC_SELECTOR_REFERENCES_.364
-_OBJC_CLASSLIST_REFERENCES_$_.365
-_OBJC_SELECTOR_REFERENCES_.410
-_OBJC_CLASSLIST_REFERENCES_$_.419
-_OBJC_SELECTOR_REFERENCES_.421
-___block_descriptor_48_e8_32s40s_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.412
+___block_descriptor_28_e4_20s24s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.427
 _OBJC_SELECTOR_REFERENCES_.429
 _OBJC_CLASSLIST_REFERENCES_$_.430
 _OBJC_CLASSLIST_REFERENCES_$_.431
 _OBJC_SELECTOR_REFERENCES_.433
 _OBJC_SELECTOR_REFERENCES_.435
-_OBJC_SELECTOR_REFERENCES_.439
+_OBJC_SELECTOR_REFERENCES_.437
 _OBJC_SELECTOR_REFERENCES_.441
 _OBJC_SELECTOR_REFERENCES_.447
 _OBJC_SELECTOR_REFERENCES_.453
-_OBJC_SELECTOR_REFERENCES_.457
 _OBJC_CLASSLIST_REFERENCES_$_.458
 _OBJC_SELECTOR_REFERENCES_.460
 _OBJC_SELECTOR_REFERENCES_.462
 _OBJC_SELECTOR_REFERENCES_.464
 _OBJC_SELECTOR_REFERENCES_.466
+_OBJC_SELECTOR_REFERENCES_.468
 _OBJC_CLASSLIST_REFERENCES_$_.469
+_OBJC_SELECTOR_REFERENCES_.477
 _OBJC_CLASSLIST_REFERENCES_$_.480
 _OBJC_SELECTOR_REFERENCES_.482
+_OBJC_CLASSLIST_REFERENCES_$_.495
 _OBJC_CLASSLIST_REFERENCES_$_.498
 _OBJC_SELECTOR_REFERENCES_.500
-_OBJC_SELECTOR_REFERENCES_.512
 _OBJC_CLASSLIST_REFERENCES_$_.513
-_OBJC_CLASSLIST_REFERENCES_$_.514
-_OBJC_SELECTOR_REFERENCES_.532
 _OBJC_SELECTOR_REFERENCES_.534
 _OBJC_CLASSLIST_REFERENCES_$_.535
-_OBJC_SELECTOR_REFERENCES_.537
 _OBJC_SELECTOR_REFERENCES_.539
 _OBJC_SELECTOR_REFERENCES_.541
 _OBJC_SELECTOR_REFERENCES_.543
-_OBJC_SELECTOR_REFERENCES_.547
 _OBJC_SELECTOR_REFERENCES_.549
 _OBJC_SELECTOR_REFERENCES_.551
 _OBJC_CLASSLIST_REFERENCES_$_.554
 _OBJC_SELECTOR_REFERENCES_.556
-___block_descriptor_32_e17_v16?0"NSError"8l
-_OBJC_SELECTOR_REFERENCES_.559
-_OBJC_CLASSLIST_REFERENCES_$_.564
+___block_descriptor_20_e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.566
 ___block_literal_global.567
 ___block_literal_global.568
 _OBJC_CLASSLIST_REFERENCES_$_.569
 _OBJC_CLASSLIST_REFERENCES_$_.570
+_OBJC_SELECTOR_REFERENCES_.574
+_OBJC_SELECTOR_REFERENCES_.576
+_OBJC_SELECTOR_REFERENCES_.578
 _OBJC_CLASSLIST_REFERENCES_$_.579
-_OBJC_SELECTOR_REFERENCES_.581
-_OBJC_SELECTOR_REFERENCES_.583
-_OBJC_SELECTOR_REFERENCES_.585
-___block_descriptor_64_e8_32s40s48s56s_e5_v8?0l
+___block_descriptor_36_e4_20s24s28s32s_e5_v4?0l
 _OBJC_CLASSLIST_REFERENCES_$_.588
 _OBJC_SELECTOR_REFERENCES_.590
+_OBJC_SELECTOR_REFERENCES_.592
 _OBJC_CLASSLIST_REFERENCES_$_.593
-_OBJC_SELECTOR_REFERENCES_.595
-___block_descriptor_40_e8_32s_e31_v32?0"UNNotification"8Q16^B24l
-___block_descriptor_40_e8_32s_e17_v16?0"NSArray"8l
-_OBJC_SELECTOR_REFERENCES_.601
+___block_descriptor_24_e4_20s_e30_v16?0"UNNotification"4I8^c12l
+_OBJC_SELECTOR_REFERENCES_.598
+___block_descriptor_24_e4_20s_e16_v8?0"NSArray"4l
 _OBJC_CLASSLIST_REFERENCES_$_.604
+_OBJC_SELECTOR_REFERENCES_.606
+_OBJC_SELECTOR_REFERENCES_.608
+_OBJC_SELECTOR_REFERENCES_.610
 _OBJC_CLASSLIST_REFERENCES_$_.611
 _OBJC_SELECTOR_REFERENCES_.613
 _OBJC_CLASSLIST_REFERENCES_$_.620
 _OBJC_SELECTOR_REFERENCES_.622
 _OBJC_CLASSLIST_REFERENCES_$_.625
-___block_descriptor_40_e8_32s_e11_v24?0q816l
-_OBJC_SELECTOR_REFERENCES_.649
+_OBJC_CLASSLIST_REFERENCES_$_.628
+_OBJC_SELECTOR_REFERENCES_.630
+_OBJC_SELECTOR_REFERENCES_.632
+___block_descriptor_24_e4_20s_e10_v12?0i48l
+_OBJC_SELECTOR_REFERENCES_.639
+_OBJC_SELECTOR_REFERENCES_.641
 _OBJC_CLASSLIST_REFERENCES_$_.654
-_OBJC_SELECTOR_REFERENCES_.656
-_OBJC_SELECTOR_REFERENCES_.660
 _OBJC_CLASSLIST_REFERENCES_$_.661
-___block_descriptor_32_e25_v32?0"NSString"8Q16^B24l
+_OBJC_SELECTOR_REFERENCES_.663
+_OBJC_SELECTOR_REFERENCES_.665
+_OBJC_SELECTOR_REFERENCES_.667
+___block_descriptor_20_e24_v16?0"NSString"4I8^c12l
 ___block_literal_global.669
 _OBJC_SELECTOR_REFERENCES_.673
-_OBJC_SELECTOR_REFERENCES_.675
 _OBJC_SELECTOR_REFERENCES_.677
 _OBJC_SELECTOR_REFERENCES_.679
 __OBJC_$_CLASS_METHODS_NetCorePushTaskManager
@@ -2777,8 +2785,8 @@ __45-[NetCorePushTaskManager parseNotifications:]_block_invoke
 __56-[NetCorePushTaskManager fetchNotificationsFromSmartech]_block_invoke
 __72-[NetCorePushTaskManager fetchNotificationsFromDeviceNotificationCenter]_block_invoke_2
 __72-[NetCorePushTaskManager fetchNotificationsFromDeviceNotificationCenter]_block_invoke
-__destroy_helper_block_e8_32s40s48s56s
-__copy_helper_block_e8_32s40s48s56s
+__destroy_helper_block_e4_20s24s28s32s
+__copy_helper_block_e4_20s24s28s32s
 __51-[NetCorePushTaskManager handleRemoteNotification:]_block_invoke_4
 __51-[NetCorePushTaskManager handleRemoteNotification:]_block_invoke_3
 __51-[NetCorePushTaskManager handleRemoteNotification:]_block_invoke_2
@@ -2792,14 +2800,14 @@ ___38+[NCInAppRuleOperation sharedInstance]_block_invoke
 ___29-[NCInAppRuleOperation start]_block_invoke
 ___29-[NCInAppRuleOperation start]_block_invoke_2
 ___29-[NCInAppRuleOperation start]_block_invoke_3
-___copy_helper_block_e8_32s40s48s56s64s72r80r88r
-___destroy_helper_block_e8_32s40s48s56s64s72r80r88r
+___copy_helper_block_e4_20s24s28s32s36s40r44r48r
+___destroy_helper_block_e4_20s24s28s32s36s40r44r48r
 -[NCInAppRuleOperation evaluateControlGroupForRule:]
 -[NCInAppRuleOperation fetchExistingDisplayCountForRule:onDate:]
 -[NCInAppRuleOperation contentCompleteWithRule:withFrequencyTypeValue:]
 ___71-[NCInAppRuleOperation contentCompleteWithRule:withFrequencyTypeValue:]_block_invoke
-___copy_helper_block_e8_32s40s48s56s64r72r80r88r96r104r112r
-___destroy_helper_block_e8_32s40s48s56s64r72r80r88r96r104r112r
+___copy_helper_block_e4_20s24s28s32s36r40r44r48r52r56r60r
+___destroy_helper_block_e4_20s24s28s32s36r40r44r48r52r56r60r
 ___71-[NCInAppRuleOperation contentCompleteWithRule:withFrequencyTypeValue:]_block_invoke.458
 -[NCInAppRuleOperation shouldAppendInAppCreativeWithBaseURL:]
 -[NCInAppRuleOperation ruleEvaluationCompletionBlock]
@@ -2811,15 +2819,16 @@ ___71-[NCInAppRuleOperation contentCompleteWithRule:withFrequencyTypeValue:]_blo
 -[NCInAppRuleOperation payloadDictionary]
 -[NCInAppRuleOperation setPayloadDictionary:]
 -[NCInAppRuleOperation .cxx_destruct]
-___block_descriptor_96_e8_32s40s48s56s64s72r80r88r_e8_v12?0B8l
-___block_descriptor_96_e8_32s40s48s56s64s72r80r88r_e5_v8?0l
-___block_descriptor_96_e8_32s40s48s56s64s72r80r88r_e33_v32?0"NCInAppEventRule"8Q16^B24l
+___block_descriptor_52_e4_20s24s28s32s36s40r44r48r_e7_v8?0c4l
+___block_descriptor_52_e4_20s24s28s32s36s40r44r48r_e5_v4?0l
+___block_descriptor_52_e4_20s24s28s32s36s40r44r48r_e32_v16?0"NCInAppEventRule"4I8^c12l
 _OBJC_CLASSLIST_REFERENCES_$_.398
-_OBJC_SELECTOR_REFERENCES_.400
+_OBJC_SELECTOR_REFERENCES_.414
 _OBJC_CLASSLIST_REFERENCES_$_.439
-___block_descriptor_120_e8_32s40s48s56s64r72r80r88r96r104r112r_e5_v8?0l
+___block_descriptor_64_e4_20s24s28s32s36r40r44r48r52r56r60r_e5_v4?0l
 _OBJC_CLASSLIST_REFERENCES_$_.442
 _OBJC_CLASSLIST_REFERENCES_$_.449
+_OBJC_SELECTOR_REFERENCES_.455
 _OBJC_CLASSLIST_REFERENCES_$_.459
 _OBJC_IVAR_$_NCInAppRuleOperation._ruleEvaluationCompletionBlock
 _OBJC_IVAR_$_NCInAppRuleOperation._eventId
@@ -2834,11 +2843,11 @@ __OBJC_CLASS_RO_$_NCInAppRuleOperation
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Core/InAppMessaging/Operations/NCInAppRuleOperation.m
 NetCorePush/Core/InAppMessaging/Operations/NCInAppRuleOperation.m
 __71-[NCInAppRuleOperation contentCompleteWithRule:withFrequencyTypeValue:]_block_invoke.458
-__destroy_helper_block_e8_32s40s48s56s64r72r80r88r96r104r112r
-__copy_helper_block_e8_32s40s48s56s64r72r80r88r96r104r112r
+__destroy_helper_block_e4_20s24s28s32s36r40r44r48r52r56r60r
+__copy_helper_block_e4_20s24s28s32s36r40r44r48r52r56r60r
 __71-[NCInAppRuleOperation contentCompleteWithRule:withFrequencyTypeValue:]_block_invoke
-__destroy_helper_block_e8_32s40s48s56s64s72r80r88r
-__copy_helper_block_e8_32s40s48s56s64s72r80r88r
+__destroy_helper_block_e4_20s24s28s32s36s40r44r48r
+__copy_helper_block_e4_20s24s28s32s36s40r44r48r
 __29-[NCInAppRuleOperation start]_block_invoke_3
 __29-[NCInAppRuleOperation start]_block_invoke_2
 __29-[NCInAppRuleOperation start]_block_invoke
@@ -2851,19 +2860,19 @@ ___49-[NetCoreWebServiceHandler callGetService:Block:]_block_invoke
 -[NetCoreWebServiceHandler callProfilePushService:Block:]
 -[NetCoreWebServiceHandler postPreparedDictionaryToServer:MethodName:Block:]
 ___76-[NetCoreWebServiceHandler postPreparedDictionaryToServer:MethodName:Block:]_block_invoke
-___copy_helper_block_e8_32s40s48s56s64b72r80r
-___destroy_helper_block_e8_32s40s48s56s64s72r80r
+___copy_helper_block_e4_20s24s28s32s36b40r44r
+___destroy_helper_block_e4_20s24s28s32s36s40r44r
 -[NetCoreWebServiceHandler postRequestDataToTheServer:RequestParamters:Block:]
 ___78-[NetCoreWebServiceHandler postRequestDataToTheServer:RequestParamters:Block:]_block_invoke
 -[NetCoreWebServiceHandler excecuteSessionRequest:ResultBlock:]
 ___63-[NetCoreWebServiceHandler excecuteSessionRequest:ResultBlock:]_block_invoke
-___copy_helper_block_e8_32b40r
+___copy_helper_block_e4_20b24r
 -[NetCoreWebServiceHandler URLSession:didReceiveChallenge:completionHandler:]
 -[NetCoreWebServiceHandler shoulProcessRegValue]
-___block_descriptor_40_e8_32bs_e11_v24?0q816l
+___block_descriptor_24_e4_20bs_e10_v12?0i48l
+_OBJC_CLASSLIST_REFERENCES_$_.323
 _OBJC_CLASSLIST_REFERENCES_$_.343
 _OBJC_CLASSLIST_REFERENCES_$_.344
-_OBJC_CLASSLIST_REFERENCES_$_.351
 _OBJC_SELECTOR_REFERENCES_.387
 _OBJC_CLASSLIST_REFERENCES_$_.390
 _OBJC_CLASSLIST_REFERENCES_$_.403
@@ -2871,19 +2880,17 @@ _OBJC_SELECTOR_REFERENCES_.417
 _OBJC_CLASSLIST_REFERENCES_$_.418
 _OBJC_CLASSLIST_REFERENCES_$_.425
 _OBJC_CLASSLIST_REFERENCES_$_.444
-_OBJC_SELECTOR_REFERENCES_.454
 _OBJC_CLASSLIST_REFERENCES_$_.482
-___block_descriptor_88_e8_32s40s48s56s64bs72r80r_e8_v16?0q8l
+___block_descriptor_48_e4_20s24s28s32s36bs40r44r_e7_v8?0i4l
 _OBJC_CLASSLIST_REFERENCES_$_.496
-___block_descriptor_56_e8_32s40s48bs_e11_v24?0q816l
+___block_descriptor_32_e4_20s24s28bs_e10_v12?0i48l
 _OBJC_CLASSLIST_REFERENCES_$_.544
+_OBJC_SELECTOR_REFERENCES_.546
+_OBJC_CLASSLIST_REFERENCES_$_.547
 _OBJC_CLASSLIST_REFERENCES_$_.552
 _OBJC_SELECTOR_REFERENCES_.554
-___block_descriptor_48_e8_32bs40r_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+___block_descriptor_28_e4_20bs24r_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
 _OBJC_SELECTOR_REFERENCES_.557
-_OBJC_SELECTOR_REFERENCES_.561
-_OBJC_SELECTOR_REFERENCES_.563
-_OBJC_SELECTOR_REFERENCES_.570
 __OBJC_$_CLASS_METHODS_NetCoreWebServiceHandler
 __OBJC_$_PROTOCOL_REFS_NSURLSessionDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSURLSessionDelegate
@@ -2897,11 +2904,11 @@ __OBJC_$_PROP_LIST_NetCoreWebServiceHandler
 __OBJC_CLASS_RO_$_NetCoreWebServiceHandler
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Utitlities/Services/NetCoreWebServiceHandler.m
 NetCorePush/Utitlities/Services/NetCoreWebServiceHandler.m
-__copy_helper_block_e8_32b40r
+__copy_helper_block_e4_20b24r
 __63-[NetCoreWebServiceHandler excecuteSessionRequest:ResultBlock:]_block_invoke
 __78-[NetCoreWebServiceHandler postRequestDataToTheServer:RequestParamters:Block:]_block_invoke
-__destroy_helper_block_e8_32s40s48s56s64s72r80r
-__copy_helper_block_e8_32s40s48s56s64b72r80r
+__destroy_helper_block_e4_20s24s28s32s36s40r44r
+__copy_helper_block_e4_20s24s28s32s36b40r44r
 __76-[NetCoreWebServiceHandler postPreparedDictionaryToServer:MethodName:Block:]_block_invoke
 __49-[NetCoreWebServiceHandler callGetService:Block:]_block_invoke
 __42+[NetCoreWebServiceHandler sharedInstance]_block_invoke
@@ -2947,32 +2954,27 @@ ___66-[NetCoreNotificationService removeDuplicateNotificationFromTray:]_block_in
 -[NetCoreNotificationService .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.345
 _OBJC_CLASSLIST_REFERENCES_$_.368
-_OBJC_CLASSLIST_REFERENCES_$_.374
+_OBJC_SELECTOR_REFERENCES_.419
 _OBJC_SELECTOR_REFERENCES_.423
 _OBJC_SELECTOR_REFERENCES_.425
 _OBJC_CLASSLIST_REFERENCES_$_.446
 _OBJC_CLASSLIST_REFERENCES_$_.451
 _OBJC_CLASSLIST_REFERENCES_$_.465
-___block_descriptor_48_e8_32s40s_e17_v16?0"NSArray"8l
+___block_descriptor_28_e4_20s24s_e16_v8?0"NSArray"4l
 _OBJC_IVAR_$_NetCoreNotificationService.customBgView
 _OBJC_IVAR_$_NetCoreNotificationService.carouselIndex
 _OBJC_IVAR_$_NetCoreNotificationService.content
-_OBJC_CLASSLIST_REFERENCES_$_.477
 _OBJC_IVAR_$_NetCoreNotificationService.carousel
 _OBJC_SELECTOR_REFERENCES_.495
-_OBJC_SELECTOR_REFERENCES_.509
-_OBJC_CLASSLIST_REFERENCES_$_.510
 _OBJC_CLASSLIST_REFERENCES_$_.511
 _OBJC_SELECTOR_REFERENCES_.513
 _OBJC_SELECTOR_REFERENCES_.517
 _OBJC_CLASSLIST_REFERENCES_$_.518
 _OBJC_SELECTOR_REFERENCES_.524
 _OBJC_SELECTOR_REFERENCES_.526
+_OBJC_SELECTOR_REFERENCES_.528
 _OBJC_CLASSLIST_REFERENCES_$_.529
 _OBJC_SELECTOR_REFERENCES_.545
-_OBJC_CLASSLIST_REFERENCES_$_.548
-_OBJC_SELECTOR_REFERENCES_.550
-_OBJC_SELECTOR_REFERENCES_.552
 _OBJC_IVAR_$_NetCoreNotificationService._contentHandler
 _OBJC_IVAR_$_NetCoreNotificationService._bestAttemptContent
 __OBJC_$_CLASS_METHODS_NetCoreNotificationService
@@ -3030,10 +3032,11 @@ ___69-[NCWebViewController userContentController:didReceiveScriptMessage:]_block
 -[NCWebViewController .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.389
 _OBJC_CLASSLIST_REFERENCES_$_.406
-___block_descriptor_40_e8_32s_e30_v24?0"NSString"8"NSError"16l
+___block_descriptor_24_e4_20s_e29_v12?0"NSString"4"NSError"8l
 _OBJC_CLASSLIST_REFERENCES_$_.448
 _OBJC_CLASSLIST_REFERENCES_$_.463
-___block_descriptor_40_e8_32s_e38_v28?0"NSString"8B16"NSDictionary"20l
+_OBJC_CLASSLIST_REFERENCES_$_.475
+___block_descriptor_24_e4_20s_e37_v16?0"NSString"4c8"NSDictionary"12l
 _OBJC_IVAR_$_NCWebViewController._delegate
 _OBJC_IVAR_$_NCWebViewController._webView
 __OBJC_$_PROTOCOL_REFS_WKNavigationDelegate
@@ -3075,6 +3078,7 @@ __41-[NCWebViewController triggerJS:webView:]_block_invoke
 +[NCNotificationDatabaseSource notificationUpdateUserIdentity:]
 +[NCNotificationDatabaseSource getAllNotificationsForIdentity:]
 +[NCNotificationDatabaseSource notificationDelete:]
+_OBJC_CLASSLIST_REFERENCES_$_.325
 _OBJC_CLASSLIST_REFERENCES_$_.367
 _OBJC_CLASSLIST_REFERENCES_$_.370
 _OBJC_CLASSLIST_REFERENCES_$_.378
@@ -3085,7 +3089,30 @@ __OBJC_CLASS_RO_$_NCNotificationDatabaseSource
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Database/DatabaseSource/NCNotificationDatabaseSource.m
 NetCorePush/Database/DatabaseSource/NCNotificationDatabaseSource.m
 __ZL15__ARCLite__loadv
+__ZL30add_image_hook_autoreleasepoolPK11mach_headerl
+__ZL34__arclite_objc_autoreleasePoolPushv
+__ZL33__arclite_objc_autoreleasePoolPopPv
+__ZL19patch_lazy_pointersPK11mach_headerP7patch_tm
+__ZL42__arclite_NSArray_objectAtIndexedSubscriptP7NSArrayP13objc_selectorj
+__ZL53__arclite_NSMutableArray_setObject_atIndexedSubscriptP14NSMutableArrayP13objc_selectorP11objc_objectj
+__ZL46__arclite_NSDictionary_objectForKeyedSubscriptP12NSDictionaryP13objc_selectorP11objc_object
+__ZL47__arclite_NSOrderedSet_objectAtIndexedSubscriptP12NSOrderedSetP13objc_selectorj
+__ZL58__arclite_NSMutableOrderedSet_setObject_atIndexedSubscriptP19NSMutableOrderedSetP13objc_selectorP11objc_objectj
 __ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL18add_image_hook_ARCPK11mach_headerl
+__ZL27__arclite_objc_loadClassrefPP10objc_class
+__ZL36__arclite_object_setInstanceVariableP11objc_objectPKcPv
+__ZL24__arclite_object_setIvarP11objc_objectP9objc_ivarS0_
+__ZL21__arclite_object_copyP11objc_objectm
+__ZL21__arclite_objc_retainP11objc_object
+__ZL26__arclite_objc_retainBlockP11objc_object
+__ZL22__arclite_objc_releaseP11objc_object
+__ZL26__arclite_objc_autoreleaseP11objc_object
+__ZL32__arclite_objc_retainAutoreleaseP11objc_object
+__ZL37__arclite_objc_autoreleaseReturnValueP11objc_object
+__ZL43__arclite_objc_retainAutoreleaseReturnValueP11objc_object
+__ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
+__ZL26__arclite_objc_storeStrongPP11objc_objectS0_
 __ZL22add_image_hook_swiftV1PK11mach_headerl
 __ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
 __ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
@@ -3128,11 +3155,21 @@ __ZL11_class_name
 __ZL32OBJC_$_CLASS_METHODS___ARCLite__
 __ZL17_load_method_name
 __ZL17_load_method_type
+__ZL23NSAutoreleasePool_class
+__ZZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+__ZGVZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+__OBJC_$_PROTOCOL_INSTANCE_METHODS___ARCLiteIndexedSubscripting__
+__OBJC_$_PROTOCOL_METHOD_TYPES___ARCLiteIndexedSubscripting__
+__OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
+__OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
+__OBJC_PROTOCOL_REFERENCE_$___ARCLiteIndexedSubscripting__
 __OBJC_$_PROTOCOL_INSTANCE_METHODS___ARCLiteKeyedSubscripting__
 __OBJC_$_PROTOCOL_METHOD_TYPES___ARCLiteKeyedSubscripting__
 __OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
 __OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
 __OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZGVZL18add_image_hook_ARCPK11mach_headerlE7patches
 __ZL30NSUndoManagerProxy_targetClass
 __ZL29original_NSManagedObject_init
 __ZL40original_NSManagedObject_allocWithEntity
@@ -3145,6 +3182,7 @@ __ZL27original_NSKKMS_indexForKey
 __ZL28original_NSKKsD_objectForKey
 __ZL34original_NSKKsD_removeObjectForKey
 __ZL32original_NSKKsD_setObject_forKey
+_OBJC_SELECTOR_REFERENCES_.81
 __ZL40original_NSKKsD_addEntriesFromDictionary
 __ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
 __ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
@@ -3160,7 +3198,11 @@ __ZL25original_protocol_getName
 __ZL36original_objc_copyClassNamesForImage
 __ZL12demangleLock
 __ZL9Demangled
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=arm64-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -Wno-objc-signed-char-bool-implicit-int-conversion -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -mlinker-version=556.6
+_OBJC_SELECTOR_REFERENCES_.107
+_OBJC_SELECTOR_REFERENCES_.109
+_OBJC_SELECTOR_REFERENCES_.115
+_OBJC_SELECTOR_REFERENCES_.117
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=armv7s-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/armv7s -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7s -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.o -Wno-objc-signed-char-bool-implicit-int-conversion -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -mlinker-version=556.6 -march=armv7s
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76
 fixStringForCoreData
@@ -3212,7 +3254,6 @@ __arclite_NSManagedObject_allocWithEntity
 __arclite_NSManagedObject_init
 __arclite_NSUndoManagerProxy_isKindOfClass
 add_image_hook_swiftV1
-patch_lazy_pointers
 patch_t<const char **(const char *, unsigned int *)>
 patch_t<const char *(Protocol *)>
 patch_t<const char *(Class)>
@@ -3221,10 +3262,54 @@ patch_t<Class (const char *)>
 patch_t<void *(id)>
 patch_t<Class (Class, const char *, unsigned long)>
 patch_t<Class (Class, const objc_image_info *)>
+__arclite_objc_storeStrong
+__arclite_objc_release
+__arclite_objc_retain
+__arclite_objc_retainAutoreleasedReturnValue
+__arclite_objc_retainAutoreleaseReturnValue
+__arclite_objc_autoreleaseReturnValue
+__arclite_objc_retainAutorelease
+__arclite_objc_autorelease
+__arclite_objc_retainBlock
+__arclite_object_copy
+fixupCopiedReferences
+_class_getInstanceStart
+alignedInstanceStart
+__arclite_class_usesAutomaticRetainRelease
+classOrSuperClassesUseARR
+__arclite_object_setIvar
+isScannedOffset
+_ivar_getClass
+__arclite_object_setInstanceVariable
+__arclite_objc_loadClassref
+add_image_hook_ARC
+patch_t<void (id *, id)>
+patch_t<id (id)>
+patch_t<void (id)>
+patch_t<id (id, unsigned long)>
+patch_t<void (id, objc_ivar *, id)>
+patch_t<objc_ivar *(id, const char *, void *)>
+patch_t<Class (Class *)>
 __arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__arclite_NSMutableOrderedSet_setObject_atIndexedSubscript
+__arclite_NSOrderedSet_objectAtIndexedSubscript
+__arclite_NSDictionary_objectForKeyedSubscript
+__arclite_NSMutableArray_setObject_atIndexedSubscript
+__arclite_NSArray_objectAtIndexedSubscript
+patch_lazy_pointers
+__arclite_objc_autoreleasePoolPop
+__arclite_objc_autoreleasePoolPush
+add_image_hook_autoreleasepool
+patch_t<void (void *)>
+patch_t<void *()>
 __ARCLite__load
 install_swiftV1
 replaceMethod
+install_ARC
 install_dict_nil_value
 addOrReplaceMethod
 keyedGetter
+install_subscripting
+addMethod
+indexedGetter
+install_autoreleasepool
