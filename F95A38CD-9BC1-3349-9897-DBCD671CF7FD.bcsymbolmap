@@ -1,5 +1,7 @@
 BCSymbolMap Version: 2.0
-Apple clang version 11.0.3 (clang-1103.0.32.62)
+Apple clang version 12.0.0 (clang-1200.0.32.2)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk
+iPhoneOS14.0.sdk
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/build/NetCorePush.build/Release-iphoneos/NetCorePush.build/DerivedSources/NetCorePush_vers.c
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush
 +[NetCoreCommonMethods eventStringFromEventId:]
@@ -65,7 +67,6 @@ ___destroy_helper_block_e8_
 +[NetCoreCommonMethods getNotificationStatusString:]
 +[NetCoreCommonMethods updateOldGUID]
 ___clang_at_available_requires_core_foundation_framework
-___clang_at_available_requires_core_foundation_framework.cold.1
 _OBJC_CLASSLIST_REFERENCES_$_
 _OBJC_SELECTOR_REFERENCES_
 _OBJC_SELECTOR_REFERENCES_.334
@@ -230,14 +231,13 @@ _OBJC_SELECTOR_REFERENCES_.958
 __OBJC_$_CLASS_METHODS_NetCoreCommonMethods
 __OBJC_METACLASS_RO_$_NetCoreCommonMethods
 __OBJC_CLASS_RO_$_NetCoreCommonMethods
-_OBJC_LABEL_CLASS_$
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Utitlities/Common Classes/NetCoreCommonMethods.m
 NetCorePush/Utitlities/Common Classes/NetCoreCommonMethods.m
 __destroy_helper_block_e8_
 __copy_helper_block_e8_
 __57+[NetCoreCommonMethods checkNotificationPermissionStatus]_block_invoke
 NSMakeRange
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __destroy_helper_block_e8_32s
 __copy_helper_block_e8_32s
 __51+[NetCoreCommonMethods removeNotificationFromTray:]_block_invoke
@@ -283,7 +283,7 @@ __OBJC_CLASS_RO_$_NetCoreInstallation
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Core/Installation/NetCoreInstallation.m
 NetCorePush/Core/Installation/NetCoreInstallation.m
 __37+[NetCoreInstallation sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/dispatch/once.h
 +[NCDeeplinkHelper handleOpenURLScheme:withCompletion:]
 +[NCDeeplinkHelper handleUniversalLinkWithUserActivity:andCompletion:]
 +[NCDeeplinkHelper handleDeeplinkURLString:customPayload:withCompletion:]
@@ -440,7 +440,6 @@ ___33+[NCDateFormatter sharedInstance]_block_invoke
 -[NCActionButton titleString]
 -[NCActionButton setTitleString:]
 -[NCActionButton .cxx_destruct]
-_OBJC_CLASSLIST_SUP_REFS_$_
 _OBJC_SELECTOR_REFERENCES_.40
 _OBJC_SELECTOR_REFERENCES_.50
 _OBJC_SELECTOR_REFERENCES_.52
@@ -503,7 +502,6 @@ _OBJC_IVAR_$_NCNotification._actionButtonArray
 __OBJC_$_INSTANCE_VARIABLES_NCNotification
 __OBJC_$_PROP_LIST_NCNotification
 __OBJC_CLASS_RO_$_NCNotification
-_OBJC_CLASSLIST_SUP_REFS_$_.265
 _OBJC_CLASSLIST_REFERENCES_$_.266
 _OBJC_CLASSLIST_REFERENCES_$_.267
 _OBJC_SELECTOR_REFERENCES_.271
@@ -518,7 +516,6 @@ _OBJC_IVAR_$_NCDateFormatter._dateFormatter
 __OBJC_$_INSTANCE_VARIABLES_NCDateFormatter
 __OBJC_$_PROP_LIST_NCDateFormatter
 __OBJC_CLASS_RO_$_NCDateFormatter
-_OBJC_CLASSLIST_SUP_REFS_$_.287
 __OBJC_METACLASS_RO_$_NCCarousel
 __OBJC_$_INSTANCE_METHODS_NCCarousel
 _OBJC_IVAR_$_NCCarousel._imageUrlString
@@ -527,7 +524,6 @@ _OBJC_IVAR_$_NCCarousel._imageMessageString
 __OBJC_$_INSTANCE_VARIABLES_NCCarousel
 __OBJC_$_PROP_LIST_NCCarousel
 __OBJC_CLASS_RO_$_NCCarousel
-_OBJC_CLASSLIST_SUP_REFS_$_.311
 __OBJC_METACLASS_RO_$_NCActionButton
 __OBJC_$_INSTANCE_METHODS_NCActionButton
 _OBJC_IVAR_$_NCActionButton._deeplinkString
@@ -697,7 +693,6 @@ _OBJC_IVAR_$_NCSmartechSettings._baseURLs
 __OBJC_$_INSTANCE_VARIABLES_NCSmartechSettings
 __OBJC_$_PROP_LIST_NCSmartechSettings
 __OBJC_CLASS_RO_$_NCSmartechSettings
-_OBJC_CLASSLIST_SUP_REFS_$_.330
 _OBJC_SELECTOR_REFERENCES_.338
 _OBJC_SELECTOR_REFERENCES_.340
 _OBJC_SELECTOR_REFERENCES_.346
@@ -1363,7 +1358,7 @@ __destroy_helper_block_e8_32s48s56s64r72r
 __copy_helper_block_e8_32s48s56s64r72r
 __64+[NCInAppRuleEvaluator evaluateWhomTo:forRuleEvent:withPayload:]_block_invoke
 __inline_isnand
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/usr/include/math.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/math.h
 +[Netcore sharedInstance]
 ___25+[Netcore sharedInstance]_block_invoke
 -[Netcore init]
@@ -1918,12 +1913,11 @@ __OBJC_$_INSTANCE_METHODS_NCiCarousel
 __OBJC_$_INSTANCE_VARIABLES_NCiCarousel
 __OBJC_$_PROP_LIST_NCiCarousel
 __OBJC_CLASS_RO_$_NCiCarousel
-_OBJC_LABEL_CATEGORY_$
 /Users/Jobin/_Work/Code/SDK/iOS/Netcore-iOS-SDK/NetCorePush/NetCorePush/Utitlities/RichPush/NCiCarousel.m
 NetCorePush/Utitlities/RichPush/NCiCarousel.m
 NetCorePush/Utitlities/RichPush/NCiCarousel.h
 __tg_fabs
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/usr/include/tgmath.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/tgmath.h
 __tg_round
 __tg_pow
 __tg_floor
@@ -1933,7 +1927,7 @@ __tg_cos
 __tg_sin
 compareViewDepth
 __CGSizeEqualToSize
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 +[NetCoreAppTracking sharedInstance]
 ___36+[NetCoreAppTracking sharedInstance]_block_invoke
 -[NetCoreAppTracking sendAppTrackingEvent:Block:]
@@ -2464,7 +2458,6 @@ _OBJC_IVAR_$_NCInAppRuleModel._mid
 __OBJC_$_INSTANCE_VARIABLES_NCInAppRuleModel
 __OBJC_$_PROP_LIST_NCInAppRuleModel
 __OBJC_CLASS_RO_$_NCInAppRuleModel
-_OBJC_CLASSLIST_SUP_REFS_$_.334
 __OBJC_CLASS_PROTOCOLS_$_NCWhomTo
 __OBJC_METACLASS_RO_$_NCWhomTo
 __OBJC_$_INSTANCE_METHODS_NCWhomTo
@@ -2476,7 +2469,6 @@ _OBJC_IVAR_$_NCWhomTo._segmentIds
 __OBJC_$_INSTANCE_VARIABLES_NCWhomTo
 __OBJC_$_PROP_LIST_NCWhomTo
 __OBJC_CLASS_RO_$_NCWhomTo
-_OBJC_CLASSLIST_SUP_REFS_$_.374
 __OBJC_CLASS_PROTOCOLS_$_NCEvents
 __OBJC_METACLASS_RO_$_NCEvents
 __OBJC_$_INSTANCE_METHODS_NCEvents
@@ -2485,7 +2477,6 @@ _OBJC_IVAR_$_NCEvents._rules
 __OBJC_$_INSTANCE_VARIABLES_NCEvents
 __OBJC_$_PROP_LIST_NCEvents
 __OBJC_CLASS_RO_$_NCEvents
-_OBJC_CLASSLIST_SUP_REFS_$_.391
 _OBJC_SELECTOR_REFERENCES_.393
 _OBJC_SELECTOR_REFERENCES_.395
 _OBJC_SELECTOR_REFERENCES_.397
@@ -2501,7 +2492,6 @@ _OBJC_IVAR_$_NCRules._filters
 __OBJC_$_INSTANCE_VARIABLES_NCRules
 __OBJC_$_PROP_LIST_NCRules
 __OBJC_CLASS_RO_$_NCRules
-_OBJC_CLASSLIST_SUP_REFS_$_.436
 _OBJC_SELECTOR_REFERENCES_.438
 __OBJC_CLASS_PROTOCOLS_$_NCFilters
 __OBJC_METACLASS_RO_$_NCFilters
@@ -2513,7 +2503,6 @@ _OBJC_IVAR_$_NCFilters._value
 __OBJC_$_INSTANCE_VARIABLES_NCFilters
 __OBJC_$_PROP_LIST_NCFilters
 __OBJC_CLASS_RO_$_NCFilters
-_OBJC_CLASSLIST_SUP_REFS_$_.467
 _OBJC_SELECTOR_REFERENCES_.473
 _OBJC_SELECTOR_REFERENCES_.475
 __OBJC_CLASS_PROTOCOLS_$_NCWhereTo
@@ -2524,7 +2513,6 @@ _OBJC_IVAR_$_NCWhereTo._trigger
 __OBJC_$_INSTANCE_VARIABLES_NCWhereTo
 __OBJC_$_PROP_LIST_NCWhereTo
 __OBJC_CLASS_RO_$_NCWhereTo
-_OBJC_CLASSLIST_SUP_REFS_$_.485
 __OBJC_CLASS_PROTOCOLS_$_NCWhenTo
 __OBJC_METACLASS_RO_$_NCWhenTo
 __OBJC_$_INSTANCE_METHODS_NCWhenTo
@@ -2533,7 +2521,6 @@ _OBJC_IVAR_$_NCWhenTo._days
 __OBJC_$_INSTANCE_VARIABLES_NCWhenTo
 __OBJC_$_PROP_LIST_NCWhenTo
 __OBJC_CLASS_RO_$_NCWhenTo
-_OBJC_CLASSLIST_SUP_REFS_$_.502
 _OBJC_SELECTOR_REFERENCES_.508
 _OBJC_SELECTOR_REFERENCES_.510
 __OBJC_CLASS_PROTOCOLS_$_NCTime
@@ -2544,7 +2531,6 @@ _OBJC_IVAR_$_NCTime._to
 __OBJC_$_INSTANCE_VARIABLES_NCTime
 __OBJC_$_PROP_LIST_NCTime
 __OBJC_CLASS_RO_$_NCTime
-_OBJC_CLASSLIST_SUP_REFS_$_.519
 _OBJC_SELECTOR_REFERENCES_.521
 _OBJC_SELECTOR_REFERENCES_.523
 __OBJC_CLASS_PROTOCOLS_$_NCWhatTo
@@ -3020,6 +3006,7 @@ ___41-[NCWebViewController triggerJS:webView:]_block_invoke
 -[NCWebViewController observeValueForKeyPath:ofObject:change:context:]
 -[NCWebViewController userContentController:didReceiveScriptMessage:]
 ___69-[NCWebViewController userContentController:didReceiveScriptMessage:]_block_invoke
+-[NCWebViewController convertJsonStringToDictionary:]
 -[NCWebViewController headerBannerConstraintsForWebView:onSuperView:]
 -[NCWebViewController footerBannerConstraintsForWebView:onSuperView:]
 -[NCWebViewController interstitialBannerConstraintsForWebView:onSuperView:]
@@ -3036,8 +3023,14 @@ _OBJC_CLASSLIST_REFERENCES_$_.406
 ___block_descriptor_40_e8_32s_e30_v24?0"NSString"8"NSError"16l
 _OBJC_CLASSLIST_REFERENCES_$_.448
 _OBJC_CLASSLIST_REFERENCES_$_.463
-_OBJC_CLASSLIST_REFERENCES_$_.475
+_OBJC_CLASSLIST_REFERENCES_$_.474
+_OBJC_CLASSLIST_REFERENCES_$_.486
+_OBJC_CLASSLIST_REFERENCES_$_.487
+_OBJC_CLASSLIST_REFERENCES_$_.494
 ___block_descriptor_40_e8_32s_e38_v28?0"NSString"8B16"NSDictionary"20l
+_OBJC_CLASSLIST_REFERENCES_$_.500
+_OBJC_CLASSLIST_REFERENCES_$_.509
+_OBJC_SELECTOR_REFERENCES_.511
 _OBJC_IVAR_$_NCWebViewController._delegate
 _OBJC_IVAR_$_NCWebViewController._webView
 __OBJC_$_PROTOCOL_REFS_WKNavigationDelegate
@@ -3165,7 +3158,9 @@ __ZL25original_protocol_getName
 __ZL36original_objc_copyClassNamesForImage
 __ZL12demangleLock
 __ZL9Demangled
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=arm64-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -Wno-objc-signed-char-bool-implicit-int-conversion -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -mlinker-version=556.6
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=arm64-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -mlinker-version=609
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.Internal.sdk
+iPhoneOS14.0.Internal.sdk
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76
 fixStringForCoreData
@@ -3173,7 +3168,7 @@ source/arclite.mm
 cxxConstruct
 arclite_uninitialized_function
 scanMangledField
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk/usr/include/_ctype.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.Internal.sdk/usr/include/_ctype.h
 __isctype
 demangledName
 copySwiftV1DemangledName
