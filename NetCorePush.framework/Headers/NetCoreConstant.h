@@ -5,7 +5,7 @@
  
  @author Netcore Solutions
  @copyright  2019 Netcore Solutions
- @version    2.5.6 */
+ @version    2.5.7 */
 
 #ifndef NetCoreConstant_h
 #define NetCoreConstant_h

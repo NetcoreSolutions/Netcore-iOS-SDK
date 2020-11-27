@@ -258,6 +258,19 @@ typedef NS_ENUM(NSUInteger, NCLogLevel) {
  */
 - (BOOL)isNotificationFromSmartech:(NSDictionary *)userInfo;
 
+/**
+ @brief This method is used to set the device advertiser id to be shared with Smartech backend.
+ 
+ @discussion The developer needs to handle capturing of advertised id and then pass it to the SDK which will send it to the backend.
+ 
+ You can use the below code.
+ 
+ @code
+ [[Smartech sharedInstance] setDeviceAdvertiserId:@""];
+ @endcode
+ */
+- (void)setDeviceAdvertiserId:(NSString *)advertiserId;
+
 #pragma mark - Debugging Methods
 
 /**
